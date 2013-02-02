@@ -1,0 +1,65 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3cfcfddf-ab86-45a1-8311-37a711d3a5e7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>hynew</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>USER INFO</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="b919ad6e-a5dd-4c65-a146-9380aca0236b">
+          <ID>USER INFO</ID>
+          <Name>USER INFO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="00d24aee-8bae-4622-a510-3607c1163b03">
+            <DataSourceViewID>hynew</DataSourceViewID>
+            <TableID>HYNEW_USER_INFO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>COMMUNICATION LOG</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="22588736-5d92-4289-8979-917dbf52e30d">
+          <ID>COMMUNICATION LOG</ID>
+          <Name>COMMUNICATION LOG</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="fa2f2c05-f213-40ac-be36-fae4ec0466ba">
+            <DataSourceViewID>hynew</DataSourceViewID>
+            <TableID>HYNEW_COMMUNICATION_LOG</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>COMMUNICATION LOG 1</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="e08cf908-659e-4e16-8155-f1241a51ff8a">
+          <ID>COMMUNICATION LOG</ID>
+          <Name>COMMUNICATION LOG</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="74f7fc1c-9136-42a6-815e-af709c3ac378">
+            <DataSourceViewID>hynew</DataSourceViewID>
+            <TableID>HYNEW_COMMUNICATION_LOG</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

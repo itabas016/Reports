@@ -1,0 +1,15 @@
+﻿<DataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" xsi:type="RelationalDataSource" dwd:design-time-name="9d758f22-a6cc-4a2d-895d-f5e91ab694d8" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>hynew</ID>
+  <Name>hynew</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <ConnectionString>DATA SOURCE=(DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=192.168.0.102)(PORT=1522))(CONNECT_DATA=(SERVICE_NAME=orcl)));PASSWORD=;PERSIST SECURITY INFO=True;USER ID=</ConnectionString>
+  <ConnectionStringSecurity>PasswordRemoved</ConnectionStringSecurity>
+  <ImpersonationInfo>
+    <ImpersonationMode>ImpersonateAccount</ImpersonationMode>
+    <Account>administrator</Account>
+    <ImpersonationInfoSecurity>PasswordRemoved</ImpersonationInfoSecurity>
+  </ImpersonationInfo>
+  <ManagedProvider>Oracle.DataAccess.Client</ManagedProvider>
+  <Timeout>PT0S</Timeout>
+</DataSource>
