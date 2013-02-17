@@ -8,48 +8,84 @@
   </Database>
   <Cubes>
     <ProjectItem>
-      <Name>hynew.cube</Name>
-      <FullPath>hynew.cube</FullPath>
+      <Name>main.cube</Name>
+      <FullPath>main.cube</FullPath>
       <Dependencies>
         <ProjectItem>
-          <Name>hynew.partitions</Name>
-          <FullPath>hynew.partitions</FullPath>
+          <Name>main.partitions</Name>
+          <FullPath>main.partitions</FullPath>
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>DIM DATE.dim</Name>
-      <FullPath>DIM DATE.dim</FullPath>
+      <Name>DATE.dim</Name>
+      <FullPath>DATE.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DIM ACTION INFO.dim</Name>
-      <FullPath>DIM ACTION INFO.dim</FullPath>
+      <Name>ActionInfo.dim</Name>
+      <FullPath>ActionInfo.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DIM CHANNEL.dim</Name>
-      <FullPath>DIM CHANNEL.dim</FullPath>
+      <Name>Channel.dim</Name>
+      <FullPath>Channel.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DIM MACHINETYPE.dim</Name>
-      <FullPath>DIM MACHINETYPE.dim</FullPath>
+      <Name>MachineType.dim</Name>
+      <FullPath>MachineType.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DIM CITY.dim</Name>
-      <FullPath>DIM CITY.dim</FullPath>
+      <Name>City.dim</Name>
+      <FullPath>City.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Batch.dim</Name>
+      <FullPath>Batch.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>BrandModel.dim</Name>
+      <FullPath>BrandModel.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DesignHouse.dim</Name>
+      <FullPath>DesignHouse.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DomainName.dim</Name>
+      <FullPath>DomainName.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Resolution.dim</Name>
+      <FullPath>Resolution.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>AppVersion.dim</Name>
+      <FullPath>AppVersion.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>AndroidVersion.dim</Name>
+      <FullPath>AndroidVersion.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Network.dim</Name>
+      <FullPath>Network.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ResultCode.dim</Name>
+      <FullPath>ResultCode.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
-      <Name>hynew.ds</Name>
-      <FullPath>hynew.ds</FullPath>
+      <Name>main.ds</Name>
+      <FullPath>main.ds</FullPath>
     </ProjectItem>
   </DataSources>
   <DataSourceViews>
     <ProjectItem>
-      <Name>hynew.dsv</Name>
-      <FullPath>hynew.dsv</FullPath>
+      <Name>main.dsv</Name>
+      <FullPath>main.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
   <Configurations>
@@ -60,7 +96,7 @@
           <ConfigurationSetting>
             <Id>hynew</Id>
             <Name>hynew</Name>
-            <Value xsi:type="xsd:string">DATA SOURCE=(DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=192.168.0.102)(PORT=1522))(CONNECT_DATA=(SERVICE_NAME=orcl)));PASSWORD=;PERSIST SECURITY INFO=True;USER ID=</Value>
+            <Value xsi:type="xsd:string">DATA SOURCE=(DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=127.0.0.1)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=tyd)));PASSWORD=;PERSIST SECURITY INFO=True;USER ID=</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionProviderMappings>

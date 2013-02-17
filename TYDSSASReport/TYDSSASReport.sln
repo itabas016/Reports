@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "TYDSSASReport", "TYDSSASReport\TYDSSASReport.rptproj", "{566073E4-04AE-4697-9CA0-86138507DF10}"
+EndProject
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "TYDSSASPoc", "..\TYDSSASPoc\TYDSSASPoc.dwproj", "{047A72DB-D993-49D3-8F73-F81D4445A294}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Development|Default = Development|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{566073E4-04AE-4697-9CA0-86138507DF10}.Debug|Default.ActiveCfg = Debug
+		{566073E4-04AE-4697-9CA0-86138507DF10}.Debug|Default.Build.0 = DebugLocal
+		{566073E4-04AE-4697-9CA0-86138507DF10}.Debug|Default.Deploy.0 = DebugLocal
+		{566073E4-04AE-4697-9CA0-86138507DF10}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{566073E4-04AE-4697-9CA0-86138507DF10}.DebugLocal|Default.Build.0 = DebugLocal
+		{566073E4-04AE-4697-9CA0-86138507DF10}.Development|Default.ActiveCfg = DebugLocal
+		{566073E4-04AE-4697-9CA0-86138507DF10}.Development|Default.Build.0 = DebugLocal
+		{566073E4-04AE-4697-9CA0-86138507DF10}.Development|Default.Deploy.0 = DebugLocal
+		{566073E4-04AE-4697-9CA0-86138507DF10}.Release|Default.ActiveCfg = Release
+		{566073E4-04AE-4697-9CA0-86138507DF10}.Release|Default.Build.0 = Release
+		{566073E4-04AE-4697-9CA0-86138507DF10}.Release|Default.Deploy.0 = Release
+		{047A72DB-D993-49D3-8F73-F81D4445A294}.Debug|Default.ActiveCfg = Development
+		{047A72DB-D993-49D3-8F73-F81D4445A294}.Debug|Default.Build.0 = Development
+		{047A72DB-D993-49D3-8F73-F81D4445A294}.Debug|Default.Deploy.0 = Development
+		{047A72DB-D993-49D3-8F73-F81D4445A294}.DebugLocal|Default.ActiveCfg = Development
+		{047A72DB-D993-49D3-8F73-F81D4445A294}.DebugLocal|Default.Build.0 = Development
+		{047A72DB-D993-49D3-8F73-F81D4445A294}.DebugLocal|Default.Deploy.0 = Development
+		{047A72DB-D993-49D3-8F73-F81D4445A294}.Development|Default.ActiveCfg = Development
+		{047A72DB-D993-49D3-8F73-F81D4445A294}.Development|Default.Build.0 = Development
+		{047A72DB-D993-49D3-8F73-F81D4445A294}.Development|Default.Deploy.0 = Development
+		{047A72DB-D993-49D3-8F73-F81D4445A294}.Release|Default.ActiveCfg = Development
+		{047A72DB-D993-49D3-8F73-F81D4445A294}.Release|Default.Build.0 = Development
+		{047A72DB-D993-49D3-8F73-F81D4445A294}.Release|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
