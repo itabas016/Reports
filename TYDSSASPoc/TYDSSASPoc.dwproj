@@ -75,6 +75,10 @@
       <Name>ResultCode.dim</Name>
       <FullPath>ResultCode.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>TIME.dim</Name>
+      <FullPath>TIME.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
