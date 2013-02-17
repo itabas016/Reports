@@ -12,11 +12,23 @@
       <Name>NewUserPerDate.rsd</Name>
       <FullPath>NewUserPerDate.rsd</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>UserPerMinute.rsd</Name>
+      <FullPath>UserPerMinute.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DimDate.rsd</Name>
+      <FullPath>DimDate.rsd</FullPath>
+    </ProjectItem>
   </DataSets>
   <Reports>
     <ProjectItem>
       <Name>NewUser.rdl</Name>
       <FullPath>NewUser.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>UserPerHour.rdl</Name>
+      <FullPath>UserPerHour.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>

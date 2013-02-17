@@ -20,16 +20,8 @@
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>DATE.dim</Name>
-      <FullPath>DATE.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>ActionInfo.dim</Name>
       <FullPath>ActionInfo.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Channel.dim</Name>
-      <FullPath>Channel.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>MachineType.dim</Name>
@@ -78,6 +70,14 @@
     <ProjectItem>
       <Name>TIME.dim</Name>
       <FullPath>TIME.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Channel.dim</Name>
+      <FullPath>Channel.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DATE.dim</Name>
+      <FullPath>DATE.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
