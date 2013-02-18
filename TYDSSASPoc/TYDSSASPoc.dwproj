@@ -117,6 +117,32 @@
             <Value xsi:type="xsd:int">1</Value>
           </ConfigurationSetting>
         </ConnectionSecurityMappings>
+        <ReportActionServers>
+          <ConfigurationSetting>
+            <Id>hynew</Id>
+            <Name>hynew</Name>
+            <Value xsi:type="ConfigurationSettingsCollection">
+              <ConfigurationSetting>
+                <Id>Action</Id>
+                <Name>Action</Name>
+                <Value xsi:type="xsd:string">&lt;&lt;Target Server&gt;&gt;</Value>
+              </ConfigurationSetting>
+            </Value>
+          </ConfigurationSetting>
+        </ReportActionServers>
+        <ReportActionPaths>
+          <ConfigurationSetting>
+            <Id>hynew</Id>
+            <Name>hynew</Name>
+            <Value xsi:type="ConfigurationSettingsCollection">
+              <ConfigurationSetting>
+                <Id>Action</Id>
+                <Name>Action</Name>
+                <Value xsi:type="xsd:string">&lt;&lt;Report Server Virtual Directory&gt;&gt;?/&lt;&lt;Path to Report&gt;&gt;</Value>
+              </ConfigurationSetting>
+            </Value>
+          </ConfigurationSetting>
+        </ReportActionPaths>
       </Options>
     </Configuration>
   </Configurations>
