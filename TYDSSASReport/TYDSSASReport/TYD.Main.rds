@@ -3,6 +3,7 @@
   <ConnectionProperties>
     <Extension>OLEDB-MD</Extension>
     <ConnectString>Data Source=(local);Initial Catalog=TYDSSASPoc</ConnectString>
+    <IntegratedSecurity>true</IntegratedSecurity>
   </ConnectionProperties>
   <DataSourceID>ba6a32b3-fb79-4005-a59c-f43662afbb6f</DataSourceID>
 </RptDataSource>

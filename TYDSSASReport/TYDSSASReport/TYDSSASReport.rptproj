@@ -9,22 +9,30 @@
   </DataSources>
   <DataSets>
     <ProjectItem>
-      <Name>NewUserPerDate.rsd</Name>
-      <FullPath>NewUserPerDate.rsd</FullPath>
+      <Name>DimDate.rsd</Name>
+      <FullPath>DimDate.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>UserPerDate.rsd</Name>
+      <FullPath>UserPerDate.rsd</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>UserPerMinute.rsd</Name>
       <FullPath>UserPerMinute.rsd</FullPath>
     </ProjectItem>
-    <ProjectItem>
-      <Name>DimDate.rsd</Name>
-      <FullPath>DimDate.rsd</FullPath>
-    </ProjectItem>
   </DataSets>
   <Reports>
     <ProjectItem>
-      <Name>NewUser.rdl</Name>
-      <FullPath>NewUser.rdl</FullPath>
+      <Name>UserPerDate.rdl</Name>
+      <FullPath>UserPerDate.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report2.rdl</Name>
+      <FullPath>Report2.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report3.rdl</Name>
+      <FullPath>Report3.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>UserPerHour.rdl</Name>
