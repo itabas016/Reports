@@ -9,8 +9,8 @@
           <QueryParameter Name="DIMDATEDATE">
             <Value>=Code.DimDateRange(Parameters!DIMDATEDATE.Value,3)</Value>
           </QueryParameter>
-          <QueryParameter Name="DIMCHANNELID">
-            <Value>=Parameters!DIMCHANNELID.Value</Value>
+          <QueryParameter Name="DIMCHANNELPARENTNAME">
+            <Value>=Parameters!DIMCHANNELPARENTNAME.Value</Value>
           </QueryParameter>
         </QueryParameters>
       </SharedDataSet>
@@ -700,7 +700,7 @@
                       <Style />
                     </ChartDataLabel>
                   </ChartEmptyPoints>
-                  <LegendName>Legend2</LegendName>
+                  <LegendName>Legend1</LegendName>
                   <ChartItemInLegend>
                     <LegendText>=Fields!DATE.Value</LegendText>
                   </ChartItemInLegend>
@@ -739,6 +739,10 @@
                       <Style />
                     </ChartDataLabel>
                   </ChartEmptyPoints>
+                  <LegendName>Legend2</LegendName>
+                  <ChartItemInLegend>
+                    <LegendText>=Fields!DATE.Value</LegendText>
+                  </ChartItemInLegend>
                   <ChartAreaName>Area2</ChartAreaName>
                   <ValueAxisName>Primary</ValueAxisName>
                   <CategoryAxisName>Primary</CategoryAxisName>
@@ -1074,6 +1078,26 @@
                   <FontSize>8pt</FontSize>
                 </Style>
                 <Position>RightCenter</Position>
+                <DockToChartArea>Area2</DockToChartArea>
+                <DockOutsideChartArea>true</DockOutsideChartArea>
+                <ChartLegendTitle>
+                  <Caption />
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </ChartLegendTitle>
+                <HeaderSeparatorColor>Black</HeaderSeparatorColor>
+                <ColumnSeparatorColor>Black</ColumnSeparatorColor>
+              </ChartLegend>
+              <ChartLegend Name="Legend1">
+                <Style>
+                  <BackgroundGradientType>None</BackgroundGradientType>
+                  <FontSize>8pt</FontSize>
+                </Style>
+                <Position>RightCenter</Position>
+                <DockToChartArea>Area1</DockToChartArea>
                 <DockOutsideChartArea>true</DockOutsideChartArea>
                 <ChartLegendTitle>
                   <Caption />
@@ -1573,6 +1597,15 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>UserPerMinute</DataSetName>
+            <Filters>
+              <Filter>
+                <FilterExpression>=Fields!DATE.Value</FilterExpression>
+                <Operator>Equal</Operator>
+                <FilterValues>
+                  <FilterValue>=Format(Today(), "yyyy-MM-dd" )</FilterValue>
+                </FilterValues>
+              </Filter>
+            </Filters>
             <Top>5.31125in</Top>
             <Left>0.06005in</Left>
             <Height>0.73959in</Height>
@@ -1615,14 +1648,14 @@
         </DataSetReference>
       </ValidValues>
     </ReportParameter>
-    <ReportParameter Name="DIMCHANNELID">
+    <ReportParameter Name="DIMCHANNELPARENTNAME">
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>="[DIM CHANNEL].[ID].[All]"</Value>
+          <Value>="[DIM CHANNEL].[PARENT NAME].[All]"</Value>
         </Values>
       </DefaultValue>
-      <Prompt>DIMCHANNELID</Prompt>
+      <Prompt>DIMCHANNELPARENTNAME</Prompt>
       <ValidValues>
         <DataSetReference>
           <DataSetName>DimChannel</DataSetName>

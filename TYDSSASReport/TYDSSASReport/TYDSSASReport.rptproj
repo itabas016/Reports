@@ -24,6 +24,10 @@
       <Name>DimChannel.rsd</Name>
       <FullPath>DimChannel.rsd</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>AppDownload.rsd</Name>
+      <FullPath>AppDownload.rsd</FullPath>
+    </ProjectItem>
   </DataSets>
   <Reports>
     <ProjectItem>

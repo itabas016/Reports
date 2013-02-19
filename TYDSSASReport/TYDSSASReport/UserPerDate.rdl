@@ -9,8 +9,8 @@
           <QueryParameter Name="DIMDATEDATE">
             <Value>=Parameters!DIMDATEDATE.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="DIMCHANNELID">
-            <Value>=Parameters!DIMCHANNELID.Value</Value>
+          <QueryParameter Name="DIMCHANNELPARENTNAME">
+            <Value>=Parameters!DIMCHANNELPARENTNAME.Value</Value>
           </QueryParameter>
         </QueryParameters>
       </SharedDataSet>
@@ -231,7 +231,6 @@
                           <Format>#,0,;(#,0,)</Format>
                         </Style>
                         <UseValueAsLabel>true</UseValueAsLabel>
-                        <Visible>true</Visible>
                       </ChartDataLabel>
                       <Style>
                         <Color>HotPink</Color>
@@ -819,14 +818,14 @@
       </ValidValues>
       <MultiValue>true</MultiValue>
     </ReportParameter>
-    <ReportParameter Name="DIMCHANNELID">
+    <ReportParameter Name="DIMCHANNELPARENTNAME">
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>="[DIM CHANNEL].[ID].[All]"</Value>
+          <Value>="[DIM CHANNEL].[PARENT NAME].[All]"</Value>
         </Values>
       </DefaultValue>
-      <Prompt>DIMCHANNELID</Prompt>
+      <Prompt>DIMCHANNELPARENTNAME</Prompt>
       <ValidValues>
         <DataSetReference>
           <DataSetName>DimChannel</DataSetName>

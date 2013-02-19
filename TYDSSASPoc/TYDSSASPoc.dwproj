@@ -79,6 +79,10 @@
       <Name>DATE.dim</Name>
       <FullPath>DATE.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>APP INFO.dim</Name>
+      <FullPath>APP INFO.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>

@@ -18,15 +18,15 @@
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
-          <ProactiveCaching dwd:design-time-name="ba5dcc36-1823-4940-837b-f5ed81de5b0f">
+          <ProactiveCaching dwd:design-time-name="6fdad10a-0177-4f0f-a8bb-dc27b5b6c2db">
             <SilenceInterval>-PT1S</SilenceInterval>
             <Latency>-PT1S</Latency>
             <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
-            <ForceRebuildInterval>PT10M</ForceRebuildInterval>
+            <ForceRebuildInterval>PT5M</ForceRebuildInterval>
             <Enabled>true</Enabled>
             <OnlineMode>OnCacheComplete</OnlineMode>
             <AggregationStorage>MolapOnly</AggregationStorage>
-            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="d586d70b-3ba0-4c4c-9241-4cbd7885ec5b">
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="eb52f528-7ebc-4a13-86b8-f9b385d6d1f3">
               <NotificationTechnique>Server</NotificationTechnique>
             </Source>
           </ProactiveCaching>
@@ -50,15 +50,15 @@
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
-          <ProactiveCaching dwd:design-time-name="33dc8f8c-4b5d-42a1-ab55-c80fa6ed436b">
+          <ProactiveCaching dwd:design-time-name="46089258-91b4-43c5-89da-713040297e07">
             <SilenceInterval>-PT1S</SilenceInterval>
             <Latency>-PT1S</Latency>
             <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
-            <ForceRebuildInterval>PT10M</ForceRebuildInterval>
+            <ForceRebuildInterval>PT2M</ForceRebuildInterval>
             <Enabled>true</Enabled>
             <OnlineMode>OnCacheComplete</OnlineMode>
             <AggregationStorage>MolapOnly</AggregationStorage>
-            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="c7cc40b7-060e-4597-a618-bdef3e088b0b">
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="4d2e601e-6529-49a5-ad93-9052f7aac7e3">
               <NotificationTechnique>Server</NotificationTechnique>
             </Source>
           </ProactiveCaching>
@@ -82,15 +82,15 @@
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
-          <ProactiveCaching dwd:design-time-name="7227c40e-0e4f-4c4f-ad8e-affbc13cd179">
+          <ProactiveCaching dwd:design-time-name="5a650a25-b262-42e9-a87d-f9f6aeb3289f">
             <SilenceInterval>-PT1S</SilenceInterval>
             <Latency>-PT1S</Latency>
             <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
-            <ForceRebuildInterval>PT10M</ForceRebuildInterval>
+            <ForceRebuildInterval>PT2M</ForceRebuildInterval>
             <Enabled>true</Enabled>
             <OnlineMode>OnCacheComplete</OnlineMode>
             <AggregationStorage>MolapOnly</AggregationStorage>
-            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="251d25b6-f991-498a-8693-c7e2bd8ed8cd">
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="845e16e8-b4af-49e5-b003-e688c766f892">
               <NotificationTechnique>Server</NotificationTechnique>
             </Source>
           </ProactiveCaching>
