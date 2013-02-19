@@ -4,96 +4,80 @@
     <MeasureGroup>
       <ID>USER INFO</ID>
       <Partitions>
-        <Partition dwd:design-time-name="b919ad6e-a5dd-4c65-a146-9380aca0236b">
+        <Partition dwd:design-time-name="29e45cb2-9712-484c-a328-142eb7dea80e">
           <ID>USER INFO</ID>
           <Name>USER INFO</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="00d24aee-8bae-4622-a510-3607c1163b03">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="28ffcc99-f478-42bb-9db2-53653f4f2907">
             <DataSourceViewID>hynew</DataSourceViewID>
-            <TableID>HYNEW_USER_INFO</TableID>
+            <TableID>MAIN_USER_INFO</TableID>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
-          <ProactiveCaching dwd:design-time-name="6fdad10a-0177-4f0f-a8bb-dc27b5b6c2db">
-            <SilenceInterval>-PT1S</SilenceInterval>
-            <Latency>-PT1S</Latency>
-            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
-            <ForceRebuildInterval>PT5M</ForceRebuildInterval>
-            <Enabled>true</Enabled>
-            <OnlineMode>OnCacheComplete</OnlineMode>
-            <AggregationStorage>MolapOnly</AggregationStorage>
-            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="eb52f528-7ebc-4a13-86b8-f9b385d6d1f3">
-              <NotificationTechnique>Server</NotificationTechnique>
-            </Source>
-          </ProactiveCaching>
         </Partition>
       </Partitions>
     </MeasureGroup>
     <MeasureGroup>
       <ID>COMMUNICATION LOG</ID>
       <Partitions>
-        <Partition dwd:design-time-name="22588736-5d92-4289-8979-917dbf52e30d">
+        <Partition dwd:design-time-name="713bb8e5-37e8-4f8b-b4e4-74fa42d5d5b3">
           <ID>COMMUNICATION LOG</ID>
           <Name>COMMUNICATION LOG</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="fa2f2c05-f213-40ac-be36-fae4ec0466ba">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="837f39c4-11e7-4893-b93b-ec8686d80bfe">
             <DataSourceViewID>hynew</DataSourceViewID>
-            <TableID>HYNEW_COMMUNICATION_LOG</TableID>
+            <TableID>MAIN_COMMUNICATION_LOG</TableID>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
-          <ProactiveCaching dwd:design-time-name="46089258-91b4-43c5-89da-713040297e07">
-            <SilenceInterval>-PT1S</SilenceInterval>
-            <Latency>-PT1S</Latency>
-            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
-            <ForceRebuildInterval>PT2M</ForceRebuildInterval>
-            <Enabled>true</Enabled>
-            <OnlineMode>OnCacheComplete</OnlineMode>
-            <AggregationStorage>MolapOnly</AggregationStorage>
-            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="4d2e601e-6529-49a5-ad93-9052f7aac7e3">
-              <NotificationTechnique>Server</NotificationTechnique>
-            </Source>
-          </ProactiveCaching>
         </Partition>
       </Partitions>
     </MeasureGroup>
     <MeasureGroup>
       <ID>COMMUNICATION LOG 1</ID>
       <Partitions>
-        <Partition dwd:design-time-name="e08cf908-659e-4e16-8155-f1241a51ff8a">
+        <Partition dwd:design-time-name="0ccce962-756a-4ad4-bb13-f6778896d6a7">
           <ID>COMMUNICATION LOG</ID>
           <Name>COMMUNICATION LOG</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="74f7fc1c-9136-42a6-815e-af709c3ac378">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9e1d67f5-285c-4d71-92b1-d1cada56e924">
             <DataSourceViewID>hynew</DataSourceViewID>
-            <TableID>HYNEW_COMMUNICATION_LOG</TableID>
+            <TableID>MAIN_COMMUNICATION_LOG</TableID>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
-          <ProactiveCaching dwd:design-time-name="5a650a25-b262-42e9-a87d-f9f6aeb3289f">
-            <SilenceInterval>-PT1S</SilenceInterval>
-            <Latency>-PT1S</Latency>
-            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
-            <ForceRebuildInterval>PT2M</ForceRebuildInterval>
-            <Enabled>true</Enabled>
-            <OnlineMode>OnCacheComplete</OnlineMode>
-            <AggregationStorage>MolapOnly</AggregationStorage>
-            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="845e16e8-b4af-49e5-b003-e688c766f892">
-              <NotificationTechnique>Server</NotificationTechnique>
-            </Source>
-          </ProactiveCaching>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>ACTIVATED USER</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="f9447c83-06da-4da9-8c02-4944f439d25f">
+          <ID>ACTIVATED USER</ID>
+          <Name>ACTIVATED USER</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7804153a-3fea-4482-89e7-274e9f7dca85">
+            <DataSourceViewID>hynew</DataSourceViewID>
+            <TableID>MAIN_ACTIVATED_USER</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
         </Partition>
       </Partitions>
     </MeasureGroup>

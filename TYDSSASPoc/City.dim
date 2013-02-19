@@ -25,7 +25,7 @@
             </control>
             <layoutobject>
               <ddsxmlobj>
-                <property name="LogicalObject" value="HYNEW_CITY" vartype="8" />
+                <property name="LogicalObject" value="MAIN_CITY" vartype="8" />
               </ddsxmlobj>
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
@@ -36,7 +36,7 @@
             </control>
             <layoutobject>
               <ddsxmlobj>
-                <property name="LogicalObject" value="HYNEW_PROVINCE" vartype="8" />
+                <property name="LogicalObject" value="MAIN_PROVINCE" vartype="8" />
               </ddsxmlobj>
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
@@ -117,7 +117,7 @@
           <NullProcessing>UnknownMember</NullProcessing>
           <DataType>BigInt</DataType>
           <Source xsi:type="ColumnBinding" dwd:design-time-name="11126b20-e3c1-4957-a07e-f17cdbebc497">
-            <TableID>HYNEW_CITY</TableID>
+            <TableID>MAIN_CITY</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </KeyColumn>
@@ -126,7 +126,7 @@
         <DataType>WChar</DataType>
         <DataSize>255</DataSize>
         <Source xsi:type="ColumnBinding" dwd:design-time-name="5bc70d70-a300-43d4-9b9a-76694db986b3">
-          <TableID>HYNEW_CITY</TableID>
+          <TableID>MAIN_CITY</TableID>
           <ColumnID>NAME</ColumnID>
         </Source>
       </NameColumn>
@@ -150,7 +150,7 @@
           <NullProcessing>UnknownMember</NullProcessing>
           <DataType>BigInt</DataType>
           <Source xsi:type="ColumnBinding" dwd:design-time-name="5e86f6f0-6a9b-47d6-a6d0-1bea4f6d6a44">
-            <TableID>HYNEW_PROVINCE</TableID>
+            <TableID>MAIN_PROVINCE</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </KeyColumn>
@@ -172,7 +172,7 @@
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
           <Source xsi:type="ColumnBinding" dwd:design-time-name="bf5c14da-4dbb-4155-b577-86dd8a499f1b">
-            <TableID>HYNEW_PROVINCE</TableID>
+            <TableID>MAIN_PROVINCE</TableID>
             <ColumnID>NAME</ColumnID>
           </Source>
         </KeyColumn>
@@ -188,7 +188,7 @@
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
           <Source xsi:type="ColumnBinding" dwd:design-time-name="47f41970-96b6-4014-8d01-d7c7f965e645">
-            <TableID>HYNEW_CITY</TableID>
+            <TableID>MAIN_CITY</TableID>
             <ColumnID>NAME</ColumnID>
           </Source>
         </KeyColumn>

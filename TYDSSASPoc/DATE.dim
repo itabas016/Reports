@@ -25,7 +25,7 @@
             </control>
             <layoutobject>
               <ddsxmlobj>
-                <property name="LogicalObject" value="HYNEW_DIM_DATE" vartype="8" />
+                <property name="LogicalObject" value="MAIN_DIM_DATE" vartype="8" />
               </ddsxmlobj>
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
@@ -179,7 +179,7 @@
           <NullProcessing>UnknownMember</NullProcessing>
           <DataType>Date</DataType>
           <Source xsi:type="ColumnBinding" dwd:design-time-name="3a784e13-dc2b-400e-a76c-6e8f4da6d6a2">
-            <TableID>HYNEW_DIM_DATE</TableID>
+            <TableID>MAIN_DIM_DATE</TableID>
             <ColumnID>DATE</ColumnID>
           </Source>
         </KeyColumn>
@@ -188,7 +188,7 @@
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
         <Source xsi:type="ColumnBinding" dwd:design-time-name="4c324bab-d670-4573-9f63-a0c22e217444">
-          <TableID>HYNEW_DIM_DATE</TableID>
+          <TableID>MAIN_DIM_DATE</TableID>
           <ColumnID>DATE_CN</ColumnID>
         </Source>
       </NameColumn>
@@ -243,7 +243,7 @@
         <KeyColumn dwd:design-time-name="8af9f9cc-8392-4c18-807e-7c27a3de87c8">
           <DataType>Integer</DataType>
           <Source xsi:type="ColumnBinding" dwd:design-time-name="f711ef0c-510f-4083-b9e6-22bbf25dddc6">
-            <TableID>HYNEW_DIM_DATE</TableID>
+            <TableID>MAIN_DIM_DATE</TableID>
             <ColumnID>DATE_ID</ColumnID>
           </Source>
         </KeyColumn>
@@ -258,7 +258,7 @@
         <KeyColumn dwd:design-time-name="f9dae601-5ee7-4b11-af81-fc89937d0f16">
           <DataType>SmallInt</DataType>
           <Source xsi:type="ColumnBinding" dwd:design-time-name="08b61630-f6d1-4509-9a79-ac83785b5793">
-            <TableID>HYNEW_DIM_DATE</TableID>
+            <TableID>MAIN_DIM_DATE</TableID>
             <ColumnID>YEAR</ColumnID>
           </Source>
         </KeyColumn>
@@ -273,7 +273,7 @@
         <KeyColumn dwd:design-time-name="60364914-3f00-4821-b122-5101e8d70bfd">
           <DataType>Integer</DataType>
           <Source xsi:type="ColumnBinding" dwd:design-time-name="7881bb12-6020-4ad4-978d-f30ffa1bb0f0">
-            <TableID>HYNEW_DIM_DATE</TableID>
+            <TableID>MAIN_DIM_DATE</TableID>
             <ColumnID>YEAR_QUARTER</ColumnID>
           </Source>
         </KeyColumn>
@@ -288,7 +288,7 @@
         <KeyColumn dwd:design-time-name="234eb2a8-0bae-483d-b5ac-708e2f184d18">
           <DataType>Integer</DataType>
           <Source xsi:type="ColumnBinding" dwd:design-time-name="e096c23b-c38a-415b-a7d6-291e7fb20c6e">
-            <TableID>HYNEW_DIM_DATE</TableID>
+            <TableID>MAIN_DIM_DATE</TableID>
             <ColumnID>YEAR_MONTH</ColumnID>
           </Source>
         </KeyColumn>
@@ -303,7 +303,7 @@
         <KeyColumn dwd:design-time-name="00e54322-0436-469d-80d3-972395f9333f">
           <DataType>Integer</DataType>
           <Source xsi:type="ColumnBinding" dwd:design-time-name="8074d5e8-343a-4ea2-afa5-1bba2e7af069">
-            <TableID>HYNEW_DIM_DATE</TableID>
+            <TableID>MAIN_DIM_DATE</TableID>
             <ColumnID>YEAR_DAY_OF_YEAR</ColumnID>
           </Source>
         </KeyColumn>
@@ -319,7 +319,7 @@
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
           <Source xsi:type="ColumnBinding" dwd:design-time-name="e1b6f192-7d35-4d7a-bee0-e49e499ccefc">
-            <TableID>HYNEW_DIM_DATE</TableID>
+            <TableID>MAIN_DIM_DATE</TableID>
             <ColumnID>YEAR_NAME</ColumnID>
           </Source>
         </KeyColumn>
@@ -335,7 +335,7 @@
           <DataType>WChar</DataType>
           <DataSize>7</DataSize>
           <Source xsi:type="ColumnBinding" dwd:design-time-name="03c8d49b-16e1-4440-b525-f9a1bf6e6db0">
-            <TableID>HYNEW_DIM_DATE</TableID>
+            <TableID>MAIN_DIM_DATE</TableID>
             <ColumnID>YEAR_QUARTER_NAME</ColumnID>
           </Source>
         </KeyColumn>
@@ -351,7 +351,7 @@
           <DataType>WChar</DataType>
           <DataSize>8</DataSize>
           <Source xsi:type="ColumnBinding" dwd:design-time-name="83d148cc-19aa-4fe2-a6ff-a0307fd1a5cc">
-            <TableID>HYNEW_DIM_DATE</TableID>
+            <TableID>MAIN_DIM_DATE</TableID>
             <ColumnID>YEAR_MONTH_NAME</ColumnID>
           </Source>
         </KeyColumn>
@@ -367,7 +367,7 @@
           <DataType>WChar</DataType>
           <DataSize>14</DataSize>
           <Source xsi:type="ColumnBinding" dwd:design-time-name="7a5504da-0491-40aa-9205-af70481c6abb">
-            <TableID>HYNEW_DIM_DATE</TableID>
+            <TableID>MAIN_DIM_DATE</TableID>
             <ColumnID>YEAR_MONTH_NAME_LONG</ColumnID>
           </Source>
         </KeyColumn>
@@ -383,7 +383,7 @@
           <DataType>WChar</DataType>
           <DataSize>8</DataSize>
           <Source xsi:type="ColumnBinding" dwd:design-time-name="b1f0623b-2a79-4cb2-950e-6a44d16bcbaf">
-            <TableID>HYNEW_DIM_DATE</TableID>
+            <TableID>MAIN_DIM_DATE</TableID>
             <ColumnID>YEAR_MONTH_CN</ColumnID>
           </Source>
         </KeyColumn>

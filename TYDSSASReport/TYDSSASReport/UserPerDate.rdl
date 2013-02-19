@@ -148,7 +148,6 @@
                           <Format>#,0;(#,0)</Format>
                         </Style>
                         <UseValueAsLabel>true</UseValueAsLabel>
-                        <Visible>true</Visible>
                       </ChartDataLabel>
                       <Style>
                         <Color>Orange</Color>
@@ -190,7 +189,6 @@
                           <Format>#,0;(#,0)</Format>
                         </Style>
                         <UseValueAsLabel>true</UseValueAsLabel>
-                        <Visible>true</Visible>
                       </ChartDataLabel>
                       <Style />
                       <ChartMarker>
@@ -212,7 +210,6 @@
                       <Style />
                     </ChartDataLabel>
                   </ChartEmptyPoints>
-                  <ChartAreaName>Area1</ChartAreaName>
                   <ValueAxisName>Primary</ValueAxisName>
                   <CategoryAxisName>Primary</CategoryAxisName>
                   <ChartSmartLabel>
@@ -254,6 +251,7 @@
                       <Style />
                     </ChartDataLabel>
                   </ChartEmptyPoints>
+                  <LegendName>Legend1</LegendName>
                   <ChartAreaName>Area2</ChartAreaName>
                   <ValueAxisName>Primary</ValueAxisName>
                   <CategoryAxisName>Primary</CategoryAxisName>
@@ -352,163 +350,6 @@
                     </Style>
                     <ChartAxisTitle>
                       <Caption>新增用户数</Caption>
-                      <Style>
-                        <FontSize>8pt</FontSize>
-                      </Style>
-                    </ChartAxisTitle>
-                    <ChartMajorGridLines>
-                      <Style>
-                        <Border>
-                          <Color>Gainsboro</Color>
-                        </Border>
-                      </Style>
-                    </ChartMajorGridLines>
-                    <ChartMinorGridLines>
-                      <Enabled>True</Enabled>
-                      <Style>
-                        <Border>
-                          <Color>Gainsboro</Color>
-                          <Style>Dotted</Style>
-                        </Border>
-                      </Style>
-                    </ChartMinorGridLines>
-                    <ChartMinorTickMarks>
-                      <Length>0.5</Length>
-                    </ChartMinorTickMarks>
-                    <CrossAt>NaN</CrossAt>
-                    <Minimum>NaN</Minimum>
-                    <Maximum>NaN</Maximum>
-                    <ChartAxisScaleBreak>
-                      <Style />
-                    </ChartAxisScaleBreak>
-                  </ChartAxis>
-                  <ChartAxis Name="Secondary">
-                    <Style>
-                      <FontSize>8pt</FontSize>
-                    </Style>
-                    <ChartAxisTitle>
-                      <Caption>Axis Title</Caption>
-                      <Style>
-                        <FontSize>8pt</FontSize>
-                      </Style>
-                    </ChartAxisTitle>
-                    <ChartMajorGridLines>
-                      <Style>
-                        <Border>
-                          <Color>Gainsboro</Color>
-                        </Border>
-                      </Style>
-                    </ChartMajorGridLines>
-                    <ChartMinorGridLines>
-                      <Style>
-                        <Border>
-                          <Color>Gainsboro</Color>
-                          <Style>Dotted</Style>
-                        </Border>
-                      </Style>
-                    </ChartMinorGridLines>
-                    <ChartMinorTickMarks>
-                      <Length>0.5</Length>
-                    </ChartMinorTickMarks>
-                    <CrossAt>NaN</CrossAt>
-                    <Location>Opposite</Location>
-                    <Minimum>NaN</Minimum>
-                    <Maximum>NaN</Maximum>
-                    <ChartAxisScaleBreak>
-                      <Style />
-                    </ChartAxisScaleBreak>
-                  </ChartAxis>
-                </ChartValueAxes>
-                <Style>
-                  <BackgroundGradientType>None</BackgroundGradientType>
-                </Style>
-              </ChartArea>
-              <ChartArea Name="Area1">
-                <ChartCategoryAxes>
-                  <ChartAxis Name="Primary">
-                    <Style>
-                      <FontSize>7pt</FontSize>
-                    </Style>
-                    <ChartAxisTitle>
-                      <Caption>日期</Caption>
-                      <Style>
-                        <FontSize>8pt</FontSize>
-                      </Style>
-                    </ChartAxisTitle>
-                    <VariableAutoInterval>true</VariableAutoInterval>
-                    <ChartMajorGridLines>
-                      <Enabled>False</Enabled>
-                      <Style>
-                        <Border>
-                          <Color>Gainsboro</Color>
-                        </Border>
-                      </Style>
-                    </ChartMajorGridLines>
-                    <ChartMinorGridLines>
-                      <Style>
-                        <Border>
-                          <Color>Gainsboro</Color>
-                          <Style>Dotted</Style>
-                        </Border>
-                      </Style>
-                    </ChartMinorGridLines>
-                    <ChartMinorTickMarks>
-                      <Length>0.5</Length>
-                    </ChartMinorTickMarks>
-                    <CrossAt>NaN</CrossAt>
-                    <Minimum>NaN</Minimum>
-                    <Maximum>NaN</Maximum>
-                    <LabelsAutoFitDisabled>true</LabelsAutoFitDisabled>
-                    <ChartAxisScaleBreak>
-                      <Style />
-                    </ChartAxisScaleBreak>
-                  </ChartAxis>
-                  <ChartAxis Name="Secondary">
-                    <Style>
-                      <FontSize>8pt</FontSize>
-                    </Style>
-                    <ChartAxisTitle>
-                      <Caption>Axis Title</Caption>
-                      <Style>
-                        <FontSize>8pt</FontSize>
-                      </Style>
-                    </ChartAxisTitle>
-                    <ChartMajorGridLines>
-                      <Enabled>False</Enabled>
-                      <Style>
-                        <Border>
-                          <Color>Gainsboro</Color>
-                        </Border>
-                      </Style>
-                    </ChartMajorGridLines>
-                    <ChartMinorGridLines>
-                      <Style>
-                        <Border>
-                          <Color>Gainsboro</Color>
-                          <Style>Dotted</Style>
-                        </Border>
-                      </Style>
-                    </ChartMinorGridLines>
-                    <ChartMinorTickMarks>
-                      <Length>0.5</Length>
-                    </ChartMinorTickMarks>
-                    <CrossAt>NaN</CrossAt>
-                    <Location>Opposite</Location>
-                    <Minimum>NaN</Minimum>
-                    <Maximum>NaN</Maximum>
-                    <ChartAxisScaleBreak>
-                      <Style />
-                    </ChartAxisScaleBreak>
-                  </ChartAxis>
-                </ChartCategoryAxes>
-                <ChartValueAxes>
-                  <ChartAxis Name="Primary">
-                    <Style>
-                      <FontSize>8pt</FontSize>
-                      <Format>#,0;(#,0)</Format>
-                    </Style>
-                    <ChartAxisTitle>
-                      <Caption>活跃用户数</Caption>
                       <Style>
                         <FontSize>8pt</FontSize>
                       </Style>
@@ -745,6 +586,26 @@
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontSize>8pt</FontSize>
                 </Style>
+                <DockToChartArea>Default</DockToChartArea>
+                <DockOutsideChartArea>true</DockOutsideChartArea>
+                <ChartLegendTitle>
+                  <Caption />
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </ChartLegendTitle>
+                <HeaderSeparatorColor>Black</HeaderSeparatorColor>
+                <ColumnSeparatorColor>Black</ColumnSeparatorColor>
+              </ChartLegend>
+              <ChartLegend Name="Legend1">
+                <Style>
+                  <BackgroundGradientType>None</BackgroundGradientType>
+                  <FontSize>8pt</FontSize>
+                </Style>
+                <DockToChartArea>Area2</DockToChartArea>
+                <DockOutsideChartArea>true</DockOutsideChartArea>
                 <ChartLegendTitle>
                   <Caption />
                   <Style>
@@ -775,7 +636,7 @@
             </ChartNoDataMessage>
             <DataSetName>DimPerDate</DataSetName>
             <Top>0.17584in</Top>
-            <Height>7.01042in</Height>
+            <Height>6.23959in</Height>
             <Width>9.80083in</Width>
             <Style>
               <Border>
@@ -787,7 +648,7 @@
             </Style>
           </Chart>
         </ReportItems>
-        <Height>7.18626in</Height>
+        <Height>6.48834in</Height>
         <Style />
       </Body>
       <Width>9.80083in</Width>

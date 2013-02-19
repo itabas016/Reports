@@ -25,7 +25,7 @@
             </control>
             <layoutobject>
               <ddsxmlobj>
-                <property name="LogicalObject" value="HYNEW_NETWORK_TYPE_INFO" vartype="8" />
+                <property name="LogicalObject" value="MAIN_NETWORK_TYPE_INFO" vartype="8" />
               </ddsxmlobj>
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
@@ -88,7 +88,7 @@
           <NullProcessing>UnknownMember</NullProcessing>
           <DataType>BigInt</DataType>
           <Source xsi:type="ColumnBinding" dwd:design-time-name="2d8b8349-6934-47b5-92a8-15efa8dd478a">
-            <TableID>HYNEW_NETWORK_TYPE_INFO</TableID>
+            <TableID>MAIN_NETWORK_TYPE_INFO</TableID>
             <ColumnID>ID</ColumnID>
           </Source>
         </KeyColumn>
@@ -97,7 +97,7 @@
         <DataType>WChar</DataType>
         <DataSize>255</DataSize>
         <Source xsi:type="ColumnBinding" dwd:design-time-name="17d1c79c-0ac8-4e99-b2f0-8b8b0888039e">
-          <TableID>HYNEW_NETWORK_TYPE_INFO</TableID>
+          <TableID>MAIN_NETWORK_TYPE_INFO</TableID>
           <ColumnID>DISPLAY_NAME</ColumnID>
         </Source>
       </NameColumn>

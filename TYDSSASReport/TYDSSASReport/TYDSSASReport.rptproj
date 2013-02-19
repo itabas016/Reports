@@ -9,6 +9,14 @@
   </DataSources>
   <DataSets>
     <ProjectItem>
+      <Name>AppDownload.rsd</Name>
+      <FullPath>AppDownload.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DimChannel.rsd</Name>
+      <FullPath>DimChannel.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>DimDate.rsd</Name>
       <FullPath>DimDate.rsd</FullPath>
     </ProjectItem>
@@ -19,14 +27,6 @@
     <ProjectItem>
       <Name>UserPerMinute.rsd</Name>
       <FullPath>UserPerMinute.rsd</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>DimChannel.rsd</Name>
-      <FullPath>DimChannel.rsd</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>AppDownload.rsd</Name>
-      <FullPath>AppDownload.rsd</FullPath>
     </ProjectItem>
   </DataSets>
   <Reports>
@@ -45,6 +45,10 @@
     <ProjectItem>
       <Name>UserPerHour.rdl</Name>
       <FullPath>UserPerHour.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>ChannelUserPerDate.rdl</Name>
+      <FullPath>ChannelUserPerDate.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
@@ -69,7 +73,9 @@
         <TargetServerURL>http://localhost/ReportServer</TargetServerURL>
         <TargetFolder>TYDSSASReport</TargetFolder>
         <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
+        <OverwriteDataSources>true</OverwriteDataSources>
         <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+        <OverwriteDatasets>true</OverwriteDatasets>
         <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
       </Options>
     </Configuration>
