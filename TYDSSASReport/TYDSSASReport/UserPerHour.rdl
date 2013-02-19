@@ -9,6 +9,9 @@
           <QueryParameter Name="DIMDATEDATE">
             <Value>=Code.DimDateRange(Parameters!DIMDATEDATE.Value,3)</Value>
           </QueryParameter>
+          <QueryParameter Name="DIMCHANNELID">
+            <Value>=Parameters!DIMCHANNELID.Value</Value>
+          </QueryParameter>
         </QueryParameters>
       </SharedDataSet>
       <Fields>
@@ -61,6 +64,29 @@
         </Field>
         <Field Name="ParameterCaptionIndented">
           <DataField>ParameterCaptionIndented</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="DimChannel">
+      <SharedDataSet>
+        <SharedDataSetReference>DimChannel</SharedDataSetReference>
+      </SharedDataSet>
+      <Fields>
+        <Field Name="ID">
+          <DataField>ID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ParameterCaption">
+          <DataField>ParameterCaption</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ParameterValue">
+          <DataField>ParameterValue</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ParameterLevel">
+          <DataField>ParameterLevel</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
@@ -1586,6 +1612,22 @@
           <DataSetName>DimDate</DataSetName>
           <ValueField>ParameterValue</ValueField>
           <LabelField>ParameterCaptionIndented</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="DIMCHANNELID">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>="[DIM CHANNEL].[ID].[All]"</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DIMCHANNELID</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>DimChannel</DataSetName>
+          <ValueField>ParameterValue</ValueField>
+          <LabelField>ParameterCaption</LabelField>
         </DataSetReference>
       </ValidValues>
     </ReportParameter>

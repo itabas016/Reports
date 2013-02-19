@@ -20,12 +20,12 @@
       <Name>UserPerMinute.rsd</Name>
       <FullPath>UserPerMinute.rsd</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>DimChannel.rsd</Name>
+      <FullPath>DimChannel.rsd</FullPath>
+    </ProjectItem>
   </DataSets>
   <Reports>
-    <ProjectItem>
-      <Name>UserPerDate.rdl</Name>
-      <FullPath>UserPerDate.rdl</FullPath>
-    </ProjectItem>
     <ProjectItem>
       <Name>Report2.rdl</Name>
       <FullPath>Report2.rdl</FullPath>
@@ -33,6 +33,10 @@
     <ProjectItem>
       <Name>Report3.rdl</Name>
       <FullPath>Report3.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>UserPerDate.rdl</Name>
+      <FullPath>UserPerDate.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>UserPerHour.rdl</Name>

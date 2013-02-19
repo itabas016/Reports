@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <DataSet Name="">
+    <Query>
+      <DataSourceReference>TYD.Main</DataSourceReference>
+      <CommandText>WITH MEMBER [Measures].[ParameterCaption] AS [DIM CHANNEL].[ID].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [DIM CHANNEL].[ID].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [DIM CHANNEL].[ID].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [DIM CHANNEL].[ID].ALLMEMBERS ON ROWS FROM [main]</CommandText>
+      <rd:DesignerState><QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition"><CommandType>MDX</CommandType><Type>Query</Type><QuerySpecification xsi:type="MDXQuerySpecification"><Select><Items><Item><ID xsi:type="Level"><DimensionName>DIM CHANNEL</DimensionName><HierarchyName>ID</HierarchyName><HierarchyUniqueName>[DIM CHANNEL].[ID]</HierarchyUniqueName><LevelName>ID</LevelName><UniqueName>[DIM CHANNEL].[ID].[ID]</UniqueName></ID><ItemCaption>ID</ItemCaption></Item><Item><ID xsi:type="Measure"><MeasureName>ParameterCaption</MeasureName><UniqueName>[Measures].[ParameterCaption]</UniqueName></ID><ItemCaption>ParameterCaption</ItemCaption><FormattedValue>true</FormattedValue></Item><Item><ID xsi:type="Measure"><MeasureName>ParameterValue</MeasureName><UniqueName>[Measures].[ParameterValue]</UniqueName></ID><ItemCaption>ParameterValue</ItemCaption><FormattedValue>true</FormattedValue></Item><Item><ID xsi:type="Measure"><MeasureName>ParameterLevel</MeasureName><UniqueName>[Measures].[ParameterLevel]</UniqueName></ID><ItemCaption>ParameterLevel</ItemCaption><FormattedValue>true</FormattedValue></Item></Items></Select><From>main</From><Filter><FilterItems /></Filter><Calculations /><Aggregates /><QueryProperties /></QuerySpecification><Query><Statement>WITH MEMBER [Measures].[ParameterCaption] AS [DIM CHANNEL].[ID].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [DIM CHANNEL].[ID].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [DIM CHANNEL].[ID].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [DIM CHANNEL].[ID].ALLMEMBERS ON ROWS FROM [main]</Statement><ParameterDefinitions /></Query></QueryDefinition></rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="ID">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[DIM CHANNEL].[ID].[ID]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ParameterCaption">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[ParameterCaption]" /&gt;</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="ParameterValue">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[ParameterValue]" /&gt;</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="ParameterLevel">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[ParameterLevel]" /&gt;</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
