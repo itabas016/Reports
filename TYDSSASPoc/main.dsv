@@ -27,7 +27,7 @@
             <Name>_ALL_TABLES_</Name>
             <DiagramLayout>
               <dds>
-                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="164" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="8518" scrolltop="14722" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="80" x="32808" y="12621" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="165" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="6683" scrolltop="4165" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="80" x="32464" y="19341" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                   <font>
                     <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                   </font>
@@ -1325,12 +1325,23 @@
                     <point x="31091" y="25888" />
                   </connector>
                 </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="TYD_APP" left="6964" top="8696" logicalid="164" controlid="83" masterid="0" hint1="0" hint2="0" width="3638" height="3671" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="00080000360e0000570e0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="TYD_APP" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
               </dds>
 </DiagramLayout>
             <ShowRelationshipNames>False</ShowRelationshipNames>
             <UseDiagramDefaultLayout>False</UseDiagramDefaultLayout>
-            <DiagramViewPortLeft>8518</DiagramViewPortLeft>
-            <DiagramViewPortTop>14722</DiagramViewPortTop>
+            <DiagramViewPortLeft>6683</DiagramViewPortLeft>
+            <DiagramViewPortTop>4165</DiagramViewPortTop>
             <DiagramBoundingLeft>20</DiagramBoundingLeft>
             <DiagramBoundingTop>0</DiagramBoundingTop>
             <DiagramZoom>80</DiagramZoom>
@@ -1379,7 +1390,7 @@
             <xs:element name="MAIN_ACTIVATED_USER" msprop:QueryDefinition="SELECT &quot;STORE&quot;.&quot;ACTIVATED_USER&quot;.*,trunc(&quot;STORE&quot;.&quot;ACTIVATED_USER&quot;.CREATE_TIME) &quot;CREATE_DATE&quot;,SUBSTR(TO_CHAR(&quot;STORE&quot;.&quot;ACTIVATED_USER&quot;.CREATE_TIME,'hh24:mi:ss'),0,4) as TIME_KEY,&quot;STORE&quot;.&quot;USER_INFO&quot;.&quot;CHANNEL_ID&quot;,&quot;STORE&quot;.&quot;USER_INFO&quot;.&quot;RESOLUTION_ID&quot;,&quot;STORE&quot;.&quot;USER_INFO&quot;.&quot;MACHINE_TYPE_ID&quot;,&quot;STORE&quot;.&quot;USER_INFO&quot;.&quot;BATCH_ID&quot;,&quot;STORE&quot;.&quot;USER_INFO&quot;.&quot;BRAND_MODEL_ID&quot;,&quot;STORE&quot;.&quot;USER_INFO&quot;.&quot;ANDROID_VERSION_ID&quot;,&quot;STORE&quot;.&quot;USER_INFO&quot;.&quot;PROVINCE_ID&quot;,&quot;STORE&quot;.&quot;USER_INFO&quot;.&quot;CITY_ID&quot;,&quot;STORE&quot;.&quot;USER_INFO&quot;.&quot;DOMAIN_NAME_ID&quot;,&quot;STORE&quot;.&quot;USER_INFO&quot;.&quot;FROM_APP_ID&quot;,&quot;STORE&quot;.&quot;USER_INFO&quot;.&quot;NETWORK_TYPE_ID&quot;  FROM &quot;STORE&quot;.&quot;ACTIVATED_USER&quot;&#xD;&#xA;INNER JOIN &quot;STORE&quot;.&quot;USER_INFO&quot;&#xD;&#xA;ON &quot;STORE&quot;.&quot;ACTIVATED_USER&quot;.&quot;USER_ID&quot;=&quot;STORE&quot;.&quot;USER_INFO&quot;.&quot;ID&quot;" msprop:DbTableName="ACTIVATED_USER" msprop:QueryBuilder="GenericQueryBuilder" msprop:IsLogical="True" msprop:FriendlyName="ACTIVATED_USER" msprop:design-time-name="0c86c9b1-1eb7-4ecb-a748-379be6980bc1" msprop:TableType="View">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="ID" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="6d1d7fe6-c518-493a-8219-34b39f256644" type="xs:long" minOccurs="0" />
+                  <xs:element name="ID" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="6d1d7fe6-c518-493a-8219-34b39f256644" type="xs:long" />
                   <xs:element name="USER_ID" msprop:FriendlyName="USER_ID" msprop:DbColumnName="USER_ID" msprop:design-time-name="03bef4d9-57e0-461d-bfe0-591452bc8fd2" type="xs:long" minOccurs="0" />
                   <xs:element name="CREATE_TIME" msprop:FriendlyName="CREATE_TIME" msprop:DbColumnName="CREATE_TIME" msprop:design-time-name="ba8ebb68-0637-4ac3-a2ba-fb3c87613448" type="xs:dateTime" minOccurs="0" />
                   <xs:element name="CREATE_DATE" msprop:design-time-name="c07c1199-d4af-4f93-8fd9-fc9e3d6a46df" msprop:DbColumnName="CREATE_DATE" type="xs:dateTime" minOccurs="0" />
@@ -1681,7 +1692,7 @@
                   <xs:element name="RESERVED_ID1" msprop:FriendlyName="RESERVED_ID1" msprop:DbColumnName="RESERVED_ID1" msprop:design-time-name="f87f2560-cdfc-41a4-8024-e1610017ccfe" type="xs:long" minOccurs="0" />
                   <xs:element name="RESERVED_ID2" msprop:FriendlyName="RESERVED_ID2" msprop:DbColumnName="RESERVED_ID2" msprop:design-time-name="45217400-6d14-4544-a361-eb0bfc18585d" type="xs:long" minOccurs="0" />
                   <xs:element name="RESERVED_ID3" msprop:FriendlyName="RESERVED_ID3" msprop:DbColumnName="RESERVED_ID3" msprop:design-time-name="0cbc23ec-7011-42d8-b299-675e72115d6a" type="xs:long" minOccurs="0" />
-                  <xs:element name="ID" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="aa4da338-c857-4922-af79-068d7e3394e9" type="xs:long" minOccurs="0" />
+                  <xs:element name="ID" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="aa4da338-c857-4922-af79-068d7e3394e9" type="xs:long" />
                   <xs:element name="CREATE_TIME" msprop:FriendlyName="CREATE_TIME" msprop:DbColumnName="CREATE_TIME" msprop:design-time-name="7b3475a8-5586-4ad5-af9d-714a215697e7" type="xs:dateTime" minOccurs="0" />
                   <xs:element name="CREATE_DATE" msprop:design-time-name="289a0274-6b68-452f-b1aa-f38c5fd328ce" msprop:DbColumnName="CREATE_DATE" type="xs:dateTime" minOccurs="0" />
                   <xs:element name="SERVER_ID" msprop:design-time-name="37229fe0-99d1-452a-893a-beca2fd8cabb" msprop:DbColumnName="SERVER_ID" type="xs:long" minOccurs="0" />
@@ -2114,7 +2125,7 @@
                     </xs:simpleType>
                   </xs:element>
                   <xs:element name="CREATE_TIME" msprop:FriendlyName="CREATE_TIME" msprop:DbColumnName="CREATE_TIME" msprop:design-time-name="a5a61fb3-1a02-400b-ada6-0963940f769d" type="xs:dateTime" minOccurs="0" />
-                  <xs:element name="ID" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="d9e02897-9c91-4c08-9d01-22d3bccfd71c" type="xs:long" minOccurs="0" />
+                  <xs:element name="ID" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="d9e02897-9c91-4c08-9d01-22d3bccfd71c" type="xs:long" />
                   <xs:element name="RESOLUTION_ID" msprop:FriendlyName="RESOLUTION_ID" msprop:DbColumnName="RESOLUTION_ID" msprop:design-time-name="7d8421be-5a23-4272-a6ba-4cd3ef6fd192" type="xs:long" minOccurs="0" />
                   <xs:element name="MACHINE_TYPE_ID" msprop:FriendlyName="MACHINE_TYPE_ID" msprop:DbColumnName="MACHINE_TYPE_ID" msprop:design-time-name="501f7086-5b6d-4871-9599-fe3872535c19" type="xs:long" minOccurs="0" />
                   <xs:element name="BATCH_ID" msprop:FriendlyName="BATCH_ID" msprop:DbColumnName="BATCH_ID" msprop:design-time-name="599aa587-28b5-4a5d-825d-d8bcde84a93e" type="xs:long" minOccurs="0" />
@@ -2194,7 +2205,7 @@
             <xs:element name="MachineType" msprop:QueryDefinition="SELECT A.ID,&#xD;&#xA;       A.KEY,&#xD;&#xA;       A.DISPLAY_NAME,&#xD;&#xA;       A.PARENT_ID,&#xD;&#xA;       B.NAME AS PARENT_NAME,&#xD;&#xA;       G.ID AS GRAND_ID,&#xD;&#xA;       G.NAME AS GRAND_NAME&#xD;&#xA;  FROM STORE.MACHINE_TYPE_INFO A&#xD;&#xA;       LEFT JOIN STORE.MACHINE_TYPE_MANUAL B&#xD;&#xA;          ON A.PARENT_ID = B.ID&#xD;&#xA;       LEFT JOIN STORE.MACHINE_TYPE_MANUAL G&#xD;&#xA;          ON B.PARENT_ID = G.ID&#xD;&#xA;  ORDER BY ID" msprop:DbTableName="MachineType" msprop:QueryBuilder="GenericQueryBuilder" msprop:IsLogical="True" msprop:FriendlyName="MachineType" msprop:design-time-name="3117de93-0553-486d-ab37-1b75182d5e63" msprop:TableType="View" msprop:Description="">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="ID" msdata:ReadOnly="true" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="d20baf0e-4cae-46b5-9b22-a7a10995dd14" type="xs:long" minOccurs="0" />
+                  <xs:element name="ID" msdata:ReadOnly="true" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="d20baf0e-4cae-46b5-9b22-a7a10995dd14" type="xs:long" />
                   <xs:element name="KEY" msdata:ReadOnly="true" msprop:FriendlyName="KEY" msprop:DbColumnName="KEY" msprop:design-time-name="9cc7e023-66e6-4d82-88db-adf03f327e78" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
@@ -2297,7 +2308,7 @@
             <xs:element name="DesignHouse" msprop:QueryDefinition="SELECT A.ID,&#xD;&#xA;       A.KEY,&#xD;&#xA;       A.DISPLAY_NAME,&#xD;&#xA;       A.PARENT_ID,&#xD;&#xA;       B.NAME AS PARENT_NAME,&#xD;&#xA;       G.ID AS GRAND_ID,&#xD;&#xA;       G.NAME AS GRAND_NAME&#xD;&#xA;  FROM STORE.DESIGN_HOUSE_INFO A&#xD;&#xA;       LEFT JOIN STORE.DESIGN_HOUSE_MANUAL B&#xD;&#xA;          ON A.PARENT_ID = B.ID&#xD;&#xA;       LEFT JOIN STORE.DESIGN_HOUSE_MANUAL G&#xD;&#xA;          ON B.PARENT_ID = G.ID&#xD;&#xA;  ORDER BY ID" msprop:DbTableName="DesignHouse" msprop:QueryBuilder="GenericQueryBuilder" msprop:IsLogical="True" msprop:FriendlyName="DesignHouse" msprop:design-time-name="67dfc9f3-74e9-4ea0-9799-251c3093b6d1" msprop:TableType="View" msprop:Description="">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="ID" msdata:ReadOnly="true" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="69a6048e-543a-4f48-bbd8-92210b951106" type="xs:long" minOccurs="0" />
+                  <xs:element name="ID" msdata:ReadOnly="true" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="69a6048e-543a-4f48-bbd8-92210b951106" type="xs:long" />
                   <xs:element name="KEY" msdata:ReadOnly="true" msprop:FriendlyName="KEY" msprop:DbColumnName="KEY" msprop:design-time-name="13ffdf03-8bf8-48f5-a89f-2a8d7313a622" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
@@ -2334,7 +2345,7 @@
             <xs:element name="BrandModel" msprop:QueryDefinition="SELECT A.ID,&#xD;&#xA;       A.KEY,&#xD;&#xA;       A.DISPLAY_NAME,&#xD;&#xA;       A.PARENT_ID,&#xD;&#xA;       B.NAME AS PARENT_NAME,&#xD;&#xA;       G.ID AS GRAND_ID,&#xD;&#xA;       G.NAME AS GRAND_NAME&#xD;&#xA;  FROM STORE.BRAND_MODEL_INFO A&#xD;&#xA;       LEFT JOIN STORE.BRAND_MODEL_MANUAL B&#xD;&#xA;          ON A.PARENT_ID = B.ID&#xD;&#xA;       LEFT JOIN STORE.BRAND_MODEL_MANUAL G&#xD;&#xA;          ON B.PARENT_ID = G.ID&#xD;&#xA;  ORDER BY ID" msprop:DbTableName="BrandModel" msprop:QueryBuilder="GenericQueryBuilder" msprop:IsLogical="True" msprop:FriendlyName="BrandModel" msprop:design-time-name="49d24741-4c43-40e5-9e16-9965ea4ff932" msprop:TableType="View" msprop:Description="">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="ID" msdata:ReadOnly="true" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="59aa4c77-c7ba-47d3-a8b2-be1d4deff930" type="xs:long" minOccurs="0" />
+                  <xs:element name="ID" msdata:ReadOnly="true" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="59aa4c77-c7ba-47d3-a8b2-be1d4deff930" type="xs:long" />
                   <xs:element name="KEY" msdata:ReadOnly="true" msprop:FriendlyName="KEY" msprop:DbColumnName="KEY" msprop:design-time-name="4afc4760-5892-45a7-b950-afd93d7b957d" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
@@ -2547,6 +2558,36 @@
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="8" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="TYD_APP" msprop:QueryDefinition="SELECT  B.ID,A.APP_NO,B.CREATE_TIME,B.PARENT_ID, B.KEY, B.DISPLAY_NAME FROM TYD_APPS A&#xD;&#xA;LEFT JOIN APP_INFO B&#xD;&#xA;ON A.APP_NO = B.APP_NO&#xD;&#xA;WHERE B.ID IS NOT NULL" msprop:DbTableName="TYD_APP" msprop:QueryBuilder="GenericQueryBuilder" msprop:IsLogical="True" msprop:FriendlyName="TYD_APP" msprop:design-time-name="0cef5d3a-aac8-4444-bfa6-092e52c6c4cc" msprop:TableType="View" msprop:Description="">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID" msdata:ReadOnly="true" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="5427e165-e8bf-43a2-9b28-454c6f0ecb9a" type="xs:long" minOccurs="0" />
+                  <xs:element name="APP_NO" msdata:ReadOnly="true" msprop:FriendlyName="APP_NO" msprop:DbColumnName="APP_NO" msprop:design-time-name="6830577a-91b3-47b9-b8ca-a837085d21da" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CREATE_TIME" msdata:ReadOnly="true" msprop:FriendlyName="CREATE_TIME" msprop:DbColumnName="CREATE_TIME" msprop:design-time-name="905c685c-0740-4b8c-a553-80dc9b98dc19" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="PARENT_ID" msdata:ReadOnly="true" msprop:FriendlyName="PARENT_ID" msprop:DbColumnName="PARENT_ID" msprop:design-time-name="a2c39c39-f16f-4ff0-8b0b-f9ed7154cb9e" type="xs:int" minOccurs="0" />
+                  <xs:element name="KEY" msdata:ReadOnly="true" msprop:FriendlyName="KEY" msprop:DbColumnName="KEY" msprop:design-time-name="12363b84-b914-4c7c-8658-09a4953f9fce" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DISPLAY_NAME" msdata:ReadOnly="true" msprop:FriendlyName="DISPLAY_NAME" msprop:DbColumnName="DISPLAY_NAME" msprop:design-time-name="c153f68f-0d68-4028-b439-acbd78f774d4" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>

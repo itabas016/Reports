@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="TYD.Store">
+  <ConnectionProperties>
+    <Extension>ORACLE</Extension>
+    <ConnectString>Data Source="(DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=192.168.30.6)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=tyd)))"</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>d069f0e5-aa93-44e3-aceb-d90fa2ca9078</DataSourceID>
+</RptDataSource>
