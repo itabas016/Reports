@@ -1623,7 +1623,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Sum(Fields!新增用户.Value)</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>N0</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1641,6 +1643,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1653,7 +1656,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Sum(Fields!激活用户.Value)</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>N0</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1671,6 +1676,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1683,7 +1689,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Sum(Fields!活跃用户.Value)</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>N0</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1701,6 +1709,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1713,7 +1722,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Sum(Fields!用户请求.Value)</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>N0</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1731,6 +1742,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -1783,6 +1795,7 @@
                                   <Value>=Sum(Fields!新增用户.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>N0</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1802,6 +1815,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1816,6 +1830,7 @@
                                   <Value>=Sum(Fields!激活用户.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>N0</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1835,6 +1850,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1849,6 +1865,7 @@
                                   <Value>=Sum(Fields!活跃用户.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>N0</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1868,6 +1885,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1882,6 +1900,7 @@
                                   <Value>=Sum(Fields!用户请求.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>N0</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1901,6 +1920,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -1949,7 +1969,7 @@
             <Top>5.31125in</Top>
             <Left>0.06005in</Left>
             <Height>0.73959in</Height>
-            <Width>4.9375in</Width>
+            <Width>4.93751in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>

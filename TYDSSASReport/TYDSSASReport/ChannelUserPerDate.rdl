@@ -424,7 +424,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!新增用户.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>N0</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -454,7 +456,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!激活用户.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>N0</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -484,7 +488,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!活跃用户.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>N0</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -514,7 +520,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!用户请求.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>N0</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -617,6 +625,7 @@
                                   <Value>=Sum(Fields!新增用户.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>N0</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -650,6 +659,7 @@
                                   <Value>=Sum(Fields!激活用户.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>N0</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -683,6 +693,7 @@
                                   <Value>=Sum(Fields!活跃用户.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>N0</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -716,6 +727,7 @@
                                   <Value>=Sum(Fields!用户请求.Value)</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>N0</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
