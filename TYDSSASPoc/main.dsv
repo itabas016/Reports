@@ -1608,7 +1608,7 @@
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="MAIN_COMMUNICATION_LOG" msprop:QueryDefinition="SELECT &quot;STORE&quot;.&quot;COMMUNICATION_LOG&quot;.*,trunc(CREATE_TIME) &quot;CREATE_DATE&quot;,SUBSTR(TO_CHAR(&quot;STORE&quot;.&quot;COMMUNICATION_LOG&quot;.CREATE_TIME,'hh24:mi:ss'),0,4) as TIME_KEY  FROM &quot;STORE&quot;.&quot;COMMUNICATION_LOG&quot; where rownum&lt;100000" msprop:DbTableName="COMMUNICATION_LOG" msprop:QueryBuilder="GenericQueryBuilder" msprop:IsLogical="True" msprop:FriendlyName="COMMUNICATION_LOG" msprop:design-time-name="b66bfbc2-4980-4963-aaa5-199dabe79733" msprop:TableType="View">
+            <xs:element name="MAIN_COMMUNICATION_LOG" msprop:QueryDefinition="SELECT &quot;STORE&quot;.&quot;COMMUNICATION_LOG&quot;.*,trunc(CREATE_TIME) &quot;CREATE_DATE&quot;,SUBSTR(TO_CHAR(&quot;STORE&quot;.&quot;COMMUNICATION_LOG&quot;.CREATE_TIME,'hh24:mi:ss'),0,4) as TIME_KEY  FROM &quot;STORE&quot;.&quot;COMMUNICATION_LOG&quot; where rownum&lt;20000000" msprop:DbTableName="COMMUNICATION_LOG" msprop:QueryBuilder="GenericQueryBuilder" msprop:IsLogical="True" msprop:FriendlyName="COMMUNICATION_LOG" msprop:design-time-name="b66bfbc2-4980-4963-aaa5-199dabe79733" msprop:TableType="View">
               <xs:complexType>
                 <xs:sequence>
                   <xs:element name="USER_ID" msprop:FriendlyName="USER_ID" msprop:DbColumnName="USER_ID" msprop:design-time-name="0e19fc0d-b764-4697-b32c-a74eb00aeaca" type="xs:long" minOccurs="0" />
@@ -1681,7 +1681,7 @@
                   <xs:element name="RESERVED_ID1" msprop:FriendlyName="RESERVED_ID1" msprop:DbColumnName="RESERVED_ID1" msprop:design-time-name="f87f2560-cdfc-41a4-8024-e1610017ccfe" type="xs:long" minOccurs="0" />
                   <xs:element name="RESERVED_ID2" msprop:FriendlyName="RESERVED_ID2" msprop:DbColumnName="RESERVED_ID2" msprop:design-time-name="45217400-6d14-4544-a361-eb0bfc18585d" type="xs:long" minOccurs="0" />
                   <xs:element name="RESERVED_ID3" msprop:FriendlyName="RESERVED_ID3" msprop:DbColumnName="RESERVED_ID3" msprop:design-time-name="0cbc23ec-7011-42d8-b299-675e72115d6a" type="xs:long" minOccurs="0" />
-                  <xs:element name="ID" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="aa4da338-c857-4922-af79-068d7e3394e9" type="xs:long" />
+                  <xs:element name="ID" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="aa4da338-c857-4922-af79-068d7e3394e9" type="xs:long" minOccurs="0" />
                   <xs:element name="CREATE_TIME" msprop:FriendlyName="CREATE_TIME" msprop:DbColumnName="CREATE_TIME" msprop:design-time-name="7b3475a8-5586-4ad5-af9d-714a215697e7" type="xs:dateTime" minOccurs="0" />
                   <xs:element name="CREATE_DATE" msprop:design-time-name="289a0274-6b68-452f-b1aa-f38c5fd328ce" msprop:DbColumnName="CREATE_DATE" type="xs:dateTime" minOccurs="0" />
                   <xs:element name="SERVER_ID" msprop:design-time-name="37229fe0-99d1-452a-893a-beca2fd8cabb" msprop:DbColumnName="SERVER_ID" type="xs:long" minOccurs="0" />

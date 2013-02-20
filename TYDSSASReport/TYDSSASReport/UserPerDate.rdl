@@ -6,11 +6,11 @@
       <SharedDataSet>
         <SharedDataSetReference>UserPerDate</SharedDataSetReference>
         <QueryParameters>
-          <QueryParameter Name="DIMDATEDATE">
-            <Value>=Parameters!DIMDATEDATE.Value</Value>
+          <QueryParameter Name="DATEDATE">
+            <Value>=Parameters!DATEDATE.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="DIMCHANNELPARENTNAME">
-            <Value>=Parameters!DIMCHANNELPARENTNAME.Value</Value>
+          <QueryParameter Name="CHANNELPARENTNAME">
+            <Value>=Parameters!CHANNELPARENTNAME.Value</Value>
           </QueryParameter>
         </QueryParameters>
       </SharedDataSet>
@@ -35,8 +35,20 @@
           <DataField>活跃用户</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
+        <Field Name="PARENT_NAME">
+          <DataField>PARENT_NAME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="用户请求">
           <DataField>用户请求</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ID">
+          <DataField>ID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="激活用户">
+          <DataField>激活用户</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
@@ -132,6 +144,9 @@
                 </ChartMember>
                 <ChartMember>
                   <Label>用户请求</Label>
+                </ChartMember>
+                <ChartMember>
+                  <Label>激活用户</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartSeriesHierarchy>
@@ -260,6 +275,44 @@
                     <MinMovingDistance>0pt</MinMovingDistance>
                   </ChartSmartLabel>
                 </ChartSeries>
+                <ChartSeries Name="激活用户">
+                  <ChartDataPoints>
+                    <ChartDataPoint>
+                      <ChartDataPointValues>
+                        <Y>=Sum(Fields!激活用户.Value)</Y>
+                      </ChartDataPointValues>
+                      <ChartDataLabel>
+                        <Style />
+                      </ChartDataLabel>
+                      <Style>
+                        <Color>Red</Color>
+                      </Style>
+                      <ChartMarker>
+                        <Type>Diamond</Type>
+                        <Style />
+                      </ChartMarker>
+                      <DataElementOutput>Output</DataElementOutput>
+                    </ChartDataPoint>
+                  </ChartDataPoints>
+                  <Type>Line</Type>
+                  <Subtype>Smooth</Subtype>
+                  <Style />
+                  <ChartEmptyPoints>
+                    <Style />
+                    <ChartMarker>
+                      <Style />
+                    </ChartMarker>
+                    <ChartDataLabel>
+                      <Style />
+                    </ChartDataLabel>
+                  </ChartEmptyPoints>
+                  <ValueAxisName>Primary</ValueAxisName>
+                  <CategoryAxisName>Primary</CategoryAxisName>
+                  <ChartSmartLabel>
+                    <CalloutLineColor>Black</CalloutLineColor>
+                    <MinMovingDistance>0pt</MinMovingDistance>
+                  </ChartSmartLabel>
+                </ChartSeries>
               </ChartSeriesCollection>
             </ChartData>
             <ChartAreas>
@@ -349,7 +402,7 @@
                       <Format>#,0;(#,0)</Format>
                     </Style>
                     <ChartAxisTitle>
-                      <Caption>新增用户数</Caption>
+                      <Caption>新增/活跃/激活用户数</Caption>
                       <Style>
                         <FontSize>8pt</FontSize>
                       </Style>
@@ -637,7 +690,7 @@
             <DataSetName>DimPerDate</DataSetName>
             <Top>0.17584in</Top>
             <Height>6.23959in</Height>
-            <Width>9.80083in</Width>
+            <Width>8.69666in</Width>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
@@ -651,7 +704,7 @@
         <Height>6.48834in</Height>
         <Style />
       </Body>
-      <Width>9.80083in</Width>
+      <Width>13.58208in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
@@ -662,14 +715,14 @@
     </ReportSection>
   </ReportSections>
   <ReportParameters>
-    <ReportParameter Name="DIMDATEDATE">
+    <ReportParameter Name="DATEDATE">
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>[DIM DATE].[DATE].[All]</Value>
+          <Value>[DATE].[DATE].[All]</Value>
         </Values>
       </DefaultValue>
-      <Prompt>DIMDATEDATE</Prompt>
+      <Prompt>DATEDATE</Prompt>
       <ValidValues>
         <DataSetReference>
           <DataSetName>DimDate</DataSetName>
@@ -679,14 +732,14 @@
       </ValidValues>
       <MultiValue>true</MultiValue>
     </ReportParameter>
-    <ReportParameter Name="DIMCHANNELPARENTNAME">
+    <ReportParameter Name="CHANNELPARENTNAME">
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>="[DIM CHANNEL].[PARENT NAME].[All]"</Value>
+          <Value>="[CHANNEL].[PARENT NAME].[All]"</Value>
         </Values>
       </DefaultValue>
-      <Prompt>DIMCHANNELPARENTNAME</Prompt>
+      <Prompt>CHANNELPARENTNAME</Prompt>
       <ValidValues>
         <DataSetReference>
           <DataSetName>DimChannel</DataSetName>

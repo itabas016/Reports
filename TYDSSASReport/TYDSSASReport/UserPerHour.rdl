@@ -6,11 +6,11 @@
       <SharedDataSet>
         <SharedDataSetReference>UserPerMinute</SharedDataSetReference>
         <QueryParameters>
-          <QueryParameter Name="DIMDATEDATE">
-            <Value>=Code.DimDateRange(Parameters!DIMDATEDATE.Value,3)</Value>
+          <QueryParameter Name="DATEDATE">
+            <Value>=Code.DimDateRange(Parameters!DATEDATE.Value,3)</Value>
           </QueryParameter>
-          <QueryParameter Name="DIMCHANNELPARENTNAME">
-            <Value>=Parameters!DIMCHANNELPARENTNAME.Value</Value>
+          <QueryParameter Name="CHANNELPARENTNAME">
+            <Value>=Parameters!CHANNELPARENTNAME.Value</Value>
           </QueryParameter>
         </QueryParameters>
       </SharedDataSet>
@@ -21,6 +21,10 @@
         </Field>
         <Field Name="DATE">
           <DataField>DATE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="YEAR_MONTH_CN">
+          <DataField>YEAR_MONTH_CN</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="TIME_KEY">
@@ -46,6 +50,10 @@
         <Field Name="ID">
           <DataField>ID</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="激活用户">
+          <DataField>激活用户</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
@@ -80,8 +88,8 @@
         <SharedDataSetReference>DimChannel</SharedDataSetReference>
       </SharedDataSet>
       <Fields>
-        <Field Name="ID">
-          <DataField>ID</DataField>
+        <Field Name="PARENT_NAME">
+          <DataField>PARENT_NAME</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ParameterCaption">
@@ -168,7 +176,7 @@
                       </ChartDataLabel>
                       <Style>
                         <Border>
-                          <Width>=iif(Fields!DATE.Value&gt;=Code.GetDateText(Parameters!DIMDATEDATE.Value), "2pt" , "1.0pt")</Width>
+                          <Width>=iif(Fields!DATE.Value&gt;=Code.GetDateText(Parameters!DATEDATE.Value), "2pt" , "1.0pt")</Width>
                         </Border>
                       </Style>
                       <ChartMarker>
@@ -210,7 +218,7 @@
                       </ChartDataLabel>
                       <Style>
                         <Border>
-                          <Width>=iif(Fields!DATE.Value&gt;=Code.GetDateText(Parameters!DIMDATEDATE.Value), "1.5pt" , "1.0pt")</Width>
+                          <Width>=iif(Fields!DATE.Value&gt;=Code.GetDateText(Parameters!DATEDATE.Value), "1.5pt" , "1.0pt")</Width>
                         </Border>
                       </Style>
                       <ChartMarker>
@@ -669,6 +677,9 @@
                     <ChartMember>
                       <Label>用户请求</Label>
                     </ChartMember>
+                    <ChartMember>
+                      <Label>激活用户</Label>
+                    </ChartMember>
                   </ChartMembers>
                   <Label>=Fields!DATE.Value</Label>
                 </ChartMember>
@@ -687,7 +698,7 @@
                       </ChartDataLabel>
                       <Style>
                         <Border>
-                          <Width>=iif(Fields!DATE.Value&gt;=Code.GetDateText(Parameters!DIMDATEDATE.Value), "1.5pt" , "1.0pt")</Width>
+                          <Width>=iif(Fields!DATE.Value&gt;=Code.GetDateText(Parameters!DATEDATE.Value), "1.5pt" , "1.0pt")</Width>
                         </Border>
                       </Style>
                       <ChartMarker>
@@ -752,6 +763,46 @@
                     <LegendText>=Fields!DATE.Value</LegendText>
                   </ChartItemInLegend>
                   <ChartAreaName>Area2</ChartAreaName>
+                  <ValueAxisName>Primary</ValueAxisName>
+                  <CategoryAxisName>Primary</CategoryAxisName>
+                  <ChartSmartLabel>
+                    <CalloutLineColor>Black</CalloutLineColor>
+                    <MinMovingDistance>0pt</MinMovingDistance>
+                  </ChartSmartLabel>
+                </ChartSeries>
+                <ChartSeries Name="激活用户">
+                  <ChartDataPoints>
+                    <ChartDataPoint>
+                      <ChartDataPointValues>
+                        <Y>=Sum(Fields!激活用户.Value)</Y>
+                      </ChartDataPointValues>
+                      <ChartDataLabel>
+                        <Style />
+                      </ChartDataLabel>
+                      <Style />
+                      <ChartMarker>
+                        <Style />
+                      </ChartMarker>
+                      <DataElementOutput>Output</DataElementOutput>
+                    </ChartDataPoint>
+                  </ChartDataPoints>
+                  <Type>Line</Type>
+                  <Subtype>Smooth</Subtype>
+                  <Style />
+                  <ChartEmptyPoints>
+                    <Style />
+                    <ChartMarker>
+                      <Style />
+                    </ChartMarker>
+                    <ChartDataLabel>
+                      <Style />
+                    </ChartDataLabel>
+                  </ChartEmptyPoints>
+                  <LegendName>Legend3</LegendName>
+                  <ChartItemInLegend>
+                    <LegendText>=Fields!DATE.Value</LegendText>
+                  </ChartItemInLegend>
+                  <ChartAreaName>Area3</ChartAreaName>
                   <ValueAxisName>Primary</ValueAxisName>
                   <CategoryAxisName>Primary</CategoryAxisName>
                   <ChartSmartLabel>
@@ -1078,6 +1129,164 @@
                   <BackgroundGradientType>None</BackgroundGradientType>
                 </Style>
               </ChartArea>
+              <ChartArea Name="Area3">
+                <ChartCategoryAxes>
+                  <ChartAxis Name="Primary">
+                    <Style>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                    <ChartAxisTitle>
+                      <Caption />
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </ChartAxisTitle>
+                    <Interval>1</Interval>
+                    <ChartMajorGridLines>
+                      <Enabled>False</Enabled>
+                      <Style>
+                        <Border>
+                          <Color>Gainsboro</Color>
+                        </Border>
+                      </Style>
+                    </ChartMajorGridLines>
+                    <ChartMinorGridLines>
+                      <Style>
+                        <Border>
+                          <Color>Gainsboro</Color>
+                          <Style>Dotted</Style>
+                        </Border>
+                      </Style>
+                    </ChartMinorGridLines>
+                    <ChartMinorTickMarks>
+                      <Length>0.5</Length>
+                    </ChartMinorTickMarks>
+                    <CrossAt>NaN</CrossAt>
+                    <Minimum>NaN</Minimum>
+                    <Maximum>NaN</Maximum>
+                    <ChartAxisScaleBreak>
+                      <Style />
+                    </ChartAxisScaleBreak>
+                  </ChartAxis>
+                  <ChartAxis Name="Secondary">
+                    <Style>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                    <ChartAxisTitle>
+                      <Caption>轴标题</Caption>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </ChartAxisTitle>
+                    <ChartMajorGridLines>
+                      <Enabled>False</Enabled>
+                      <Style>
+                        <Border>
+                          <Color>Gainsboro</Color>
+                        </Border>
+                      </Style>
+                    </ChartMajorGridLines>
+                    <ChartMinorGridLines>
+                      <Style>
+                        <Border>
+                          <Color>Gainsboro</Color>
+                          <Style>Dotted</Style>
+                        </Border>
+                      </Style>
+                    </ChartMinorGridLines>
+                    <ChartMinorTickMarks>
+                      <Length>0.5</Length>
+                    </ChartMinorTickMarks>
+                    <CrossAt>NaN</CrossAt>
+                    <Location>Opposite</Location>
+                    <Minimum>NaN</Minimum>
+                    <Maximum>NaN</Maximum>
+                    <ChartAxisScaleBreak>
+                      <Style />
+                    </ChartAxisScaleBreak>
+                  </ChartAxis>
+                </ChartCategoryAxes>
+                <ChartValueAxes>
+                  <ChartAxis Name="Primary">
+                    <Style>
+                      <FontSize>8pt</FontSize>
+                      <Format>#,#</Format>
+                    </Style>
+                    <ChartAxisTitle>
+                      <Caption>用户激活数/小时</Caption>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </ChartAxisTitle>
+                    <ChartMajorGridLines>
+                      <Style>
+                        <Border>
+                          <Color>Gainsboro</Color>
+                        </Border>
+                      </Style>
+                    </ChartMajorGridLines>
+                    <ChartMinorGridLines>
+                      <Style>
+                        <Border>
+                          <Color>Gainsboro</Color>
+                          <Style>Dotted</Style>
+                        </Border>
+                      </Style>
+                    </ChartMinorGridLines>
+                    <ChartMinorTickMarks>
+                      <Length>0.5</Length>
+                    </ChartMinorTickMarks>
+                    <CrossAt>NaN</CrossAt>
+                    <Minimum>NaN</Minimum>
+                    <Maximum>NaN</Maximum>
+                    <ChartAxisScaleBreak>
+                      <Style />
+                    </ChartAxisScaleBreak>
+                  </ChartAxis>
+                  <ChartAxis Name="Secondary">
+                    <Style>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                    <ChartAxisTitle>
+                      <Caption>轴标题</Caption>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </ChartAxisTitle>
+                    <ChartMajorGridLines>
+                      <Style>
+                        <Border>
+                          <Color>Gainsboro</Color>
+                        </Border>
+                      </Style>
+                    </ChartMajorGridLines>
+                    <ChartMinorGridLines>
+                      <Style>
+                        <Border>
+                          <Color>Gainsboro</Color>
+                          <Style>Dotted</Style>
+                        </Border>
+                      </Style>
+                    </ChartMinorGridLines>
+                    <ChartMinorTickMarks>
+                      <Length>0.5</Length>
+                    </ChartMinorTickMarks>
+                    <CrossAt>NaN</CrossAt>
+                    <Location>Opposite</Location>
+                    <Minimum>NaN</Minimum>
+                    <Maximum>NaN</Maximum>
+                    <ChartAxisScaleBreak>
+                      <Style />
+                    </ChartAxisScaleBreak>
+                  </ChartAxis>
+                </ChartValueAxes>
+                <Style>
+                  <Border>
+                    <Color>DarkViolet</Color>
+                  </Border>
+                  <BackgroundGradientType>None</BackgroundGradientType>
+                </Style>
+              </ChartArea>
             </ChartAreas>
             <ChartLegends>
               <ChartLegend Name="Legend2">
@@ -1085,7 +1294,6 @@
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontSize>8pt</FontSize>
                 </Style>
-                <Position>RightCenter</Position>
                 <DockToChartArea>Area2</DockToChartArea>
                 <DockOutsideChartArea>true</DockOutsideChartArea>
                 <ChartLegendTitle>
@@ -1104,8 +1312,25 @@
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontSize>8pt</FontSize>
                 </Style>
-                <Position>RightCenter</Position>
                 <DockToChartArea>Area1</DockToChartArea>
+                <DockOutsideChartArea>true</DockOutsideChartArea>
+                <ChartLegendTitle>
+                  <Caption />
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </ChartLegendTitle>
+                <HeaderSeparatorColor>Black</HeaderSeparatorColor>
+                <ColumnSeparatorColor>Black</ColumnSeparatorColor>
+              </ChartLegend>
+              <ChartLegend Name="Legend3">
+                <Style>
+                  <BackgroundGradientType>None</BackgroundGradientType>
+                  <FontSize>8pt</FontSize>
+                </Style>
+                <DockToChartArea>Area3</DockToChartArea>
                 <DockOutsideChartArea>true</DockOutsideChartArea>
                 <ChartLegendTitle>
                   <Caption />
@@ -1137,9 +1362,9 @@
             </ChartNoDataMessage>
             <DataSetName>UserPerMinute</DataSetName>
             <Top>0cm</Top>
-            <Left>5.84272in</Left>
-            <Height>13.16819cm</Height>
-            <Width>17.21035cm</Width>
+            <Left>5.85661in</Left>
+            <Height>20.02089cm</Height>
+            <Width>17.13098cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -1154,13 +1379,16 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.1875in</Width>
+                  <Width>0.91667in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.1875in</Width>
+                  <Width>1.0625in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.1875in</Width>
+                  <Width>0.94792in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.01042in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1in</Width>
@@ -1228,6 +1456,42 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox9</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>CornflowerBlue</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox1">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>激活用户</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox1</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -1381,6 +1645,36 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="激活用户">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!激活用户.Value)</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>激活用户</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="活跃用户">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -1407,7 +1701,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1513,6 +1806,39 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="Textbox3">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!激活用户.Value)</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox3</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="Textbox17">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -1587,6 +1913,7 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
+                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -1622,7 +1949,7 @@
             <Top>5.31125in</Top>
             <Left>0.06005in</Left>
             <Height>0.73959in</Height>
-            <Width>4.5625in</Width>
+            <Width>4.9375in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -1645,14 +1972,14 @@
     </ReportSection>
   </ReportSections>
   <ReportParameters>
-    <ReportParameter Name="DIMDATEDATE">
+    <ReportParameter Name="DATEDATE">
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>="[DIM DATE].[DATE].&amp;["&amp;Format(Today(), "yyyy-MM-dd" )&amp;"T00:00:00]"</Value>
+          <Value>="[DATE].[DATE].&amp;["&amp;Format(Today(), "yyyy-MM-dd" )&amp;"T00:00:00]"</Value>
         </Values>
       </DefaultValue>
-      <Prompt>DIMDATEDATE</Prompt>
+      <Prompt>DATEDATE</Prompt>
       <ValidValues>
         <DataSetReference>
           <DataSetName>DimDate</DataSetName>
@@ -1661,14 +1988,14 @@
         </DataSetReference>
       </ValidValues>
     </ReportParameter>
-    <ReportParameter Name="DIMCHANNELPARENTNAME">
+    <ReportParameter Name="CHANNELPARENTNAME">
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>="[DIM CHANNEL].[PARENT NAME].[All]"</Value>
+          <Value>="[CHANNEL].[PARENT NAME].[All]"</Value>
         </Values>
       </DefaultValue>
-      <Prompt>DIMCHANNELPARENTNAME</Prompt>
+      <Prompt>CHANNELPARENTNAME</Prompt>
       <ValidValues>
         <DataSetReference>
           <DataSetName>DimChannel</DataSetName>
@@ -1680,7 +2007,7 @@
   </ReportParameters>
   <Code>
 		Public Function GetDateText(DimDate As String)
-			Return Replace(Replace(DimDate, "[DIM DATE].[DATE].&amp;[", ""), "T00:00:00]", "")
+			Return Replace(Replace(DimDate, "[DATE].[DATE].&amp;[", ""), "T00:00:00]", "")
 	  End Function
 
 	  Public Function GetDate(DimDate As String)
@@ -1688,7 +2015,7 @@
 	  End Function
 
 	  Public Function DimDateAdd(DimDate As String, dayCount As Int32)
-	  Return "[DIM DATE].[DATE].&amp;[" + Format(DATEADD(DateInterval.Day, dayCount, GetDate(DimDate)), "yyyy-MM-dd") + "T00:00:00]"
+	  Return "[DATE].[DATE].&amp;[" + Format(DATEADD(DateInterval.Day, dayCount, GetDate(DimDate)), "yyyy-MM-dd") + "T00:00:00]"
 	  End Function
 
 	  Public Function DimDateRange(DimDate As String, dayCount As Int32)
