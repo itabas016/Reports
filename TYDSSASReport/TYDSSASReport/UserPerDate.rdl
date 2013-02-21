@@ -118,9 +118,10 @@
                     <Filters>
                       <Filter>
                         <FilterExpression>=Fields!DATE.Value</FilterExpression>
-                        <Operator>TopN</Operator>
+                        <Operator>Between</Operator>
                         <FilterValues>
-                          <FilterValue>30</FilterValue>
+                          <FilterValue>=Format(DATEADD(DateInterval.Day,-30,Today()), "yyyy-MM-dd" )</FilterValue>
+                          <FilterValue>=Format(DATEADD(DateInterval.Day,-1,Today()), "yyyy-MM-dd" )</FilterValue>
                         </FilterValues>
                       </Filter>
                     </Filters>
@@ -328,6 +329,8 @@
                         <FontSize>8pt</FontSize>
                       </Style>
                     </ChartAxisTitle>
+                    <Interval>1</Interval>
+                    <IntervalType>Days</IntervalType>
                     <VariableAutoInterval>true</VariableAutoInterval>
                     <ChartMajorGridLines>
                       <Enabled>False</Enabled>
@@ -352,6 +355,7 @@
                     <Arrows>Lines</Arrows>
                     <Minimum>NaN</Minimum>
                     <Maximum>NaN</Maximum>
+                    <Angle>-90</Angle>
                     <LabelsAutoFitDisabled>true</LabelsAutoFitDisabled>
                     <ChartAxisScaleBreak>
                       <Style />
@@ -486,6 +490,8 @@
                         <FontSize>8pt</FontSize>
                       </Style>
                     </ChartAxisTitle>
+                    <Interval>1</Interval>
+                    <IntervalType>Days</IntervalType>
                     <VariableAutoInterval>true</VariableAutoInterval>
                     <LabelIntervalType>Days</LabelIntervalType>
                     <ChartMajorGridLines>
@@ -510,6 +516,7 @@
                     <CrossAt>NaN</CrossAt>
                     <Minimum>NaN</Minimum>
                     <Maximum>NaN</Maximum>
+                    <Angle>-90</Angle>
                     <LabelsAutoFitDisabled>true</LabelsAutoFitDisabled>
                     <ChartAxisScaleBreak>
                       <Style />
@@ -1264,6 +1271,12 @@
                       <GroupExpression>=Fields!DATE.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!DATE.Value</Value>
+                      <Direction>Descending</Direction>
+                    </SortExpression>
+                  </SortExpressions>
                   <TablixMembers>
                     <TablixMember />
                   </TablixMembers>
@@ -1277,9 +1290,10 @@
             <Filters>
               <Filter>
                 <FilterExpression>=Fields!DATE.Value</FilterExpression>
-                <Operator>TopN</Operator>
+                <Operator>Between</Operator>
                 <FilterValues>
-                  <FilterValue>30</FilterValue>
+                  <FilterValue>=Format(DATEADD(DateInterval.Day,-30,Today()), "yyyy-MM-dd" )</FilterValue>
+                  <FilterValue>=Format(DATEADD(DateInterval.Day,-1,Today()), "yyyy-MM-dd" )</FilterValue>
                 </FilterValues>
               </Filter>
             </Filters>

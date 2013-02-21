@@ -734,7 +734,7 @@
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Sum(Fields!用户请求.Value)</Y>
+                        <Y>=iif(((Format(Now(), "HH:00" )&gt;Fields!TIME_KEY.Value) or (Fields!DATE.Value&lt;Format(Now(),"yyyy-MM-dd"))) ,Sum(Fields!用户请求.Value), Nothing)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
@@ -774,7 +774,7 @@
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Sum(Fields!激活用户.Value)</Y>
+                        <Y>=iif(((Format(Now(), "HH:00" )&gt;Fields!TIME_KEY.Value) or (Fields!DATE.Value&lt;Format(Now(),"yyyy-MM-dd"))) ,Sum(Fields!激活用户.Value), Nothing)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
