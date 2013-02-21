@@ -17,12 +17,24 @@
       <FullPath>AppDownload.rsd</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>AppDownloadSuccess.rsd</Name>
+      <FullPath>AppDownloadSuccess.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DimApp.rsd</Name>
+      <FullPath>DimApp.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>DimChannel.rsd</Name>
       <FullPath>DimChannel.rsd</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>DimDate.rsd</Name>
       <FullPath>DimDate.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DimTydApp.rsd</Name>
+      <FullPath>DimTydApp.rsd</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>UserPerDate.rsd</Name>
@@ -32,31 +44,19 @@
       <Name>UserPerMinute.rsd</Name>
       <FullPath>UserPerMinute.rsd</FullPath>
     </ProjectItem>
-    <ProjectItem>
-      <Name>DimApp.rsd</Name>
-      <FullPath>DimApp.rsd</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>DimTydApp.rsd</Name>
-      <FullPath>DimTydApp.rsd</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>AppDownloadSuccess.rsd</Name>
-      <FullPath>AppDownloadSuccess.rsd</FullPath>
-    </ProjectItem>
   </DataSets>
   <Reports>
     <ProjectItem>
+      <Name>AppDownloadPerDate.rdl</Name>
+      <FullPath>AppDownloadPerDate.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>AppDownloadSuccessPerDate.rdl</Name>
+      <FullPath>AppDownloadSuccessPerDate.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>ChannelUserPerDate.rdl</Name>
       <FullPath>ChannelUserPerDate.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Report2.rdl</Name>
-      <FullPath>Report2.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Report3.rdl</Name>
-      <FullPath>Report3.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>UserPerDate.rdl</Name>
@@ -67,12 +67,8 @@
       <FullPath>UserPerHour.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>AppDownloadPerDate.rdl</Name>
-      <FullPath>AppDownloadPerDate.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>AppDownloadSuccessPerDate.rdl</Name>
-      <FullPath>AppDownloadSuccessPerDate.rdl</FullPath>
+      <Name>AppDownloadDetail.rdl</Name>
+      <FullPath>AppDownloadDetail.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>

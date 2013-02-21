@@ -509,7 +509,7 @@
             <Top>0.35938in</Top>
             <Left>0.36458in</Left>
             <Height>0.75in</Height>
-            <Width>3.45834in</Width>
+            <Width>3.45833in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -581,7 +581,7 @@
                     </CustomProperty>
                     <CustomProperty>
                       <Name>CollectedThreshold</Name>
-                      <Value>2</Value>
+                      <Value>1.5</Value>
                     </CustomProperty>
                     <CustomProperty>
                       <Name>CollectedChartShowLegend</Name>
@@ -614,6 +614,14 @@
                     <CustomProperty>
                       <Name>CollectedToolTip</Name>
                       <Value>Other</Value>
+                    </CustomProperty>
+                    <CustomProperty>
+                      <Name>CollectedSliceExploded</Name>
+                      <Value>false</Value>
+                    </CustomProperty>
+                    <CustomProperty>
+                      <Name>CollectedLabel</Name>
+                      <Value>="Other"</Value>
                     </CustomProperty>
                   </CustomProperties>
                   <ChartItemInLegend>
@@ -892,7 +900,6 @@
           <LabelField>ParameterCaption</LabelField>
         </DataSetReference>
       </ValidValues>
-      <MultiValue>true</MultiValue>
     </ReportParameter>
     <ReportParameter Name="TARGETAPPID">
       <DataType>String</DataType>

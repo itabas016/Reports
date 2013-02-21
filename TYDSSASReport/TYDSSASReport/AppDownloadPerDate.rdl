@@ -580,10 +580,6 @@
                       <Value>SingleSlice</Value>
                     </CustomProperty>
                     <CustomProperty>
-                      <Name>CollectedThreshold</Name>
-                      <Value>2</Value>
-                    </CustomProperty>
-                    <CustomProperty>
                       <Name>CollectedChartShowLegend</Name>
                       <Value>true</Value>
                     </CustomProperty>
@@ -614,6 +610,18 @@
                     <CustomProperty>
                       <Name>CollectedToolTip</Name>
                       <Value>Other</Value>
+                    </CustomProperty>
+                    <CustomProperty>
+                      <Name>CollectedLabel</Name>
+                      <Value>="Other"</Value>
+                    </CustomProperty>
+                    <CustomProperty>
+                      <Name>CollectedThresholdUsePercent</Name>
+                      <Value>true</Value>
+                    </CustomProperty>
+                    <CustomProperty>
+                      <Name>CollectedThreshold</Name>
+                      <Value>1.5</Value>
                     </CustomProperty>
                   </CustomProperties>
                   <ChartItemInLegend>
@@ -911,6 +919,7 @@
         </DataSetReference>
       </ValidValues>
       <MultiValue>true</MultiValue>
+      <UsedInQuery>True</UsedInQuery>
     </ReportParameter>
   </ReportParameters>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
