@@ -27,7 +27,7 @@
             <Name>_ALL_TABLES_</Name>
             <DiagramLayout>
               <dds>
-                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="166" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="6683" scrolltop="4165" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="80" x="32623" y="19341" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="166" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="6683" scrolltop="4165" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="80" x="28125" y="19341" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                   <font>
                     <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                   </font>
@@ -2125,7 +2125,7 @@
                     </xs:simpleType>
                   </xs:element>
                   <xs:element name="CREATE_TIME" msprop:FriendlyName="CREATE_TIME" msprop:DbColumnName="CREATE_TIME" msprop:design-time-name="a5a61fb3-1a02-400b-ada6-0963940f769d" type="xs:dateTime" minOccurs="0" />
-                  <xs:element name="ID" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="d9e02897-9c91-4c08-9d01-22d3bccfd71c" type="xs:long" />
+                  <xs:element name="ID" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="d9e02897-9c91-4c08-9d01-22d3bccfd71c" type="xs:long" minOccurs="0" />
                   <xs:element name="RESOLUTION_ID" msprop:FriendlyName="RESOLUTION_ID" msprop:DbColumnName="RESOLUTION_ID" msprop:design-time-name="7d8421be-5a23-4272-a6ba-4cd3ef6fd192" type="xs:long" minOccurs="0" />
                   <xs:element name="MACHINE_TYPE_ID" msprop:FriendlyName="MACHINE_TYPE_ID" msprop:DbColumnName="MACHINE_TYPE_ID" msprop:design-time-name="501f7086-5b6d-4871-9599-fe3872535c19" type="xs:long" minOccurs="0" />
                   <xs:element name="BATCH_ID" msprop:FriendlyName="BATCH_ID" msprop:DbColumnName="BATCH_ID" msprop:design-time-name="599aa587-28b5-4a5d-825d-d8bcde84a93e" type="xs:long" minOccurs="0" />

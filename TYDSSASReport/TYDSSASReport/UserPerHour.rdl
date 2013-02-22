@@ -698,7 +698,7 @@
                       </ChartDataLabel>
                       <Style>
                         <Border>
-                          <Width>=iif(Fields!DATE.Value&gt;=Code.GetDateText(Parameters!DATEDATE.Value), "1.5pt" , "1.0pt")</Width>
+                          <Width>=iif(Fields!DATE.Value&gt;=Code.GetDateText(Parameters!DATEDATE.Value), "2pt" , "1.0pt")</Width>
                         </Border>
                       </Style>
                       <ChartMarker>
@@ -739,7 +739,11 @@
                       <ChartDataLabel>
                         <Style />
                       </ChartDataLabel>
-                      <Style />
+                      <Style>
+                        <Border>
+                          <Width>=iif(Fields!DATE.Value&gt;=Code.GetDateText(Parameters!DATEDATE.Value), "2pt" , "1.0pt")</Width>
+                        </Border>
+                      </Style>
                       <ChartMarker>
                         <Style />
                       </ChartMarker>
@@ -779,7 +783,11 @@
                       <ChartDataLabel>
                         <Style />
                       </ChartDataLabel>
-                      <Style />
+                      <Style>
+                        <Border>
+                          <Width>=iif(Fields!DATE.Value&gt;=Code.GetDateText(Parameters!DATEDATE.Value), "2pt" , "1.0pt")</Width>
+                        </Border>
+                      </Style>
                       <ChartMarker>
                         <Style />
                       </ChartMarker>
