@@ -36,15 +36,15 @@
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
-          <ProactiveCaching dwd:design-time-name="63a68832-a16d-47d0-8ef8-dadb707ed943">
-            <SilenceInterval>PT10S</SilenceInterval>
+          <ProactiveCaching dwd:design-time-name="f6e33544-0366-455a-828a-fdd73e4beefb">
+            <SilenceInterval>PT2M</SilenceInterval>
             <Latency>-PT1S</Latency>
             <SilenceOverrideInterval>PT10M</SilenceOverrideInterval>
             <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
             <Enabled>true</Enabled>
             <OnlineMode>OnCacheComplete</OnlineMode>
             <AggregationStorage>MolapOnly</AggregationStorage>
-            <Source xsi:type="ProactiveCachingIncrementalProcessingBinding" dwd:design-time-name="1199e751-d25e-4224-99ed-3b16c9ffbaac">
+            <Source xsi:type="ProactiveCachingIncrementalProcessingBinding" dwd:design-time-name="663afa3e-dad0-46db-8813-9aa57126e74e">
               <RefreshInterval>PT20M</RefreshInterval>
               <IncrementalProcessingNotifications>
                 <IncrementalProcessingNotification>
@@ -93,15 +93,15 @@
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
-          <ProactiveCaching dwd:design-time-name="92c27ddd-16a6-4333-b9ab-ad77a21ab351">
-            <SilenceInterval>PT10S</SilenceInterval>
+          <ProactiveCaching dwd:design-time-name="d9749a30-406b-42b3-93bb-0a41f5fd2c5c">
+            <SilenceInterval>PT2M</SilenceInterval>
             <Latency>-PT1S</Latency>
             <SilenceOverrideInterval>PT10M</SilenceOverrideInterval>
             <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
             <Enabled>true</Enabled>
             <OnlineMode>OnCacheComplete</OnlineMode>
             <AggregationStorage>MolapOnly</AggregationStorage>
-            <Source xsi:type="ProactiveCachingIncrementalProcessingBinding" dwd:design-time-name="bdcf4f0a-8d10-47d2-a2ef-32b30ad5c80c">
+            <Source xsi:type="ProactiveCachingIncrementalProcessingBinding" dwd:design-time-name="6c965986-3f94-409b-8ca5-757eade82e38">
               <RefreshInterval>PT20M</RefreshInterval>
               <IncrementalProcessingNotifications>
                 <IncrementalProcessingNotification>
@@ -150,15 +150,15 @@
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
-          <ProactiveCaching dwd:design-time-name="bb385608-9e66-4c29-bccd-9ac7b8124c64">
-            <SilenceInterval>PT10S</SilenceInterval>
+          <ProactiveCaching dwd:design-time-name="a712882a-e659-495f-abe0-bfbef6b4f767">
+            <SilenceInterval>PT2M</SilenceInterval>
             <Latency>-PT1S</Latency>
             <SilenceOverrideInterval>PT10M</SilenceOverrideInterval>
             <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
             <Enabled>true</Enabled>
             <OnlineMode>OnCacheComplete</OnlineMode>
             <AggregationStorage>MolapOnly</AggregationStorage>
-            <Source xsi:type="ProactiveCachingIncrementalProcessingBinding" dwd:design-time-name="393ca6fc-990b-4206-8704-4919f1f0450a">
+            <Source xsi:type="ProactiveCachingIncrementalProcessingBinding" dwd:design-time-name="40bf1af1-7347-4d4b-a5bb-2ac20899ae7e">
               <RefreshInterval>PT20M</RefreshInterval>
               <IncrementalProcessingNotifications>
                 <IncrementalProcessingNotification>
@@ -175,7 +175,7 @@
     <MeasureGroup>
       <ID>ACTIVATED USER</ID>
       <Partitions>
-        <Partition dwd:design-time-name="f9447c83-06da-4da9-8c02-4944f439d25f">
+        <Partition dwd:design-time-name="e56fae9a-d490-45c6-a5ff-c6a29335031e">
           <ID>ACTIVATED USER</ID>
           <Name>ACTIVATED USER</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -188,11 +188,11 @@
   &lt;NotificationDesignerDetails&gt;
     &lt;PollingQuery&gt;
       &lt;DesignerType&gt;Generic&lt;/DesignerType&gt;
-      &lt;Query&gt;select  max(ID) from ACTIVATED_USER&lt;/Query&gt;
+      &lt;Query&gt;SELECT MAX(ID) FROM STORE.ACTIVATED_USER&lt;/Query&gt;
     &lt;/PollingQuery&gt;
     &lt;ProcessingQuery&gt;
       &lt;DesignerType&gt;Generic&lt;/DesignerType&gt;
-      &lt;Query&gt;SELECT "STORE"."ACTIVATED_USER".*,trunc("STORE"."ACTIVATED_USER".CREATE_TIME) "CREATE_DATE",SUBSTR(TO_CHAR("STORE"."ACTIVATED_USER".CREATE_TIME,'hh24:mi:ss'),0,4) as TIME_KEY,"STORE"."USER_INFO"."CHANNEL_ID","STORE"."USER_INFO"."RESOLUTION_ID","STORE"."USER_INFO"."MACHINE_TYPE_ID","STORE"."USER_INFO"."BATCH_ID","STORE"."USER_INFO"."BRAND_MODEL_ID","STORE"."USER_INFO"."ANDROID_VERSION_ID","STORE"."USER_INFO"."PROVINCE_ID","STORE"."USER_INFO"."CITY_ID","STORE"."USER_INFO"."DOMAIN_NAME_ID","STORE"."USER_INFO"."FROM_APP_ID","STORE"."USER_INFO"."NETWORK_TYPE_ID"  FROM "STORE"."ACTIVATED_USER" INNER JOIN "STORE"."USER_INFO" ON "STORE"."ACTIVATED_USER"."USER_ID"="STORE"."USER_INFO"."ID" WHERE "STORE"."ACTIVATED_USER"."ID" &amp;gt; :1 AND "STORE"."ACTIVATED_USER"."ID" &amp;lt;= :2&lt;/Query&gt;
+      &lt;Query&gt;SELECT A.ID, A.USER_ID,A.CREATE_TIME,trunc(A.CREATE_TIME) CREATE_DATE,SUBSTR(TO_CHAR(A.CREATE_TIME,'hh24:mi:ss'),0,4) as TIME_KEY,B.CHANNEL_ID,B.RESOLUTION_ID,B.MACHINE_TYPE_ID,B.BATCH_ID,B.BRAND_MODEL_ID,B.ANDROID_VERSION_ID,B.PROVINCE_ID,B.CITY_ID,B.DOMAIN_NAME_ID,B.FROM_APP_ID,B.NETWORK_TYPE_ID  FROM STORE.ACTIVATED_USER A INNER JOIN USER_INFO B ON A.USER_ID=B.ID  WHERE A.ID&amp;gt;:1 AND A.ID&amp;lt;=:2&lt;/Query&gt;
     &lt;/ProcessingQuery&gt;
   &lt;/NotificationDesignerDetails&gt;
 &lt;/DesignerTypes&gt;</Value>
@@ -200,28 +200,28 @@
           </Annotations>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ffd48f2b-c0ce-45d4-b652-fbc957674f71">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="29c3c636-676b-4389-8b2b-1bc803b8fa36">
             <DataSourceViewID>hynew</DataSourceViewID>
             <TableID>MAIN_ACTIVATED_USER</TableID>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
-          <ProactiveCaching dwd:design-time-name="00acbc4d-9769-45f4-80e3-241820fedd37">
-            <SilenceInterval>PT10S</SilenceInterval>
+          <ProactiveCaching dwd:design-time-name="78014a44-8826-41b1-beae-fffcfc634708">
+            <SilenceInterval>PT2M</SilenceInterval>
             <Latency>-PT1S</Latency>
             <SilenceOverrideInterval>PT10M</SilenceOverrideInterval>
             <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
             <Enabled>true</Enabled>
             <OnlineMode>OnCacheComplete</OnlineMode>
             <AggregationStorage>MolapOnly</AggregationStorage>
-            <Source xsi:type="ProactiveCachingIncrementalProcessingBinding" dwd:design-time-name="06984eec-a810-4266-9fef-ef59da2a2d99">
+            <Source xsi:type="ProactiveCachingIncrementalProcessingBinding" dwd:design-time-name="df7acf10-8daf-487e-8046-5031deea5e6f">
               <RefreshInterval>PT20M</RefreshInterval>
               <IncrementalProcessingNotifications>
                 <IncrementalProcessingNotification>
-                  <Query>select  max(ID) from ACTIVATED_USER</Query>
-                  <TableID>ACTIVATED_USER</TableID>
-                  <ProcessingQuery>SELECT "STORE"."ACTIVATED_USER".*,trunc("STORE"."ACTIVATED_USER".CREATE_TIME) "CREATE_DATE",SUBSTR(TO_CHAR("STORE"."ACTIVATED_USER".CREATE_TIME,'hh24:mi:ss'),0,4) as TIME_KEY,"STORE"."USER_INFO"."CHANNEL_ID","STORE"."USER_INFO"."RESOLUTION_ID","STORE"."USER_INFO"."MACHINE_TYPE_ID","STORE"."USER_INFO"."BATCH_ID","STORE"."USER_INFO"."BRAND_MODEL_ID","STORE"."USER_INFO"."ANDROID_VERSION_ID","STORE"."USER_INFO"."PROVINCE_ID","STORE"."USER_INFO"."CITY_ID","STORE"."USER_INFO"."DOMAIN_NAME_ID","STORE"."USER_INFO"."FROM_APP_ID","STORE"."USER_INFO"."NETWORK_TYPE_ID"  FROM "STORE"."ACTIVATED_USER" INNER JOIN "STORE"."USER_INFO" ON "STORE"."ACTIVATED_USER"."USER_ID"="STORE"."USER_INFO"."ID" WHERE "STORE"."ACTIVATED_USER"."ID" &gt; :1 AND "STORE"."ACTIVATED_USER"."ID" &lt;= :2</ProcessingQuery>
+                  <Query>SELECT MAX(ID) FROM STORE.ACTIVATED_USER</Query>
+                  <TableID>MAIN_ACTIVATED_USER</TableID>
+                  <ProcessingQuery>SELECT A.ID, A.USER_ID,A.CREATE_TIME,trunc(A.CREATE_TIME) CREATE_DATE,SUBSTR(TO_CHAR(A.CREATE_TIME,'hh24:mi:ss'),0,4) as TIME_KEY,B.CHANNEL_ID,B.RESOLUTION_ID,B.MACHINE_TYPE_ID,B.BATCH_ID,B.BRAND_MODEL_ID,B.ANDROID_VERSION_ID,B.PROVINCE_ID,B.CITY_ID,B.DOMAIN_NAME_ID,B.FROM_APP_ID,B.NETWORK_TYPE_ID  FROM STORE.ACTIVATED_USER A INNER JOIN USER_INFO B ON A.USER_ID=B.ID  WHERE A.ID&gt;:1 AND A.ID&lt;=:2</ProcessingQuery>
                 </IncrementalProcessingNotification>
               </IncrementalProcessingNotifications>
             </Source>
