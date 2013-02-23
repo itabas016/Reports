@@ -364,7 +364,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -692,12 +691,6 @@
                           <GroupExpression>=Fields!ID2.Value</GroupExpression>
                         </GroupExpressions>
                       </Group>
-                      <SortExpressions>
-                        <SortExpression>
-                          <Value>=Fields!活跃用户.Value</Value>
-                          <Direction>Descending</Direction>
-                        </SortExpression>
-                      </SortExpressions>
                       <TablixHeader>
                         <Size>1.91667in</Size>
                         <CellContents>
@@ -775,6 +768,12 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>AppDownload</DataSetName>
+            <SortExpressions>
+              <SortExpression>
+                <Value>=Fields!活跃用户.Value</Value>
+                <Direction>Descending</Direction>
+              </SortExpression>
+            </SortExpressions>
             <Top>0.25917in</Top>
             <Left>0.23833in</Left>
             <Height>0.75in</Height>
@@ -1128,6 +1127,8 @@
       </Body>
       <Width>11.88416in</Width>
       <Page>
+        <InteractiveHeight>0in</InteractiveHeight>
+        <InteractiveWidth>8.5in</InteractiveWidth>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
         <TopMargin>1in</TopMargin>
