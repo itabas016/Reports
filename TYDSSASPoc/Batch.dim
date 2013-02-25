@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3869" scrolltop="-7012" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9790" y="18018" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3869" scrolltop="-7012" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9340" y="17330" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -81,7 +81,7 @@
   <Attributes>
     <Attribute dwd:design-time-name="72cb0990-fe6e-4c90-be8c-1441b4bf9e7c">
       <ID>ID</ID>
-      <Name>ID</Name>
+      <Name>Batch</Name>
       <Usage>Key</Usage>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="d81fab57-8fb2-41c1-95a1-d762b65be727">
@@ -110,12 +110,16 @@
           <AttributeID>GRAND NAME</AttributeID>
           <Name>GRAND NAME</Name>
         </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5e516039-c444-419c-859e-9d333c4063bc">
+          <AttributeID>ID 1</AttributeID>
+          <Name>ID_</Name>
+        </AttributeRelationship>
       </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
     <Attribute dwd:design-time-name="6aed2013-8ac0-46af-8b3a-cfab9ad79e44">
       <ID>PARENT NAME</ID>
-      <Name>PARENT NAME</Name>
+      <Name>BatchGrand</Name>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="230fd256-10c3-4f2e-81d0-9552798ae16f">
           <DataType>WChar</DataType>
@@ -131,7 +135,7 @@
     </Attribute>
     <Attribute dwd:design-time-name="2cc79e78-6de8-4642-ab8b-a79519f98122">
       <ID>GRAND NAME</ID>
-      <Name>GRAND NAME</Name>
+      <Name>BatchParent</Name>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="aeb2a5d0-4f0c-4fa0-a0af-007a991f1ce0">
           <DataType>WChar</DataType>
@@ -143,6 +147,20 @@
         </KeyColumn>
       </KeyColumns>
       <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1e8d1749-eb48-4fa0-b9c4-5be0af8d9474">
+      <ID>ID 1</ID>
+      <Name>BatchId</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1990ff43-0b9c-4f16-896d-1ea2c7b72825">
+          <DataType>BigInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4b970b47-da7e-4ea9-813c-3ac23426186a">
+            <TableID>Batch</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
   </Attributes>

@@ -9,11 +9,11 @@
           <QueryParameter Name="DATEDATE">
             <Value>=Parameters!DATEDATE.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="CHANNELPARENTNAME">
-            <Value>=Parameters!CHANNELPARENTNAME.Value</Value>
+          <QueryParameter Name="CHANNELChannelParent">
+            <Value>=Parameters!CHANNELChannelParent.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="TARGETAPPID">
-            <Value>=Parameters!TARGETAPPID.Value</Value>
+          <QueryParameter Name="TARGETAPPAppId">
+            <Value>=Parameters!TARGETAPPAppId.Value</Value>
           </QueryParameter>
         </QueryParameters>
       </SharedDataSet>
@@ -22,29 +22,37 @@
           <DataField>YEAR</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="YEAR_MONTH_CN">
-          <DataField>YEAR_MONTH_CN</DataField>
+        <Field Name="Month">
+          <DataField>Month</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="DATE">
           <DataField>DATE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="PARENT_NAME">
-          <DataField>PARENT_NAME</DataField>
+        <Field Name="Time">
+          <DataField>Time</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ID">
-          <DataField>ID</DataField>
+        <Field Name="App">
+          <DataField>App</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ID2">
-          <DataField>ID2</DataField>
+        <Field Name="ChannelParent">
+          <DataField>ChannelParent</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="活跃用户">
           <DataField>活跃用户</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="AppId">
+          <DataField>AppId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Channel">
+          <DataField>Channel</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
@@ -52,14 +60,14 @@
       <SharedDataSet>
         <SharedDataSetReference>AppDownloadSuccess</SharedDataSetReference>
         <QueryParameters>
-          <QueryParameter Name="CHANNELPARENTNAME">
-            <Value>=Parameters!CHANNELPARENTNAME.Value</Value>
+          <QueryParameter Name="CHANNELChannelParent">
+            <Value>=Parameters!CHANNELChannelParent.Value</Value>
           </QueryParameter>
           <QueryParameter Name="DATEDATE">
             <Value>=Parameters!DATEDATE.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="TARGETAPPID">
-            <Value>=Parameters!TARGETAPPID.Value</Value>
+          <QueryParameter Name="TARGETAPPAppId">
+            <Value>=Parameters!TARGETAPPAppId.Value</Value>
           </QueryParameter>
         </QueryParameters>
       </SharedDataSet>
@@ -68,29 +76,37 @@
           <DataField>YEAR</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="YEAR_MONTH_CN">
-          <DataField>YEAR_MONTH_CN</DataField>
+        <Field Name="Month">
+          <DataField>Month</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="DATE">
           <DataField>DATE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="PARENT_NAME">
-          <DataField>PARENT_NAME</DataField>
+        <Field Name="Time">
+          <DataField>Time</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ID">
-          <DataField>ID</DataField>
+        <Field Name="ChannelParent">
+          <DataField>ChannelParent</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ID2">
-          <DataField>ID2</DataField>
+        <Field Name="Channel">
+          <DataField>Channel</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="活跃用户">
           <DataField>活跃用户</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="AppId">
+          <DataField>AppId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="App">
+          <DataField>App</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
@@ -125,8 +141,8 @@
         <SharedDataSetReference>DimChannel</SharedDataSetReference>
       </SharedDataSet>
       <Fields>
-        <Field Name="PARENT_NAME">
-          <DataField>PARENT_NAME</DataField>
+        <Field Name="ChannelParent">
+          <DataField>ChannelParent</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ParameterCaption">
@@ -148,8 +164,8 @@
         <SharedDataSetReference>DimApp</SharedDataSetReference>
       </SharedDataSet>
       <Fields>
-        <Field Name="ID">
-          <DataField>ID</DataField>
+        <Field Name="App">
+          <DataField>App</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ParameterCaption">
@@ -531,14 +547,14 @@
       </ValidValues>
       <MultiValue>true</MultiValue>
     </ReportParameter>
-    <ReportParameter Name="CHANNELPARENTNAME">
+    <ReportParameter Name="CHANNELChannelParent">
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>="[CHANNEL].[PARENT NAME].[All]"</Value>
+          <Value>="[CHANNEL].[ChannelParent].[All]"</Value>
         </Values>
       </DefaultValue>
-      <Prompt>CHANNELPARENTNAME</Prompt>
+      <Prompt>CHANNELChannelParent</Prompt>
       <ValidValues>
         <DataSetReference>
           <DataSetName>DimChannel</DataSetName>
@@ -548,14 +564,14 @@
       </ValidValues>
       <MultiValue>true</MultiValue>
     </ReportParameter>
-    <ReportParameter Name="TARGETAPPID">
+    <ReportParameter Name="TARGETAPPAppId">
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>="[TARGET APP].[ID].&amp;[3]"</Value>
+          <Value>="[TARGET APP].[App].&amp;[3]"</Value>
         </Values>
       </DefaultValue>
-      <Prompt>TARGETAPPID</Prompt>
+      <Prompt>TARGETAPPAppId</Prompt>
       <ValidValues>
         <DataSetReference>
           <DataSetName>DimApp</DataSetName>

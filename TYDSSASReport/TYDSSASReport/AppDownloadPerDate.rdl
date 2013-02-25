@@ -9,11 +9,11 @@
           <QueryParameter Name="DATEDATE">
             <Value>=Parameters!DATEDATE.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="CHANNELPARENTNAME">
-            <Value>=Parameters!CHANNELPARENTNAME.Value</Value>
+          <QueryParameter Name="CHANNELChannelParent">
+            <Value>=Parameters!CHANNELChannelParent.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="TARGETAPPID">
-            <Value>=Parameters!TARGETAPPID.Value</Value>
+          <QueryParameter Name="TARGETAPPAppId">
+            <Value>=Parameters!TARGETAPPAppId.Value</Value>
           </QueryParameter>
         </QueryParameters>
       </SharedDataSet>
@@ -22,29 +22,37 @@
           <DataField>YEAR</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="YEAR_MONTH_CN">
-          <DataField>YEAR_MONTH_CN</DataField>
+        <Field Name="Month">
+          <DataField>Month</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="DATE">
           <DataField>DATE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="PARENT_NAME">
-          <DataField>PARENT_NAME</DataField>
+        <Field Name="Time">
+          <DataField>Time</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ID">
-          <DataField>ID</DataField>
+        <Field Name="App">
+          <DataField>App</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ID2">
-          <DataField>ID2</DataField>
+        <Field Name="ChannelParent">
+          <DataField>ChannelParent</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="活跃用户">
           <DataField>活跃用户</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="AppId">
+          <DataField>AppId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Channel">
+          <DataField>Channel</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
@@ -53,8 +61,8 @@
         <SharedDataSetReference>DimApp</SharedDataSetReference>
       </SharedDataSet>
       <Fields>
-        <Field Name="ID">
-          <DataField>ID</DataField>
+        <Field Name="App">
+          <DataField>App</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ParameterCaption">
@@ -102,8 +110,8 @@
         <SharedDataSetReference>DimChannel</SharedDataSetReference>
       </SharedDataSet>
       <Fields>
-        <Field Name="PARENT_NAME">
-          <DataField>PARENT_NAME</DataField>
+        <Field Name="ChannelParent">
+          <DataField>ChannelParent</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ParameterCaption">
@@ -159,14 +167,14 @@
       <SharedDataSet>
         <SharedDataSetReference>AppDownloadSuccess</SharedDataSetReference>
         <QueryParameters>
-          <QueryParameter Name="CHANNELPARENTNAME">
-            <Value>=Parameters!CHANNELPARENTNAME.Value</Value>
+          <QueryParameter Name="CHANNELChannelParent">
+            <Value>=Parameters!CHANNELChannelParent.Value</Value>
           </QueryParameter>
           <QueryParameter Name="DATEDATE">
             <Value>=Parameters!DATEDATE.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="TARGETAPPID">
-            <Value>=Parameters!TARGETAPPID.Value</Value>
+          <QueryParameter Name="TARGETAPPAppId">
+            <Value>=Parameters!TARGETAPPAppId.Value</Value>
           </QueryParameter>
         </QueryParameters>
       </SharedDataSet>
@@ -175,29 +183,37 @@
           <DataField>YEAR</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="YEAR_MONTH_CN">
-          <DataField>YEAR_MONTH_CN</DataField>
+        <Field Name="Month">
+          <DataField>Month</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="DATE">
           <DataField>DATE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="PARENT_NAME">
-          <DataField>PARENT_NAME</DataField>
+        <Field Name="Time">
+          <DataField>Time</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ID">
-          <DataField>ID</DataField>
+        <Field Name="ChannelParent">
+          <DataField>ChannelParent</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ID2">
-          <DataField>ID2</DataField>
+        <Field Name="App">
+          <DataField>App</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Channel">
+          <DataField>Channel</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="活跃用户">
           <DataField>活跃用户</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="AppId">
+          <DataField>AppId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
@@ -288,19 +304,54 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>0.76042in</Width>
+                  <Width>0.5918in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.79167in</Width>
+                  <Width>0.77931in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>0.81056in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.01889in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
                   <Height>0.25in</Height>
                   <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="AppId">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!AppId.Value</Value>
+                                  <Style>
+                                    <FontFamily>Tahoma</FontFamily>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>AppId</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="活跃用户">
@@ -343,7 +394,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Lookup(Fields!ID2.Value,Fields!ID2.Value,Fields!活跃用户.Value, "AppDownloadSuccess")</Value>
+                                  <Value>=Lookup(Fields!AppId.Value,Fields!AppId.Value,Fields!活跃用户.Value, "AppDownloadSuccess")</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                   </Style>
@@ -375,7 +426,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Format(Lookup(Fields!ID2.Value,Fields!ID2.Value,Fields!活跃用户.Value, "AppDownloadSuccess")/Fields!活跃用户.Value, "P")</Value>
+                                  <Value>=Format(Lookup(Fields!AppId.Value,Fields!AppId.Value,Fields!活跃用户.Value, "AppDownloadSuccess")/Fields!活跃用户.Value, "P")</Value>
                                   <Style>
                                     <FontFamily>Tahoma</FontFamily>
                                   </Style>
@@ -403,6 +454,38 @@
                 <TablixRow>
                   <Height>0.25in</Height>
                   <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox11">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Tahoma</FontFamily>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox11</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox26">
@@ -513,6 +596,45 @@
                     </GroupExpressions>
                   </Group>
                   <TablixMembers>
+                    <TablixMember>
+                      <TablixHeader>
+                        <Size>0.25in</Size>
+                        <CellContents>
+                          <Textbox Name="Textbox1">
+                            <CanGrow>true</CanGrow>
+                            <KeepTogether>true</KeepTogether>
+                            <Paragraphs>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value>App Id</Value>
+                                    <Style>
+                                      <FontWeight>Bold</FontWeight>
+                                      <Color>White</Color>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style>
+                                  <TextAlign>General</TextAlign>
+                                </Style>
+                              </Paragraph>
+                            </Paragraphs>
+                            <rd:DefaultName>Textbox1</rd:DefaultName>
+                            <Style>
+                              <Border>
+                                <Color>LightGrey</Color>
+                                <Style>Solid</Style>
+                              </Border>
+                              <BackgroundColor>CornflowerBlue</BackgroundColor>
+                              <PaddingLeft>2pt</PaddingLeft>
+                              <PaddingRight>2pt</PaddingRight>
+                              <PaddingTop>2pt</PaddingTop>
+                              <PaddingBottom>2pt</PaddingBottom>
+                            </Style>
+                          </Textbox>
+                        </CellContents>
+                      </TablixHeader>
+                    </TablixMember>
                     <TablixMember>
                       <TablixHeader>
                         <Size>0.25in</Size>
@@ -654,7 +776,7 @@
                     </SortExpression>
                   </SortExpressions>
                   <TablixHeader>
-                    <Size>0.79167in</Size>
+                    <Size>0.68556in</Size>
                     <CellContents>
                       <Textbox Name="DATE">
                         <CanGrow>true</CanGrow>
@@ -686,22 +808,22 @@
                   </TablixHeader>
                   <TablixMembers>
                     <TablixMember>
-                      <Group Name="ID2">
+                      <Group Name="App">
                         <GroupExpressions>
-                          <GroupExpression>=Fields!ID2.Value</GroupExpression>
+                          <GroupExpression>=Fields!App.Value</GroupExpression>
                         </GroupExpressions>
                       </Group>
                       <TablixHeader>
-                        <Size>1.91667in</Size>
+                        <Size>1.75848in</Size>
                         <CellContents>
-                          <Textbox Name="ID2">
+                          <Textbox Name="App">
                             <CanGrow>true</CanGrow>
                             <KeepTogether>true</KeepTogether>
                             <Paragraphs>
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>=Fields!ID2.Value</Value>
+                                    <Value>=Fields!App.Value</Value>
                                     <Style>
                                       <FontFamily>Tahoma</FontFamily>
                                       <Format>N0</Format>
@@ -711,7 +833,7 @@
                                 <Style />
                               </Paragraph>
                             </Paragraphs>
-                            <rd:DefaultName>ID2</rd:DefaultName>
+                            <rd:DefaultName>App</rd:DefaultName>
                             <Style>
                               <Border>
                                 <Color>LightGrey</Color>
@@ -728,26 +850,25 @@
                     </TablixMember>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>1.91667in</Size>
+                        <Size>1.75848in</Size>
                         <CellContents>
-                          <Textbox Name="Textbox25">
+                          <Textbox Name="Textbox17">
                             <CanGrow>true</CanGrow>
                             <KeepTogether>true</KeepTogether>
                             <Paragraphs>
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>Total</Value>
+                                    <Value />
                                     <Style>
                                       <FontFamily>Tahoma</FontFamily>
-                                      <Format>N0</Format>
                                     </Style>
                                   </TextRun>
                                 </TextRuns>
                                 <Style />
                               </Paragraph>
                             </Paragraphs>
-                            <rd:DefaultName>Textbox25</rd:DefaultName>
+                            <rd:DefaultName>Textbox17</rd:DefaultName>
                             <Style>
                               <Border>
                                 <Color>LightGrey</Color>
@@ -761,7 +882,6 @@
                           </Textbox>
                         </CellContents>
                       </TablixHeader>
-                      <KeepWithGroup>Before</KeepWithGroup>
                     </TablixMember>
                   </TablixMembers>
                 </TablixMember>
@@ -775,9 +895,8 @@
               </SortExpression>
             </SortExpressions>
             <Top>0.25917in</Top>
-            <Left>0.23833in</Left>
             <Height>0.75in</Height>
-            <Width>5.26043in</Width>
+            <Width>5.64458in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -790,15 +909,15 @@
                 <ChartMember>
                   <Group Name="Chart1_CategoryGroup">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!ID2.Value</GroupExpression>
+                      <GroupExpression>=Fields!App.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!ID2.Value</Value>
+                      <Value>=Fields!App.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!ID2.Value</Label>
+                  <Label>=Fields!App.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
@@ -821,7 +940,7 @@
                         <Style>
                           <FontSize>8pt</FontSize>
                         </Style>
-                        <Label>=Fields!ID2.Value</Label>
+                        <Label>=Fields!App.Value</Label>
                         <Visible>true</Visible>
                       </ChartDataLabel>
                       <Style />
@@ -1154,14 +1273,14 @@
         </DataSetReference>
       </ValidValues>
     </ReportParameter>
-    <ReportParameter Name="CHANNELPARENTNAME">
+    <ReportParameter Name="CHANNELChannelParent">
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>[CHANNEL].[PARENT NAME].[All]</Value>
+          <Value>="[CHANNEL].[ChannelParent].[All]"</Value>
         </Values>
       </DefaultValue>
-      <Prompt>CHANNELPARENTNAME</Prompt>
+      <Prompt>CHANNELChannelParent</Prompt>
       <ValidValues>
         <DataSetReference>
           <DataSetName>DimChannel</DataSetName>
@@ -1171,7 +1290,7 @@
       </ValidValues>
       <MultiValue>true</MultiValue>
     </ReportParameter>
-    <ReportParameter Name="TARGETAPPID">
+    <ReportParameter Name="TARGETAPPAppId">
       <DataType>String</DataType>
       <DefaultValue>
         <DataSetReference>
@@ -1179,7 +1298,7 @@
           <ValueField>TARGET_ID</ValueField>
         </DataSetReference>
       </DefaultValue>
-      <Prompt>TARGETAPPID</Prompt>
+      <Prompt>TARGETAPPAppId</Prompt>
       <ValidValues>
         <DataSetReference>
           <DataSetName>DimApp</DataSetName>

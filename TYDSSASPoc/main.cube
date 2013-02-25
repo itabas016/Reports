@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="128" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-19678" scrolltop="-17102" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="27596" y="18018" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="128" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-19678" scrolltop="-17102" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="24844" y="18018" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -1143,350 +1143,380 @@
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Dimensions>
-    <Dimension dwd:design-time-name="62005834-2c43-4dd5-a4eb-7b4aa729c26e">
+    <Dimension dwd:design-time-name="b5094e07-fcf5-4438-b8fa-2ee34e3af26b">
       <ID>ActionInfo</ID>
       <Name>ActionInfo</Name>
       <DimensionID>ACTION INFO</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="8db9d2f0-dbbf-4c20-8039-6a095aaeb069">
+        <Attribute dwd:design-time-name="2921ee93-d07a-4865-90ea-2e1355ae6eee">
           <AttributeID>ACTION ID</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="f2f623b1-dc62-4675-bcae-94d98805c59c">
+        <Attribute dwd:design-time-name="1ecc95d8-c67c-4c4d-9365-0a352f2ee482">
           <AttributeID>CONTROLLER NAME</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="a089ae95-bff0-4a1b-93bd-35e872d4c79e">
-          <AttributeID>DISPLAY NAME</AttributeID>
+        <Attribute dwd:design-time-name="6fcdf022-923a-4335-806c-55c4652db3f8">
+          <AttributeID>ACTION ID 1</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="10b61882-d5f7-42fb-b238-b00f26821de2">
+        <Hierarchy dwd:design-time-name="7a3fee62-29f9-409b-abad-954815ce1c96">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="0bb6a1dd-c795-474f-8faf-e638651cb5c0">
+    <Dimension dwd:design-time-name="ac1d057e-2dab-4b7c-9def-4ae624ce1f0c">
       <ID>AndroidVersion</ID>
       <Name>AndroidVersion</Name>
       <DimensionID>Android Version</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="f179d458-9170-44a9-8be9-7aa2caec99ef">
+        <Attribute dwd:design-time-name="c6ad5fc2-03c8-466b-9743-94060cc0cb58">
           <AttributeID>ID</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="fcab1d88-4711-46a6-b6a7-31de1288e43a">
+        <Attribute dwd:design-time-name="e664bfa1-b209-4e0e-bf8d-07e34fb9a65a">
           <AttributeID>PARENT NAME</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="56f8f218-9171-41e3-bc32-3d39bb35b687">
+        <Attribute dwd:design-time-name="c1f4e338-e474-44be-8cec-281115f773f0">
           <AttributeID>GRAND NAME</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="62fe459c-b954-4f68-8a07-abe660c72f34">
+          <AttributeID>ID 1</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="041f330a-2b80-46c9-9dc9-4810fb9349c5">
+        <Hierarchy dwd:design-time-name="28ceb754-41a3-4553-a175-50b237816509">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="e18b631a-551a-4304-8398-67046ea9210c">
-      <ID>TARGET APP</ID>
-      <Name>TARGET APP</Name>
-      <DimensionID>APP INFO</DimensionID>
-      <Attributes>
-        <Attribute dwd:design-time-name="17fa5621-267c-436d-8e26-05086f75e37b">
-          <AttributeID>ID</AttributeID>
-        </Attribute>
-      </Attributes>
-    </Dimension>
-    <Dimension dwd:design-time-name="f71e20ea-777d-485d-b9bc-833280551e0c">
+    <Dimension dwd:design-time-name="4b448e87-fae0-4f8c-aad3-d9f3de851307">
       <ID>FROM APP</ID>
       <Name>FROM APP</Name>
       <DimensionID>APP INFO</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="17fe3eae-d1b2-4d28-a632-15e49a645d8a">
+        <Attribute dwd:design-time-name="4ecc7f67-65f9-4a1c-b471-c4f835e831e3">
           <AttributeID>ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="39811a63-485f-4aed-8aa0-698d216d0cbc">
+          <AttributeID>ID 1</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="140c2821-0807-40b1-879f-393413c80645">
+    <Dimension dwd:design-time-name="562305f2-9c35-4011-b0b0-cf509aba92ff">
+      <ID>TARGET APP</ID>
+      <Name>TARGET APP</Name>
+      <DimensionID>APP INFO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="22320510-3662-4457-a69c-5299d86a4fc2">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3e8c5c39-adc6-46ec-bc4e-bb332bf164c4">
+          <AttributeID>ID 1</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="390322a8-a9b5-45e2-a96d-1ad0fa0a120e">
       <ID>AppVersion</ID>
       <Name>AppVersion</Name>
       <DimensionID>App Version</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="af38e193-b564-46d0-9811-890ce26af52f">
+        <Attribute dwd:design-time-name="52cb89d1-87e1-4ba0-bb2e-2fdffed5e988">
           <AttributeID>ID</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="fd06edde-63b9-447b-abca-8ff3397b304b">
+        <Attribute dwd:design-time-name="9aeebfff-e1ca-402e-91fb-adb57631d58b">
           <AttributeID>PARENT NAME</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="c2e1c0a3-d7ad-44f9-b54b-41be6603c86f">
+        <Attribute dwd:design-time-name="e1322685-5557-4a1c-bc3b-e04557f5a4e1">
           <AttributeID>GRAND NAME</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cfa1f8fc-56f6-4ecc-8c24-b536c16d9bb7">
+          <AttributeID>ID 1</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="d631c1ab-5be9-4158-b45f-1e5b6e498b04">
+        <Hierarchy dwd:design-time-name="fbe7a0d1-ce64-4012-9f34-e6e729d05510">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="5aec368e-eb4d-41fc-9f21-8dd080bfeec1">
+    <Dimension dwd:design-time-name="efc38330-9504-48c3-b010-41cf32c8d6b5">
       <ID>BATCH</ID>
       <Name>BATCH</Name>
       <DimensionID>Batch</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="4eb8e159-dd58-4630-a18f-ba8232e20b77">
+        <Attribute dwd:design-time-name="db9ecade-1633-436b-8fdb-0d5fe2480d1f">
           <AttributeID>ID</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="25008211-bf3d-42d9-9fbc-342cd1468fd0">
+        <Attribute dwd:design-time-name="a572cf32-4e5d-4982-bf0c-947cb848aa85">
           <AttributeID>PARENT NAME</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="24177309-434c-4823-a826-3d53e7cb6bd9">
+        <Attribute dwd:design-time-name="200809e1-a785-4ed0-99d7-18755021a3c3">
           <AttributeID>GRAND NAME</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="32e53f3d-61d2-4337-bf26-5cd1719657f2">
+          <AttributeID>ID 1</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="9a87503c-d8bc-4d53-9887-1e7d6030bcab">
+        <Hierarchy dwd:design-time-name="350e12dd-f0cf-4f30-a282-acf4cf356d86">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="88781a1e-d5e8-4e15-af52-c16abc25b830">
+    <Dimension dwd:design-time-name="583d18d8-ae83-4fd3-8a03-3f85844a6675">
       <ID>BrandModel</ID>
       <Name>BrandModel</Name>
       <DimensionID>Brand Model</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="daed5570-32a6-4e67-bd3d-7db125af579c">
+        <Attribute dwd:design-time-name="454f2000-8328-402f-b12c-b4624c960548">
           <AttributeID>ID</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="91464086-6e6d-46fa-becd-7442728eb078">
+        <Attribute dwd:design-time-name="bd08f904-909a-463e-a254-8ccc74da70af">
           <AttributeID>PARENT NAME</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="530951db-06bc-454a-85cc-95b16dc445ad">
+        <Attribute dwd:design-time-name="006ee753-7776-476f-91c9-d871055e1520">
           <AttributeID>GRAND NAME</AttributeID>
         </Attribute>
+        <Attribute dwd:design-time-name="4cf75c79-33e2-43f1-963b-a05e7aecc244">
+          <AttributeID>ID 1</AttributeID>
+        </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="950a1832-b7f8-49c4-aa9e-50010c90a2ba">
+        <Hierarchy dwd:design-time-name="0010d4c0-52eb-4f1c-9978-cb48f479a0e7">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="7cec592c-448b-4f88-a5b7-6cca8fdf5b28">
+    <Dimension dwd:design-time-name="58159881-a962-4e25-b44d-f9ed4a3cc70d">
       <ID>CHANNEL</ID>
       <Name>CHANNEL</Name>
-      <DimensionID>DIM CHANNEL</DimensionID>
+      <DimensionID>Channel</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="546e0cf2-c894-46a7-9653-54ce2edad07e">
+        <Attribute dwd:design-time-name="0560cb06-0763-4351-8513-075e1163ab37">
           <AttributeID>ID</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="1e5e00d3-2d7f-4b4e-b31d-cbc231a6967e">
+        <Attribute dwd:design-time-name="e45330a1-8f4d-44ed-8b1c-ad0a7e39234b">
           <AttributeID>PARENT NAME</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="11ff1de0-95e6-4655-a31f-f0085b11e50a">
+          <AttributeID>ID 1</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="ee9d9ff2-3b23-4023-9c5b-8b5df9ced961">
+        <Hierarchy dwd:design-time-name="976368d9-5da9-4794-8278-29a41a0c5af3">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="7a2552fa-8f5b-463a-bb11-c160892b48a0">
+    <Dimension dwd:design-time-name="57b59f6a-2704-4587-9bf3-6a026db6fa92">
       <ID>CITY</ID>
       <Name>CITY</Name>
       <DimensionID>CITY</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="57596c09-8bb7-43f0-b621-40003aadfa09">
+        <Attribute dwd:design-time-name="93e3348a-bed1-46ca-980f-7cfa5016407a">
           <AttributeID>ID</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="4da8c005-1453-4dfd-93c4-49a57162a8f3">
+        <Attribute dwd:design-time-name="2cdb2604-afb1-482f-90ed-9b7e63525b4f">
           <AttributeID>PROVINCE - ID</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="2bd735ee-f0b7-4930-a059-9153f3ce59b1">
-          <AttributeID>NAME</AttributeID>
+        <Attribute dwd:design-time-name="d8f0689d-48ef-4402-8393-04158c215fcb">
+          <AttributeID>ID 1</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="34a1dc33-7227-401c-9aea-9f5fe00f2893">
-          <AttributeID>NAME 1</AttributeID>
+        <Attribute dwd:design-time-name="d61254b2-9bc4-448c-b415-9104a5d8f882">
+          <AttributeID>ID 2</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="38e73a4f-f769-4cc5-a566-f26d70f4e1af">
+        <Hierarchy dwd:design-time-name="350186fc-aa5b-4214-b160-120e80d0998f">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="d191c289-c5c5-4046-b146-a15ed6222f55">
+    <Dimension dwd:design-time-name="e2ecd704-3fe1-4ad3-a0d4-94f134a69c62">
       <ID>PROVINCE</ID>
       <Name>PROVINCE</Name>
       <DimensionID>CITY</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="baf00957-4ed9-42ed-969d-2ee343a03068">
+        <Attribute dwd:design-time-name="c6f401e5-f045-4f2a-ab9c-96a3f3341710">
           <AttributeID>ID</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="3073c12c-a014-491c-9930-fb0c390fa02d">
+        <Attribute dwd:design-time-name="ef81c69c-24fb-4806-87d1-78b7e82771da">
           <AttributeID>PROVINCE - ID</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="2876bb8b-baef-4998-bc28-5a43f289c6a0">
-          <AttributeID>NAME</AttributeID>
+        <Attribute dwd:design-time-name="c300bf58-6731-4e1c-8f37-2b6ab23c8950">
+          <AttributeID>ID 1</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="d37d7258-61cb-43b5-8361-d8a34a35a0bf">
-          <AttributeID>NAME 1</AttributeID>
+        <Attribute dwd:design-time-name="bcebe878-554a-4757-ab2d-df4487e789ed">
+          <AttributeID>ID 2</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="ddcbb69c-f333-4425-add3-14cec915b571">
+        <Hierarchy dwd:design-time-name="5bd03eee-c867-4dfb-b7f9-7d6489756f2c">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="d8c47fc6-550c-4dfe-9c1f-77bb3346fcf2">
+    <Dimension dwd:design-time-name="ef671734-867a-4e7c-bb77-2123430fd7f5">
       <ID>DATE</ID>
       <Name>DATE</Name>
       <DimensionID>DIM DATE</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="270c83e8-e8e0-42d5-98ca-f09588b02f68">
+        <Attribute dwd:design-time-name="39bdaf62-5b45-4b40-be31-806a99fc83d4">
           <AttributeID>DATE</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="64c5b2da-840b-4ee2-b901-9b4ee1cf1db8">
-          <AttributeID>DATE ID</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="29861d14-a33f-4775-b4f1-8174cf6d48ca">
+        <Attribute dwd:design-time-name="7e1019db-414b-48d0-9930-989764b4740f">
           <AttributeID>YEAR</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="9392e629-31d3-467d-acef-b18bb7992919">
+        <Attribute dwd:design-time-name="d1f17029-bd4e-4ee9-92f4-5b4814021a4e">
+          <AttributeID>YEAR MONTH CN</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a50925f2-350b-4b82-8673-416742dcd63d">
           <AttributeID>YEAR QUARTER</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="d87c9690-5899-4876-a1c2-7b022c3e4b72">
-          <AttributeID>YEAR MONTH</AttributeID>
+        <Attribute dwd:design-time-name="94898ec9-1dc8-4efa-b433-ad326398676f">
+          <AttributeID>DAY OF WEEK</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="28f521df-f172-48e2-aaab-292a028fe08a">
-          <AttributeID>YEAR DAY OF YEAR</AttributeID>
+        <Attribute dwd:design-time-name="8621954c-4ef8-4060-a4ec-4fb494945f1e">
+          <AttributeID>WEEKDAY NAME</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="5f35d453-8df9-47d9-b963-36bb0b9872d3">
-          <AttributeID>YEAR NAME</AttributeID>
+        <Attribute dwd:design-time-name="1acda33a-1161-4bc3-ae9f-a6ab0c496f42">
+          <AttributeID>ISO YEAR WEEK NAME</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="4ecf02d8-d69b-481f-a20d-f200720f0e27">
-          <AttributeID>YEAR QUARTER NAME</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="bfc40ab1-0381-4bde-93ab-27dc1902c4eb">
-          <AttributeID>YEAR MONTH NAME</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="67a3add3-7f98-4438-8581-182ae0547db2">
-          <AttributeID>YEAR MONTH NAME LONG</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="a50bd23d-fca8-4b67-b814-784bfb9e9ba4">
-          <AttributeID>YEAR MONTH CN</AttributeID>
+        <Attribute dwd:design-time-name="80373a51-edbe-42ee-95af-669c8d020a09">
+          <AttributeID>NEXT DAY DATE</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="afc54fb2-97e5-4d03-9597-525180ad523f">
+        <Hierarchy dwd:design-time-name="fd6ae6f9-ea9b-4efe-86a4-4859af566199">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="24472bb7-cfae-4f24-81a0-13e0c3576004">
+    <Dimension dwd:design-time-name="6110746f-ca66-4f83-9406-3b1f6d43967d">
       <ID>DesignHouse</ID>
       <Name>DesignHouse</Name>
       <DimensionID>Design House</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="6902cce2-1711-4aa9-b1ac-91476938b411">
+        <Attribute dwd:design-time-name="e7e6e051-5189-4a30-9213-85ddb8efd00d">
           <AttributeID>ID</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="9088b4ff-d776-4c21-a52d-d05ebdb8806f">
+        <Attribute dwd:design-time-name="b2232e19-e099-464c-ac53-64b5cb4613ad">
           <AttributeID>PARENT NAME</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="17a231a7-aa90-4444-9b21-303e82afb1c6">
+        <Attribute dwd:design-time-name="e8becb4f-ae2e-4253-afa8-5673f2104cc0">
           <AttributeID>GRAND NAME</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="965a028b-a2d4-463d-b4ce-e89102e7414c">
+          <AttributeID>ID 1</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="19b364e2-74d0-427d-9b43-4059325e1986">
+        <Hierarchy dwd:design-time-name="d51ba967-710e-430f-b5fe-67151241f0e4">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="fe6a9bd3-c199-4df9-a094-10f7e26886ac">
+    <Dimension dwd:design-time-name="c3023723-3422-4662-a15e-08ee091d075a">
       <ID>DomainName</ID>
       <Name>DomainName</Name>
       <DimensionID>Domain Name</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="4965ce25-a322-472a-ab8a-0b99831f96ac">
+        <Attribute dwd:design-time-name="21594503-9910-4c44-a687-30fcc1ab15bf">
           <AttributeID>ID</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="f59658ef-d70d-49ec-ad28-c6e7c1943729">
+        <Attribute dwd:design-time-name="278ab341-6270-49b0-94dc-bfc916fe5006">
           <AttributeID>PARENT NAME</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="41d2d309-c181-4175-ba0d-1eb3b5f0b8a2">
+          <AttributeID>ID 1</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="6b446985-6724-4054-93cd-f866f381551e">
+        <Hierarchy dwd:design-time-name="59363eac-18dc-4cc8-a9bb-66b3163f4dc9">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="ca0e721e-4420-422f-8887-572264ea8b66">
+    <Dimension dwd:design-time-name="62353b0a-f1db-4daa-b9b7-d8412da67642">
       <ID>MachineType</ID>
       <Name>MachineType</Name>
       <DimensionID>Machine Type</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="176dbcb8-df16-49aa-9e11-9f7cf3eb4144">
+        <Attribute dwd:design-time-name="d598096a-8ff8-46a1-aa06-c714b30ade51">
           <AttributeID>ID</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="6e0da7f7-2483-4291-a492-cc02f12b969a">
-          <AttributeID>DISPLAY NAME</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="4b13a593-41e8-461a-9b30-9e6fc21081db">
+        <Attribute dwd:design-time-name="6b226b36-6aca-490e-ba6b-9cb3cb674a2c">
           <AttributeID>PARENT NAME</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="901c3642-2e26-4940-9d01-6fc207eadb13">
+        <Attribute dwd:design-time-name="3d7ce2f5-d0f1-42eb-a89b-31d8acdc9921">
           <AttributeID>GRAND NAME</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="772a5696-e547-4f8b-832e-7d06c391f369">
+          <AttributeID>ID 1</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="6263c63b-7994-45b9-a5be-6bd6b92a9128">
+        <Hierarchy dwd:design-time-name="240831fa-aeae-458b-ae55-51931d92a26e">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="53301ad9-df96-4a8e-a380-bf70ca03216c">
+    <Dimension dwd:design-time-name="c015aa14-e29e-4f8b-a6ad-c720e35dea34">
       <ID>Network</ID>
       <Name>Network</Name>
       <DimensionID>NETWORK TYPE INFO</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="2022a318-ac1b-4804-9439-e2598d3844ca">
+        <Attribute dwd:design-time-name="afb9093e-693b-4702-9d0e-ddb8cc5350e6">
           <AttributeID>ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="41065ee4-f1cb-44ca-b1fb-daeb05b7aba2">
+          <AttributeID>ID 1</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="c0a0ccd6-3c77-4e3c-b165-c73b3f6133f0">
+    <Dimension dwd:design-time-name="79bf3cce-c62c-4203-9bfd-ac22f159b887">
       <ID>RESOLUTION</ID>
       <Name>RESOLUTION</Name>
       <DimensionID>Resolution</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="91775fde-8bf8-4fce-835b-08640b625c5a">
+        <Attribute dwd:design-time-name="874f764a-a08e-45e7-8a55-df2b341d8948">
           <AttributeID>ID</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="610a9345-04e1-4431-a10f-59c56137fdd4">
+        <Attribute dwd:design-time-name="a624d5a5-3a4a-49b7-8617-77bbd7c4667f">
           <AttributeID>PARENT NAME</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bc04159b-25b6-4519-bff6-50959b66ba30">
+          <AttributeID>ID 1</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="79b0c7ca-a481-4421-97ac-a4d305500777">
+        <Hierarchy dwd:design-time-name="d07f8402-9d78-44f8-9678-b6ee0b2b2012">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="3f4ba009-3de6-48b7-807f-b794fa2c3e47">
+    <Dimension dwd:design-time-name="b3862793-4fd3-4c84-b9d2-e8ec9caaac02">
       <ID>ResultCode</ID>
       <Name>ResultCode</Name>
       <DimensionID>RESULT CODE INFO</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="bb9b4893-0f27-44f2-b981-feaee30485ee">
+        <Attribute dwd:design-time-name="146a30c7-95f9-4b6d-8831-948a1e3b75b2">
           <AttributeID>CODE</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="61d9acc6-daa4-47c4-81e8-6ecf67354ef8">
+          <AttributeID>CODE 1</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="99c04bbc-214c-49e0-8990-61f1779493d2">
+    <Dimension dwd:design-time-name="c7de3082-2fb1-4538-ac3b-77afcfe10e9d">
       <ID>TIME</ID>
       <Name>TIME</Name>
       <DimensionID>DIM TIME</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="ea3adda0-96ec-4854-a3f9-329c7a8c7018">
+        <Attribute dwd:design-time-name="ae9b7730-0c3e-46be-bfe9-69d7a4531236">
           <AttributeID>TIME KEY</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="871a23d5-5ae3-4619-babd-1b08ebb432f1">
+          <AttributeID>TIME KEY 1</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
@@ -1519,169 +1549,16 @@
       </ErrorConfiguration>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a75336b0-07a3-4f25-b91f-34d4b55ddd5c">
-          <CubeDimensionID>CHANNEL</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="40027aa4-9f9d-452d-b5f9-5ba2222299dd">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="6e9f4836-11fa-4686-b450-50d7f32f94f8">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0acc3cea-7e78-4220-97ef-90480217914f">
-                    <TableID>MAIN_USER_INFO</TableID>
-                    <ColumnID>CHANNEL_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="07035453-2ed1-4e66-a34a-cc247fe76999">
-          <CubeDimensionID>RESOLUTION</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="58e611bd-2499-40be-8a3f-8c40359aa9dc">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="cd726132-a5f0-432e-a6b8-25b83a2e09f1">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9460b07c-96d7-46de-a25c-fbd34eb575ee">
-                    <TableID>MAIN_USER_INFO</TableID>
-                    <ColumnID>RESOLUTION_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="eaba75ed-cc2b-4613-b45e-c8b7276ade65">
-          <CubeDimensionID>BATCH</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="497e9fe9-719c-43cf-9275-0d5d2e21eefa">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="16890b6f-0af5-4fd5-a5fb-7cb814e779fa">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="25972708-6863-44ea-9851-710238e479b7">
-                    <TableID>MAIN_USER_INFO</TableID>
-                    <ColumnID>BATCH_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e48f9262-dbcf-4d9f-bf86-c7de370a5f03">
-          <CubeDimensionID>BrandModel</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="8d45595b-4507-4d5f-bfd6-28ec0b140d59">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="25f3d762-4e2d-4104-872c-ff4cf9ed57c4">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b269f8c6-383b-4940-9462-7f173655d16f">
-                    <TableID>MAIN_USER_INFO</TableID>
-                    <ColumnID>BRAND_MODEL_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8995c7b2-9f9c-4f40-a865-9381f6758294">
-          <CubeDimensionID>CITY</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="b5c516eb-2117-45df-b444-228dcca9d44e">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="751f0330-5dd1-472a-b83d-b2240a90951e">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="33a88a7c-ed66-4e13-9e3f-3b641130f215">
-                    <TableID>MAIN_USER_INFO</TableID>
-                    <ColumnID>CITY_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e0873158-cbbb-49ea-bad4-ab4aaa5534ef">
-          <CubeDimensionID>TIME</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="17cede24-022b-48b0-932f-37a09a36255f">
-              <AttributeID>TIME KEY</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="9a4a14a3-5b16-4f77-9364-e5694cc4df87">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>WChar</DataType>
-                  <DataSize>8</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="48486763-bd52-4672-9d76-b7d14046e717">
-                    <TableID>MAIN_USER_INFO</TableID>
-                    <ColumnID>TIME_KEY</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1b0e9897-133d-44a4-aa6e-5dc74bc2572c">
-          <CubeDimensionID>DATE</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="543823bb-afa3-43f4-ab25-a9391bc61a5f">
-              <AttributeID>DATE</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="1e3fdaea-5cc7-42f8-8a7e-94c992c389e1">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>Date</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e105a1a5-c584-44d5-96d9-1b593028d806">
-                    <TableID>MAIN_USER_INFO</TableID>
-                    <ColumnID>CREATE_DATE</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c0980b14-9ecb-4e67-a600-60026aee5c6c">
-          <CubeDimensionID>FROM APP</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="033fb728-67e3-4ad1-be88-7f78978c1f10">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="cea65924-c49f-42ba-aa80-5b4952513e01">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1c7e82da-c258-4287-a390-6f4344bf6139">
-                    <TableID>MAIN_USER_INFO</TableID>
-                    <ColumnID>FROM_APP_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="bf113469-0aa2-412f-a914-2fe3ea952877">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="907709ba-f77c-4f3a-9fb5-f31b4440bc6d">
           <CubeDimensionID>AndroidVersion</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="8dda7d41-4c43-41fc-9e1f-cb9d7480daa3">
+            <Attribute dwd:design-time-name="8779733b-fde5-4a44-8314-04126137fc71">
               <AttributeID>ID</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="5a31b115-cec8-4a79-9e83-5bca31e523d6">
+                <KeyColumn dwd:design-time-name="c3500f1d-5639-4d13-93c5-10b5b8ae8937">
                   <NullProcessing>UnknownMember</NullProcessing>
                   <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1c3f90f4-1b6e-4ae8-a4d1-ac3bd05f8246">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="05af44e1-08b9-4fcd-a34c-ff131ae2ccd9">
                     <TableID>MAIN_USER_INFO</TableID>
                     <ColumnID>ANDROID_VERSION_ID</ColumnID>
                   </Source>
@@ -1691,16 +1568,111 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c944f622-9f63-46da-99f1-ffb0eba56e6a">
-          <CubeDimensionID>PROVINCE</CubeDimensionID>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1b363aa7-4f42-4090-ac5c-6779f66b8fd6">
+          <CubeDimensionID>FROM APP</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="914e8e4c-afd3-446b-a356-75f70ca4f9eb">
-              <AttributeID>PROVINCE - ID</AttributeID>
+            <Attribute dwd:design-time-name="e98d4971-1534-49a3-a797-05b236df3578">
+              <AttributeID>ID</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="b309f29c-c59f-4e18-8d3f-e2925771c5f9">
+                <KeyColumn dwd:design-time-name="4cea1568-e8e7-4fc2-a117-d8d6714688e4">
                   <NullProcessing>UnknownMember</NullProcessing>
                   <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fa2a53f5-abad-4ee9-9bbe-596720ba7d58">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="208f1f9c-8552-402f-98f4-4fe8daf0d7ff">
+                    <TableID>MAIN_USER_INFO</TableID>
+                    <ColumnID>FROM_APP_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b1679e31-7803-4950-9c96-8c8b37669df9">
+          <CubeDimensionID>BATCH</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="cafa519c-88d4-44da-90b8-ded9699aa051">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0ef8f92d-4963-46e4-b5fd-e4637dd26aed">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="82607a01-78c2-4607-807c-4971a9e8b675">
+                    <TableID>MAIN_USER_INFO</TableID>
+                    <ColumnID>BATCH_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6905a5e1-8aaf-4508-a856-5eef331a3c45">
+          <CubeDimensionID>BrandModel</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="cad8ad65-3067-4e79-b37b-684605cde775">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="01508bde-6ed1-4095-ae96-a256c9899f37">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9326c91d-15af-4d9e-9429-1c9eb1e08a1b">
+                    <TableID>MAIN_USER_INFO</TableID>
+                    <ColumnID>BRAND_MODEL_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="045833e0-33e0-4d19-b39c-a732bdfda6d1">
+          <CubeDimensionID>CHANNEL</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ef86f7b8-7f82-4233-a945-50a8c2e156b9">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="646d3045-a01a-4225-88ea-bdd7ecb4f1f7">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b916a41f-4b7c-4578-9657-911082e2afe0">
+                    <TableID>MAIN_USER_INFO</TableID>
+                    <ColumnID>CHANNEL_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b17f2b9d-84d4-481a-8198-7c9429ff38f8">
+          <CubeDimensionID>CITY</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f0c1e0b4-1458-4958-8d25-b4c2ab797d33">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0b6c680b-4796-4009-a01c-bd94db41170b">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="80a3c044-7826-4122-b334-824a684adfd6">
+                    <TableID>MAIN_USER_INFO</TableID>
+                    <ColumnID>CITY_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ab17c109-179c-4e3a-82db-d16e07f03f58">
+          <CubeDimensionID>PROVINCE</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e2ef4d8a-c32e-4565-9d74-54bcc566e979">
+              <AttributeID>PROVINCE - ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e668d367-d177-4a77-8a91-c09df18ad4d9">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4105f402-e3be-4ab5-9316-cb7b2aa7ffb5">
                     <TableID>MAIN_USER_INFO</TableID>
                     <ColumnID>PROVINCE_ID</ColumnID>
                   </Source>
@@ -1710,16 +1682,35 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="eae9f9a8-ceb8-4cd3-90d4-67ed0b8217e4">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4c7fdf28-0b21-497f-82e9-8f1ad6bc7811">
+          <CubeDimensionID>DATE</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5ae8f6b5-d50b-4ebe-9939-5a47fe83b648">
+              <AttributeID>DATE</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="92b793d1-601a-4883-987c-0667d9db7acc">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d6548399-5e01-4562-b573-0bf9be31f106">
+                    <TableID>MAIN_USER_INFO</TableID>
+                    <ColumnID>CREATE_DATE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="12a17fd1-516a-466e-b8e2-7454d7ccd959">
           <CubeDimensionID>DomainName</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="f4aeced3-ce85-49f0-ae92-ba44bdc26045">
+            <Attribute dwd:design-time-name="80978d32-6202-40cc-836a-dfa7bd97cc27">
               <AttributeID>ID</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="16ab1289-8a95-4456-85e3-b78cc97dd4bc">
+                <KeyColumn dwd:design-time-name="3359fc98-6a82-4569-99f9-43dff20907ca">
                   <NullProcessing>UnknownMember</NullProcessing>
                   <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="eaa5f5a8-f112-470f-b1e0-6cb118d43ec4">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cec88839-e585-40ad-97d3-aa8c0e3ac110">
                     <TableID>MAIN_USER_INFO</TableID>
                     <ColumnID>DOMAIN_NAME_ID</ColumnID>
                   </Source>
@@ -1729,18 +1720,57 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ea0986c3-4924-4dd1-9d77-2e34b9b184d7">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="128db03c-9c02-40c1-a0d2-3b5299c746d9">
           <CubeDimensionID>MachineType</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="49335c28-2757-47ac-a86c-e77309815fd7">
+            <Attribute dwd:design-time-name="2ff1ad5f-2af1-4202-a588-25a96ae93816">
               <AttributeID>ID</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="3931b2eb-5048-4f6c-8e52-688ff7b724bc">
+                <KeyColumn dwd:design-time-name="2529dc21-774d-49e2-9cde-ddb84fb1a747">
                   <NullProcessing>UnknownMember</NullProcessing>
                   <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="12733ebf-0bdc-4ff1-9537-77b830f8348b">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="20fec97b-5a7e-403f-8bb3-a4a222df7f61">
                     <TableID>MAIN_USER_INFO</TableID>
                     <ColumnID>MACHINE_TYPE_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0b4a73d0-12c6-4e31-a240-bc8aa1faefed">
+          <CubeDimensionID>RESOLUTION</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="677bde97-46e6-4b43-a066-47dc93da1cc1">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="efd75069-837a-4416-b548-742e6648c933">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4cbde954-f893-42cb-b10c-1e9d16e07b5e">
+                    <TableID>MAIN_USER_INFO</TableID>
+                    <ColumnID>RESOLUTION_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4804f9c3-534e-416c-ba35-a47b86809c62">
+          <CubeDimensionID>TIME</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e22e8a38-802f-497c-81e0-af8709ffb6f9">
+              <AttributeID>TIME KEY</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5cbdfa23-7612-42ec-adf2-b3ba785b420f">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>WChar</DataType>
+                  <DataSize>8</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0e1000c7-0fd9-4c04-8f99-52c8c125fa50">
+                    <TableID>MAIN_USER_INFO</TableID>
+                    <ColumnID>TIME_KEY</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
@@ -1779,16 +1809,16 @@
       </ErrorConfiguration>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="22dd3aa2-7f59-4f6f-bf09-d9cac543c06e">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e80d181c-9054-401a-a8cb-d469a6948b83">
           <CubeDimensionID>ActionInfo</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="ad5ede5b-7ef5-4944-85c5-28e1fb5d978c">
+            <Attribute dwd:design-time-name="c456b651-0efc-45af-96b5-c8b8f18f612f">
               <AttributeID>ACTION ID</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="addc22a9-2e9e-414b-bced-82239f31c64c">
+                <KeyColumn dwd:design-time-name="e48610fd-f405-491c-ae9d-7dd60ea35e1f">
                   <NullProcessing>UnknownMember</NullProcessing>
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="937ba963-7b7d-4d9b-a8cc-e229fefe34f8">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="966b11b0-fcd2-433e-886b-5a65bb4e0f0c">
                     <TableID>MAIN_COMMUNICATION_LOG</TableID>
                     <ColumnID>ACTION_ID</ColumnID>
                   </Source>
@@ -1798,263 +1828,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5c383751-754e-4baf-8a78-cc24c54030ed">
-          <CubeDimensionID>DATE</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="98f7f6ab-8d9b-4591-9e73-2df0c8bd0a7b">
-              <AttributeID>DATE</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="a3351098-5a70-487d-bfad-dcc8e6d9d355">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>Date</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="01f14c1d-60ba-42cc-ae2d-f9b7ab64f8a5">
-                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
-                    <ColumnID>CREATE_DATE</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ab2f5e13-eb7f-48a1-b99f-d46bf247ccc8">
-          <CubeDimensionID>CHANNEL</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="4f73ba06-8e43-45e1-98a1-255e49bc657c">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="7f264471-23f2-431c-be14-1b406d5a5ea1">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bca365ce-68ef-47d2-9a77-c03ee2de9d8b">
-                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
-                    <ColumnID>CHANNEL_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b2efca3c-181a-4002-97aa-01867d4d9468">
-          <CubeDimensionID>MachineType</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="9cc04735-1b74-4390-b428-ed150eefd3e3">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="fa6860d7-5f3b-4fdc-8324-352dc3a38897">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2b1a07c7-dee3-47a2-980b-492f78f2deca">
-                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
-                    <ColumnID>MACHINE_TYPE_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7a8e1b10-e694-454e-8be2-8f7c2a172566">
-          <CubeDimensionID>PROVINCE</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="03e9c5c2-9a09-4527-8723-cbedadd01471">
-              <AttributeID>PROVINCE - ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="58bcb969-3588-4545-885f-dd2f6b97b9bb">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="80ee8e2e-f96b-4fde-9f28-9701c1987977">
-                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
-                    <ColumnID>PROVINCE_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e81e0a2d-07af-4267-8a6f-2f82dafede5c">
-          <CubeDimensionID>CITY</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="6280e8f3-0062-4036-9c42-ab97d96592f7">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="1100d2f1-300c-4f5f-aab1-bef41894d7c3">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c555aece-9724-4216-a7e3-5bb810f6f232">
-                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
-                    <ColumnID>CITY_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="65960cb0-2a19-4598-bc9b-dbdda25fa063">
-          <CubeDimensionID>BATCH</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="f934f74c-cd4d-465b-a510-bcde7523e619">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="f10f6f04-4771-4281-bca1-93834fcdd547">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="be527087-67ee-49da-86fe-2240733bdadb">
-                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
-                    <ColumnID>BATCH_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="91b51a94-28fb-4cc7-82ad-1fba223872d6">
-          <CubeDimensionID>DesignHouse</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="fde1d6ed-b3a6-45dc-8e16-4033f9ce3349">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="42e9e657-2331-40eb-b45a-f5eab058d700">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3c5baad2-f3c7-4f1f-a6f3-a58035311679">
-                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
-                    <ColumnID>DESIGN_HOUSE_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4a035329-518a-4950-be1a-c066ddcd3793">
-          <CubeDimensionID>BrandModel</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="77fa43fe-73a2-4e97-8ef4-1ada8757ad5e">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="7b877ee3-1498-4d83-80f4-a82bb542c17a">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="43eded12-2a07-4d87-b97e-cb0df9193c6e">
-                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
-                    <ColumnID>BRAND_MODEL_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f55d6382-1559-43d3-98fe-9e583ea82316">
-          <CubeDimensionID>RESOLUTION</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="e5d85084-8d25-4e17-b640-3db4fd895c39">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="aeb2e674-a60d-4168-a599-e66e7c2aa8fb">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="679003ea-4f36-4e7c-8801-b9a7d2afee5c">
-                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
-                    <ColumnID>RESOLUTION_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c780f7ef-9874-4800-94b8-be1374dfd9f1">
-          <CubeDimensionID>Network</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="3cf3583a-6c44-4bc5-b603-72965711b396">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="c5f749d8-997c-41f8-a828-1f2df4d2dec4">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="70135c99-f98c-405d-94b5-beb4e0525a72">
-                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
-                    <ColumnID>NETWORK_TYPE_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2d475052-f0e3-4ae2-9f60-6457a5ebded7">
-          <CubeDimensionID>DomainName</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="da36ef8d-ef34-46f1-af98-8d2133aa8505">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="d3376e1a-ec46-4584-9f21-c6c18739b6d2">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d227f83e-68b9-40d3-a126-a1f4cdff9418">
-                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
-                    <ColumnID>DOMAIN_NAME_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a7fb7761-3772-46da-b954-3593aa1a8c4f">
-          <CubeDimensionID>TARGET APP</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="ddb39d83-835a-4ae1-97d8-dd5b4e8c4080">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="4a9b693d-5b13-4f2c-8a8e-a695ef13b9f7">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d5ae087b-e332-40e2-9d8d-501bc56c35d0">
-                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
-                    <ColumnID>TARGET_APP_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7aed2e23-7aed-4026-b388-4e0020caed63">
-          <CubeDimensionID>FROM APP</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="a554305e-4b70-4166-9ae3-9a1e19dc77df">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="895368de-96de-4bde-befe-8549063d9b6d">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fa92f844-9bcd-40a9-8b50-7dd47ebeb75c">
-                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
-                    <ColumnID>FROM_APP_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b3c370a6-22d1-47be-afa5-34b968efc482">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="25ee0662-4a5a-4b37-856e-eae867921521">
           <CubeDimensionID>AndroidVersion</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="bdaef969-fc90-4ce2-8764-f7123590cd8e">
+            <Attribute dwd:design-time-name="e3e6a26f-979c-47d6-a991-6fa4319f4a93">
               <AttributeID>ID</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="1a858636-4aa8-4ded-9451-e0b7fdbb0142">
+                <KeyColumn dwd:design-time-name="374c5e7d-263d-41df-b99e-0b5625c76ec2">
                   <NullProcessing>UnknownMember</NullProcessing>
                   <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="02427ab7-dfd5-4d8d-ae3b-67476a96560d">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8962fe9f-1204-4769-9030-511554274679">
                     <TableID>MAIN_COMMUNICATION_LOG</TableID>
                     <ColumnID>ANDROID_VERSION_ID</ColumnID>
                   </Source>
@@ -2064,16 +1847,54 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="df41c6ef-3ee6-49bd-8d06-3468000b3468">
-          <CubeDimensionID>AppVersion</CubeDimensionID>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="cdd0101d-d236-4eed-ba35-5c3be5b80162">
+          <CubeDimensionID>TARGET APP</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="dbb04e2b-5c68-4171-87f6-afda3268571c">
+            <Attribute dwd:design-time-name="c7d2263c-014d-4d8c-b4e0-17b623d3e2a7">
               <AttributeID>ID</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="245e8e67-24c7-4c75-89a8-960625c304ab">
+                <KeyColumn dwd:design-time-name="2eb3ff6d-f519-4064-b30c-ce5891d148ea">
                   <NullProcessing>UnknownMember</NullProcessing>
                   <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c12461a3-04b9-499c-a9fa-053628586958">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9bc240eb-4414-4cd4-8400-957743e39ef0">
+                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
+                    <ColumnID>TARGET_APP_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e8053a43-2b3b-47ec-8f34-0fa9050250f3">
+          <CubeDimensionID>FROM APP</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="eb419571-1b78-4523-b685-6e02e1916b8c">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="97bd74b8-7c34-4e34-9a05-0da52aca08c0">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="44b65af7-e69f-4fc2-81ad-fb17bc7a6099">
+                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
+                    <ColumnID>FROM_APP_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c64879b0-2e3b-411a-839d-4a14fa5041fc">
+          <CubeDimensionID>AppVersion</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b41bf36e-2acd-4955-ae00-ab4f9b7f477b">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="419b61cb-3979-4a86-8b83-fbc473a65bdb">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5e642bec-fbd5-47a0-b2cc-ee8f6e5ac122">
                     <TableID>MAIN_COMMUNICATION_LOG</TableID>
                     <ColumnID>APP_VERSION_ID</ColumnID>
                   </Source>
@@ -2083,16 +1904,225 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="77dd6595-5c47-4bc5-94a0-23b067ab6ea6">
-          <CubeDimensionID>ResultCode</CubeDimensionID>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ccc56dac-7d35-49e3-a989-29d7d26ff77c">
+          <CubeDimensionID>BATCH</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="c0e6952c-ce59-4ece-8dc5-31a161afe6d7">
-              <AttributeID>CODE</AttributeID>
+            <Attribute dwd:design-time-name="2e8e8600-46f8-4649-a576-0c31ba586556">
+              <AttributeID>ID</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="796cc2f3-46de-41db-b7c6-08f01fe0d638">
+                <KeyColumn dwd:design-time-name="9a4b5979-5120-4a8e-8a39-2ef476e32c64">
                   <NullProcessing>UnknownMember</NullProcessing>
                   <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d5c4febe-c28f-42ac-92d9-5d03a14fd9d5">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="54f04c18-27ea-460b-a19c-e5daea90d59e">
+                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
+                    <ColumnID>BATCH_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ec446326-90a1-4872-9cce-d095b735d996">
+          <CubeDimensionID>BrandModel</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ed23f2cd-4912-41c0-ad04-45f4f997a8fa">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c156032a-f6e2-48b9-be03-4c7855c8e3cf">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5c2d53b8-ff7a-48c8-86da-3de6b3e1ca29">
+                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
+                    <ColumnID>BRAND_MODEL_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8eaf0467-df9b-4e91-ac52-3c3ddeb95d77">
+          <CubeDimensionID>CHANNEL</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e27f243d-1c38-46ce-99bc-7a1a00282076">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c9de4ccc-b2a7-48f4-b5b7-213207ae2493">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3c3c0b76-d8a1-4d2d-a8d4-572f48b1036f">
+                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
+                    <ColumnID>CHANNEL_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a89c4c89-6963-4b30-8dff-e6e0ebfb3766">
+          <CubeDimensionID>PROVINCE</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2e74827e-3bb0-481c-9260-f0af48c79be5">
+              <AttributeID>PROVINCE - ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f6327310-57e6-4ca1-b6e9-be3f68b176e9">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7de57e18-75b3-45e3-92f9-5f8afdd4a366">
+                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
+                    <ColumnID>PROVINCE_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ed884955-092a-406c-83f3-4387ca3de36f">
+          <CubeDimensionID>CITY</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ec0ba7ef-7544-412b-921d-6528f29c4075">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="dc62eaec-ff91-4fa0-b09f-52c2d7916eb0">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2eab37b0-9809-4293-8f9e-42ecd8109077">
+                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
+                    <ColumnID>CITY_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="30d235f6-0dc2-4a39-b9ee-58211003a75b">
+          <CubeDimensionID>DATE</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7ccee8ca-2a1a-44ad-a38e-a2fac5dd4845">
+              <AttributeID>DATE</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f342a8b3-3b9d-4f37-8c62-07b9221655f8">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1ec8b7f5-7343-4548-a537-7ce4c774c149">
+                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
+                    <ColumnID>CREATE_DATE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b8082b65-40f5-4fa2-929a-be1895f51503">
+          <CubeDimensionID>DesignHouse</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="34bfac4b-4b25-4a75-9f63-65bb54507d9e">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="709e400b-291f-4b1b-ad9d-faf23257d651">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="05147a4a-2f28-4ca5-9f5e-9821e77fb01f">
+                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
+                    <ColumnID>DESIGN_HOUSE_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5ebba8ca-b1df-4379-8de5-c986ca773aff">
+          <CubeDimensionID>DomainName</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f1dc2562-abf6-45d3-8afa-dfe90d743de4">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="603d9159-36fc-4b91-b8bb-e38cf98ca9d4">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="974d0108-409d-4210-8cfe-a8715d98c66f">
+                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
+                    <ColumnID>DOMAIN_NAME_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="eff7bcf0-f3f3-4b73-bae3-f32b738d21ef">
+          <CubeDimensionID>MachineType</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="585c2840-f09e-45e6-9363-2ef413a03df1">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="22fcd63a-b284-40e9-87da-a43958f75070">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4584e823-5011-4d54-9746-67d7c8a59b9a">
+                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
+                    <ColumnID>MACHINE_TYPE_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5222ebf4-3f22-470b-b507-0bfa798cf242">
+          <CubeDimensionID>Network</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="369ca20e-e998-4dda-aeb5-b5465dfda7e9">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="fb1b13de-5c06-4e9b-bfd7-6eb08e38b83f">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="da759619-bd8b-45fb-a1d8-da8907cc9b22">
+                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
+                    <ColumnID>NETWORK_TYPE_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d660956c-b88b-4d7c-824e-e7220f7e9218">
+          <CubeDimensionID>RESOLUTION</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="889fd837-aeb0-4804-8a7c-79d4091a32ec">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c4ade248-3e25-41f8-9812-adf191cc4c20">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9f679c97-7dcd-42d0-9eb2-50d62cda6695">
+                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
+                    <ColumnID>RESOLUTION_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="49bb7fc8-e546-4899-9680-193346d5228a">
+          <CubeDimensionID>ResultCode</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1206ba39-08a3-40aa-bbac-9222c8b78221">
+              <AttributeID>CODE</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="fdec3ced-d2b8-4ae4-9a3f-d5648ce5983f">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e6993efe-9fb6-48d0-a14c-6badc8a0a15a">
                     <TableID>MAIN_COMMUNICATION_LOG</TableID>
                     <ColumnID>RESULT_CODE</ColumnID>
                   </Source>
@@ -2102,17 +2132,17 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1e023fb6-c00e-474d-b48b-f48e05f8027a">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1fbc5142-07da-4466-b850-0f2e37e228e0">
           <CubeDimensionID>TIME</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="8883a759-d177-4c26-a033-714086f93ca7">
+            <Attribute dwd:design-time-name="93a45b1b-2f77-4321-8915-1fcb7901e56c">
               <AttributeID>TIME KEY</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="80040b95-c279-4c22-947a-77676258f54e">
+                <KeyColumn dwd:design-time-name="4f399a1b-da4e-4aeb-91e6-a7a467c7d04f">
                   <NullProcessing>UnknownMember</NullProcessing>
                   <DataType>WChar</DataType>
                   <DataSize>8</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c5cd506d-b51a-43d5-bbfa-ef17b237e3eb">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3ebcccfc-f9df-4d46-8402-1aec7261e96b">
                     <TableID>MAIN_COMMUNICATION_LOG</TableID>
                     <ColumnID>TIME_KEY</ColumnID>
                   </Source>
@@ -2152,16 +2182,16 @@
       </ErrorConfiguration>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d87572a7-3c5e-4485-9fff-5e5eb84c40b0">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8019784e-3fa9-4bed-bbb5-62efcd27d97f">
           <CubeDimensionID>ActionInfo</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="43f80d6c-ce4f-4a47-bd8f-9bd64f748200">
+            <Attribute dwd:design-time-name="f7419c3f-cb75-40ab-a861-7f454063a03d">
               <AttributeID>ACTION ID</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="2826fef8-577b-496b-819f-cbf221081503">
+                <KeyColumn dwd:design-time-name="db80b93b-db7b-42c7-bf66-e64d7204c844">
                   <NullProcessing>UnknownMember</NullProcessing>
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0566e190-dac4-4f62-9ef0-e55c980f2745">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f09f002e-35a5-4ba5-92c3-f4a326be15f6">
                     <TableID>MAIN_COMMUNICATION_LOG</TableID>
                     <ColumnID>ACTION_ID</ColumnID>
                   </Source>
@@ -2171,263 +2201,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4900b44b-e966-44ac-99b3-f37589928e4c">
-          <CubeDimensionID>DATE</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="7ab7421e-337a-492e-8770-00bd483931c9">
-              <AttributeID>DATE</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="1bfda4df-c769-46b1-9cca-6f3e7a39415e">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>Date</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f2cc19e1-c36c-4af5-aaea-eb96764403ef">
-                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
-                    <ColumnID>CREATE_DATE</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2e7d6d46-2928-42db-b52c-e4517c296d0e">
-          <CubeDimensionID>CHANNEL</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="650e298a-cc11-4b6d-aa03-ddfe40bd2455">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="b48b61b4-1f34-4705-800b-10086bca1201">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="66a9a8a9-67ef-43f0-91db-434fb4712a8a">
-                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
-                    <ColumnID>CHANNEL_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="793b7c4c-6235-43f1-b65f-d8f34b3195cc">
-          <CubeDimensionID>MachineType</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="f42f93d6-8ffc-4844-9cfd-764df5d54493">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="eecc3333-3256-4cb1-8661-75ac0ef90bdf">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="dcec3eb1-9e3d-4cf0-a0f7-e872c795d527">
-                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
-                    <ColumnID>MACHINE_TYPE_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6409c0d1-bca1-4b2d-9404-3125af626428">
-          <CubeDimensionID>PROVINCE</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="68c09dbe-ac17-4f9d-95c9-792dae4f4c63">
-              <AttributeID>PROVINCE - ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="9443fd3a-3f38-4a4d-98a2-b500919e8d80">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="80081f84-dd52-4a67-b058-cd648d6096fe">
-                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
-                    <ColumnID>PROVINCE_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="61660772-eb09-4b9e-8873-392a433f5eaa">
-          <CubeDimensionID>CITY</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="efe69578-5b6b-48fb-a69a-9620cded45bb">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="9c9e3c67-f3a5-49a9-9f8b-9774b8b15f1f">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="23790ee4-ccb5-49eb-8897-4c907a8eee55">
-                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
-                    <ColumnID>CITY_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="834164f5-ee98-4321-83db-f88fff698015">
-          <CubeDimensionID>BATCH</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="4ed08e59-da28-490f-b5f5-26a36dd316e7">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="185a8224-e4d1-46f9-9a8f-fd4255f3bab9">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3cfcf8bb-64a5-4671-9010-ac3f333b1f5a">
-                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
-                    <ColumnID>BATCH_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="bd51508d-6522-4550-b610-4497d3f5b788">
-          <CubeDimensionID>DesignHouse</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="d46928fe-7379-44a2-93b8-8065834587ee">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="d7190882-b842-4fd0-9b3e-d5305d9c7e2c">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6b9c4057-e5bc-4f8f-865d-552e80c6a805">
-                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
-                    <ColumnID>DESIGN_HOUSE_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e8a4426f-fbeb-41f9-93e7-eb2b2b7caa39">
-          <CubeDimensionID>BrandModel</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="4d2103be-4834-4c5d-9c5c-7692a933bf5b">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="537fede7-df1d-4f45-bd5a-a873a600c6d6">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="df6ce415-70f0-4426-8da6-ccbe9750bad8">
-                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
-                    <ColumnID>BRAND_MODEL_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="bc0d04aa-e3ae-4b0e-bc1e-30c507a99fe5">
-          <CubeDimensionID>RESOLUTION</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="ee9ea847-5ffc-44bc-a8e1-a0d0865d98da">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="fbe9d171-5388-404a-8828-4f2b4935c6a2">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="97cf50d3-456b-4e46-8901-afae8bd4a929">
-                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
-                    <ColumnID>RESOLUTION_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3f814c64-1700-4189-ae76-b390696f6df3">
-          <CubeDimensionID>Network</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="fd635b73-c9d3-4de6-88ac-fbb2b6adc098">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="7d382cf9-2487-4ccd-8eeb-e36d09aad30c">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ad5d98d8-11dd-4c86-87dc-16d8853fab4b">
-                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
-                    <ColumnID>NETWORK_TYPE_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9ee72aeb-60c7-4fef-a05b-99729af7c04e">
-          <CubeDimensionID>DomainName</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="9d37b652-076c-46b5-b989-b51a5b6bba04">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="86d309df-0a7d-41c3-9195-418e0f29d962">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f7ad91d5-cce6-4a6a-95cf-87551baecfce">
-                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
-                    <ColumnID>DOMAIN_NAME_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f3d95ea9-5a38-4ea7-b1f4-322881c765f8">
-          <CubeDimensionID>TARGET APP</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="0ead2c42-ea2a-49c6-a5d7-092dc8d84599">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="fe632821-3717-493e-9697-e478267aa262">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fde0206d-9bdf-45eb-a732-f71747dace47">
-                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
-                    <ColumnID>TARGET_APP_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b87b5826-73e0-4d67-b488-b48d95a22c6d">
-          <CubeDimensionID>FROM APP</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="0b1f420b-b5b7-4dc7-8602-4867e322cafb">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="455a8cff-d88e-4533-952b-f04bce3b8762">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9b9cebf3-8b95-41de-827d-348c0d8d8004">
-                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
-                    <ColumnID>FROM_APP_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1002f306-f9da-415d-9874-a18cfc7c7d00">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ac21de13-f110-426e-8086-6467432791cb">
           <CubeDimensionID>AndroidVersion</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="f25c9f86-f389-4c66-b186-1868451e4bad">
+            <Attribute dwd:design-time-name="c62bbb46-582a-429f-b83c-69aa92fcf447">
               <AttributeID>ID</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="4b922644-ac86-466b-9668-f05382d60eca">
+                <KeyColumn dwd:design-time-name="b2267bf0-2ccd-4482-8ada-3f3e474488d9">
                   <NullProcessing>UnknownMember</NullProcessing>
                   <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3717dd30-7e15-4038-9a05-372f0715eab1">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="134731ef-8437-46a6-b44f-221f3d9faf75">
                     <TableID>MAIN_COMMUNICATION_LOG</TableID>
                     <ColumnID>ANDROID_VERSION_ID</ColumnID>
                   </Source>
@@ -2437,16 +2220,54 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f4518d5c-e2f0-4849-a291-d0dbe122d6b9">
-          <CubeDimensionID>AppVersion</CubeDimensionID>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e510199d-911f-4e67-abf1-a2d360dc3737">
+          <CubeDimensionID>TARGET APP</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="e3c75c85-16f3-43c1-b5d7-42b8e965f050">
+            <Attribute dwd:design-time-name="3f17857e-7a2b-4610-9908-52fab317e931">
               <AttributeID>ID</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="dda84226-3cb9-4b2f-bf52-1fb9c07695e0">
+                <KeyColumn dwd:design-time-name="01582fbb-6fa5-47fa-ac4f-397541810c9c">
                   <NullProcessing>UnknownMember</NullProcessing>
                   <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="57879be8-96e0-41f0-acb5-cfaf169ef206">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2cc8b695-f87d-4731-94c1-3c85499d8f85">
+                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
+                    <ColumnID>TARGET_APP_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6ef23fd6-0a89-4a5d-914b-753dd8c698cf">
+          <CubeDimensionID>FROM APP</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ca622d62-ae85-4bc0-a4d8-d34e9379d0f1">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="37df0b01-3018-443f-9474-83b3b113259f">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a8db36a3-c007-42c1-99f5-f99109fc0b86">
+                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
+                    <ColumnID>FROM_APP_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ee578ed2-409e-41ef-8ba4-d6a0c106fa47">
+          <CubeDimensionID>AppVersion</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="be8f2b7b-c5db-4ba3-b536-1bd3f82b1374">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1acc241e-a0a8-492d-9183-273a93371774">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c3924477-f467-4ad8-ba1b-c3ee5afc7088">
                     <TableID>MAIN_COMMUNICATION_LOG</TableID>
                     <ColumnID>APP_VERSION_ID</ColumnID>
                   </Source>
@@ -2456,16 +2277,225 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9c19a348-8eec-40e1-8d9e-47c0ccf06020">
-          <CubeDimensionID>ResultCode</CubeDimensionID>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="397c78d0-89ce-4411-89b6-4978cf46e84a">
+          <CubeDimensionID>BATCH</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="5abc509c-519a-4ca4-8ba0-3ee7dbb54d5e">
-              <AttributeID>CODE</AttributeID>
+            <Attribute dwd:design-time-name="70ed9fe5-0dc8-4f98-83a7-263a0938efee">
+              <AttributeID>ID</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="b82e0063-991d-404a-ab4d-f4a08981dd25">
+                <KeyColumn dwd:design-time-name="25d27c11-4a1b-4f75-b46e-b7ca3c31b914">
                   <NullProcessing>UnknownMember</NullProcessing>
                   <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5f43866d-010b-4ebe-a024-b15c9b83dcdd">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f120902f-2464-44d1-b2c1-ee8ee8d93a9a">
+                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
+                    <ColumnID>BATCH_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d7fc6b87-7567-457e-bf1f-ff10f8d24b4d">
+          <CubeDimensionID>BrandModel</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e185bada-f4ac-409f-8940-b0aebcce6969">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="55662b7a-4a83-4ab4-836d-dd5c5d148c8d">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="26f91f24-6c9a-4309-b4b9-efb58db880d8">
+                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
+                    <ColumnID>BRAND_MODEL_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e80151e1-5140-46da-b007-7d2822d78924">
+          <CubeDimensionID>CHANNEL</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d99ea3b9-2f30-44eb-8e2f-47e9c93c56ae">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7bfbe83b-60ec-4525-b4ab-67bca6b37ac2">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1de9275e-c2c9-474c-b8f3-a335b896f129">
+                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
+                    <ColumnID>CHANNEL_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8351e7e0-f83c-4295-bbd1-8a173a207260">
+          <CubeDimensionID>PROVINCE</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="73e114cb-add4-4a60-9c8a-4f768d0eae7b">
+              <AttributeID>PROVINCE - ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1a53939d-992c-4871-b5ed-ee02ff4d8222">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="61a3ef39-5663-473a-969c-bd9c0da6a243">
+                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
+                    <ColumnID>PROVINCE_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1d91bae2-1a9d-4a18-93e8-bb13232e1950">
+          <CubeDimensionID>CITY</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1c6083ea-9252-476b-b7e2-b35703136c90">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d6adeb36-27a1-4b3a-b85a-a7b9e722afdc">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="dae3340f-6a5c-4979-b8d9-05400eccd0f4">
+                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
+                    <ColumnID>CITY_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4d27da34-73a5-4c7a-bb86-f8cb3807c058">
+          <CubeDimensionID>DATE</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3fd3e163-0acd-4e44-bd16-1aafa2119160">
+              <AttributeID>DATE</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="04a64d4a-e601-47b4-bde2-6aec829a2345">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="36b5989b-f3aa-4980-9968-ef850bf8179d">
+                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
+                    <ColumnID>CREATE_DATE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="fadfaf50-76a2-40ec-a169-2cb572066701">
+          <CubeDimensionID>DesignHouse</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="65135744-b3df-46ea-955e-6434656ab6e9">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6856ffb9-cd28-468f-b3cb-92a484619242">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="43640701-4218-4f8e-8a5c-7e7908461371">
+                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
+                    <ColumnID>DESIGN_HOUSE_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="047335e1-4421-4f13-8241-7fba7d6b4e09">
+          <CubeDimensionID>DomainName</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c579dc47-2d73-40b3-a050-38a5a28d5b95">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="81ebf9db-e12f-4ca5-bdd8-65bc683dbdd8">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="48d17e91-82b7-4ce2-acd9-82cd5648a080">
+                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
+                    <ColumnID>DOMAIN_NAME_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3bf5356f-f33d-4399-96f8-f687d1e620da">
+          <CubeDimensionID>MachineType</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="14663c0a-cdee-4925-9428-140a2aef1900">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="05055d7d-2053-4c9a-bddf-0294fa5cbcee">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="950c60e2-e27a-425b-a7dc-09bf61bd3174">
+                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
+                    <ColumnID>MACHINE_TYPE_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b822f7d7-fc7a-484f-83c0-0edb027ee5e9">
+          <CubeDimensionID>Network</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7844ac5a-0f0e-4370-8399-36bda9d6945f">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3d4653ab-386e-4722-8318-b077c99ba971">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2a658864-5778-4c58-994e-95f177c1ea48">
+                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
+                    <ColumnID>NETWORK_TYPE_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8c3e170b-4be4-44e9-b7ba-15a8a8318bd8">
+          <CubeDimensionID>RESOLUTION</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="523669e0-af9f-4de9-b0f6-4ca50cad3020">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8cec2975-b795-47f7-8905-eac82932d0a1">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="19adab23-1e9f-4acd-9b1b-94191e139186">
+                    <TableID>MAIN_COMMUNICATION_LOG</TableID>
+                    <ColumnID>RESOLUTION_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0f1f451e-b297-4cb7-b73a-1725084724be">
+          <CubeDimensionID>ResultCode</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b684d215-27c0-4dbe-af8d-2c04bb8ccd14">
+              <AttributeID>CODE</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b9dab587-87e4-461c-983a-348733abfbb1">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c8d068d2-d36b-4f91-b597-79913ac61c03">
                     <TableID>MAIN_COMMUNICATION_LOG</TableID>
                     <ColumnID>RESULT_CODE</ColumnID>
                   </Source>
@@ -2475,17 +2505,17 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0107de64-9f9a-4edf-ac83-b308f0b50b4e">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="527836b2-40b0-4251-bdca-dc34af95046d">
           <CubeDimensionID>TIME</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="58dc1665-8ecf-4164-818b-254f1e80aba5">
+            <Attribute dwd:design-time-name="1f2f188e-d6ae-4a42-943c-9e1f5869164e">
               <AttributeID>TIME KEY</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="769f0f81-9507-4388-bd33-a79d08b352f5">
+                <KeyColumn dwd:design-time-name="056c3954-7c3f-42ea-b71c-9b0699f18a09">
                   <NullProcessing>UnknownMember</NullProcessing>
                   <DataType>WChar</DataType>
                   <DataSize>8</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3c9040fd-4742-4b0d-ae18-714f9abba2c1">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="dca2a2e1-59d8-4514-bde6-91f4e5237814">
                     <TableID>MAIN_COMMUNICATION_LOG</TableID>
                     <ColumnID>TIME_KEY</ColumnID>
                   </Source>
@@ -2525,150 +2555,16 @@
       </ErrorConfiguration>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9940fc3a-10d1-47e6-a230-3328f69bf136">
-          <CubeDimensionID>DATE</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="98e03858-efbb-4f3e-a142-a3f417c57883">
-              <AttributeID>DATE</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="411f5e9f-1a13-4254-aa16-b5c9cd361a78">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>Date</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7ded1834-3203-4644-9e3a-4ea3d23c669f">
-                    <TableID>MAIN_ACTIVATED_USER</TableID>
-                    <ColumnID>CREATE_DATE</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b1e0330e-d62a-4c50-a473-1bea80ffdf0b">
-          <CubeDimensionID>TIME</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="03e7dc60-178b-49c1-b73f-ce2dc810fb11">
-              <AttributeID>TIME KEY</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="00403b95-7101-438b-9673-5a6d430f37e6">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>WChar</DataType>
-                  <DataSize>8</DataSize>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d5da96fc-eff6-46ce-8004-8161ed410076">
-                    <TableID>MAIN_ACTIVATED_USER</TableID>
-                    <ColumnID>TIME_KEY</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1c07fc1d-2fe1-45c3-ba5a-df313326f683">
-          <CubeDimensionID>CHANNEL</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="11316b66-1742-40fe-8f3b-69e02059974c">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="59f332bb-790d-4073-8ffa-f16f4e9645a0">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="58c82d66-c8a2-4e06-a6a9-fee9de671aab">
-                    <TableID>MAIN_ACTIVATED_USER</TableID>
-                    <ColumnID>CHANNEL_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c02b66ed-5725-4bb6-9ff8-72649359856c">
-          <CubeDimensionID>RESOLUTION</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="0d32d7c9-fd62-486a-aa53-217354694212">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="6a7bf0b1-d7c7-4924-af91-8e6e482e1307">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7d1e826b-9676-4761-ba97-44c92022ae94">
-                    <TableID>MAIN_ACTIVATED_USER</TableID>
-                    <ColumnID>RESOLUTION_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2ef0522c-11d5-4d14-b724-43a73c79fb9a">
-          <CubeDimensionID>MachineType</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="b67a9181-781a-4875-83c4-c7987176db1b">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="4191bf97-3f7e-4ae0-9090-90f0f21a07c5">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="750c5186-a1a7-4193-8fce-271f4b819e31">
-                    <TableID>MAIN_ACTIVATED_USER</TableID>
-                    <ColumnID>MACHINE_TYPE_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7723adc7-8e3e-41dd-8d19-bf830b3db302">
-          <CubeDimensionID>BATCH</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="d324bd5e-6f57-4275-af86-97f49875deda">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="7ad1c9a1-e408-42a2-8913-9ce5ab310194">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2ef796e4-cd87-4ebc-af31-f6f608993dc2">
-                    <TableID>MAIN_ACTIVATED_USER</TableID>
-                    <ColumnID>BATCH_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d231a1a7-0b22-495e-afe3-a7b7ee91a999">
-          <CubeDimensionID>BrandModel</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="3b5f23b6-f861-4e1c-8c0c-73263993bf8b">
-              <AttributeID>ID</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="37c9ab4e-592e-44c7-848d-b9bb37e185ef">
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="083df1aa-29ed-472a-ac2d-f08a20909238">
-                    <TableID>MAIN_ACTIVATED_USER</TableID>
-                    <ColumnID>BRAND_MODEL_ID</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="67947a7f-85dd-42f3-a268-49852e485b61">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="14b5fc9b-a0fa-4702-b564-ca7390fc0753">
           <CubeDimensionID>AndroidVersion</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="59cf1e53-538d-4c7e-8c49-c6476885e425">
+            <Attribute dwd:design-time-name="b84ddd2a-be12-4dde-9afe-4aa4189d1a24">
               <AttributeID>ID</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="433a168e-226a-4cac-a4e4-5f94a7b7e168">
+                <KeyColumn dwd:design-time-name="66a72380-ded1-4603-9db9-37977a1b50f6">
                   <NullProcessing>UnknownMember</NullProcessing>
                   <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="45f9a689-df8a-41c5-8da2-1f8468874b97">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="19010464-d45a-47df-8df5-bc4d54cbeb4b">
                     <TableID>MAIN_ACTIVATED_USER</TableID>
                     <ColumnID>ANDROID_VERSION_ID</ColumnID>
                   </Source>
@@ -2678,16 +2574,92 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="da5af962-3de8-4db1-b5b8-8c712009e0b3">
-          <CubeDimensionID>PROVINCE</CubeDimensionID>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="32049667-4605-4c0d-92be-a9145d9155bc">
+          <CubeDimensionID>FROM APP</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="78f4fd0a-fa50-4d22-82eb-f25759715745">
-              <AttributeID>PROVINCE - ID</AttributeID>
+            <Attribute dwd:design-time-name="b7081b83-0764-417a-bd4d-e26d94c1e677">
+              <AttributeID>ID</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="82a602ff-73a3-4e4d-b4b4-a04e60fcf322">
+                <KeyColumn dwd:design-time-name="2f898528-6295-40c4-898a-1e8057e388e0">
                   <NullProcessing>UnknownMember</NullProcessing>
                   <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f6d6a9ab-c1a7-46df-a9db-db19c2241c51">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="400cf8a6-0148-453f-9bcd-c7bbe22df791">
+                    <TableID>MAIN_ACTIVATED_USER</TableID>
+                    <ColumnID>FROM_APP_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a4a4468b-c176-46eb-8feb-0e9ebd489fba">
+          <CubeDimensionID>BATCH</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="970479df-8883-4829-b41a-ff1ffdea51af">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b39797a0-fefd-434a-ae81-ac20b0922d9d">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a6593d5b-10c9-4dc2-bd68-3a7c68b20a4b">
+                    <TableID>MAIN_ACTIVATED_USER</TableID>
+                    <ColumnID>BATCH_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d69d2366-a216-40c3-a627-2e578a020d75">
+          <CubeDimensionID>BrandModel</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3c463224-b7a4-4e57-8302-533d39050af3">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1fc11f87-1192-4f46-abaa-0d56c88c3efe">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="49bf4b16-7752-48b6-a436-9221386c8010">
+                    <TableID>MAIN_ACTIVATED_USER</TableID>
+                    <ColumnID>BRAND_MODEL_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="bae3c9db-4a0f-4398-a0f5-217cfca2f210">
+          <CubeDimensionID>CHANNEL</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b00e583a-14b1-4764-8b4e-9e39981bcd0e">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="dcceb0c0-61a8-4e00-85b8-c8b29c071163">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6560ffe5-30b8-4b86-a0f4-69cccd96c5bc">
+                    <TableID>MAIN_ACTIVATED_USER</TableID>
+                    <ColumnID>CHANNEL_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d6f3df1d-a2d8-4e55-8137-5949b73af33a">
+          <CubeDimensionID>PROVINCE</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3a29e87b-914c-47eb-861d-a2de5b313c90">
+              <AttributeID>PROVINCE - ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8c9d9589-3537-47b0-a829-1e9293e622f9">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b6db8618-e7a0-4987-a1f0-937e612ebbad">
                     <TableID>MAIN_ACTIVATED_USER</TableID>
                     <ColumnID>PROVINCE_ID</ColumnID>
                   </Source>
@@ -2697,16 +2669,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="858a35c1-7f12-440e-a295-0408bfd905ea">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="64657e87-39a7-4423-b8e5-e7df9491c668">
           <CubeDimensionID>CITY</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="bfee4ced-2ea6-4f92-b07e-c981ddbfae82">
+            <Attribute dwd:design-time-name="b0dc7147-3515-4994-9925-60712761c85b">
               <AttributeID>ID</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="4198c9a8-3bfb-4655-a1b7-fe5dfcd1578d">
+                <KeyColumn dwd:design-time-name="ccbd89d8-6962-4678-8922-13447e28b4dc">
                   <NullProcessing>UnknownMember</NullProcessing>
                   <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a496b738-72e1-41c6-8f6c-6154ce7b4471">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="861730eb-694e-4b01-b6f7-805898be1278">
                     <TableID>MAIN_ACTIVATED_USER</TableID>
                     <ColumnID>CITY_ID</ColumnID>
                   </Source>
@@ -2716,16 +2688,35 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e87ef67b-8cb6-443b-bdcc-27ef86e650a8">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="13388092-d89a-417e-b4d5-4f24a44063b5">
+          <CubeDimensionID>DATE</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a19899b0-846d-4e90-94c4-e02122c02c1d">
+              <AttributeID>DATE</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="81b09417-73e6-4c99-be7b-371ecf3282c7">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="00801047-88ad-47be-997e-ecad32f254e7">
+                    <TableID>MAIN_ACTIVATED_USER</TableID>
+                    <ColumnID>CREATE_DATE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6e3c0753-5982-48d8-8ac6-7ee5687b2ad9">
           <CubeDimensionID>DomainName</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="fd34a073-c1b1-4a3e-a8b5-ba7443e3b86c">
+            <Attribute dwd:design-time-name="d193b42e-21ff-4bbc-950c-537f3c92499d">
               <AttributeID>ID</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="e4648898-92fc-40eb-a90d-e560b6be38fa">
+                <KeyColumn dwd:design-time-name="efe2077d-d2be-4945-8568-bc634dfdf0ad">
                   <NullProcessing>UnknownMember</NullProcessing>
                   <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d509a26e-22b6-4c62-ab96-a2b45b9866eb">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0ba06dcc-404c-464a-bb4a-678e4b329615">
                     <TableID>MAIN_ACTIVATED_USER</TableID>
                     <ColumnID>DOMAIN_NAME_ID</ColumnID>
                   </Source>
@@ -2735,18 +2726,57 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9cf2f75e-611f-4e3a-b8fc-4daca48e611a">
-          <CubeDimensionID>FROM APP</CubeDimensionID>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6a67ad02-5b72-4654-a8ed-eeff606572cd">
+          <CubeDimensionID>MachineType</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="38c4ca05-6b9a-4d94-954a-13b1f6263b53">
+            <Attribute dwd:design-time-name="24708e81-0ee8-4486-947d-c058d4b6ccb4">
               <AttributeID>ID</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="aea38975-0208-4235-bff1-5d80be0b0b36">
+                <KeyColumn dwd:design-time-name="a3496421-4182-4e87-900c-4174bb57fed4">
                   <NullProcessing>UnknownMember</NullProcessing>
                   <DataType>BigInt</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ec7206e0-e442-4cbd-9585-0844c90e9f7a">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6a8faf02-0900-42ce-8055-8acbe8209399">
                     <TableID>MAIN_ACTIVATED_USER</TableID>
-                    <ColumnID>FROM_APP_ID</ColumnID>
+                    <ColumnID>MACHINE_TYPE_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a7b95946-3a63-4445-b6c3-bd1c1efe01f2">
+          <CubeDimensionID>RESOLUTION</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="984d9841-028a-4959-b56b-28e33e5dc4ad">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9d9d37d8-efc0-4a7a-bd2c-cea88dec6d82">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0c1899b7-a879-4a99-9bb4-a4b49690832c">
+                    <TableID>MAIN_ACTIVATED_USER</TableID>
+                    <ColumnID>RESOLUTION_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6625ff18-c0b1-411e-a290-8c9709ccfe35">
+          <CubeDimensionID>TIME</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e88ad50a-06ca-4ed0-91db-925895f245f7">
+              <AttributeID>TIME KEY</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a609af49-03aa-407a-8966-cd935e073bec">
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <DataType>WChar</DataType>
+                  <DataSize>8</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="38e1406a-f617-449d-8756-651678460483">
+                    <TableID>MAIN_ACTIVATED_USER</TableID>
+                    <ColumnID>TIME_KEY</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>

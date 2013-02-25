@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3750" scrolltop="-2778" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9790" y="18018" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3750" scrolltop="-2778" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9340" y="17330" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -114,7 +114,7 @@
   <Attributes>
     <Attribute dwd:design-time-name="1e1daa3a-160d-4774-aadf-fbefb0eeeea5">
       <ID>ID</ID>
-      <Name>ID</Name>
+      <Name>MachineType</Name>
       <Usage>Key</Usage>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="28e50466-eb02-42bf-b6d1-758f07a36433">
@@ -126,11 +126,15 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="d5af1f74-9e26-4819-85d6-6fcdb338eaa3">
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b7a09fc9-796f-45fd-a097-53e8dc456937">
+          <TableID>MachineType</TableID>
+          <ColumnID>DISPLAY_NAME</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="babc61b7-3de6-44ef-8743-ff8d01778f17">
-          <AttributeID>DISPLAY NAME</AttributeID>
-          <Name>DISPLAY NAME</Name>
-        </AttributeRelationship>
         <AttributeRelationship dwd:design-time-name="8468ac56-f105-4c43-adf0-2a757fc2c745">
           <AttributeID>PARENT NAME</AttributeID>
           <Name>PARENT NAME</Name>
@@ -139,30 +143,17 @@
           <AttributeID>GRAND NAME</AttributeID>
           <Name>GRAND NAME</Name>
         </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="64fbe68d-fd95-43cf-ace3-5752056a9533">
+          <AttributeID>ID 1</AttributeID>
+          <Name>ID_</Name>
+        </AttributeRelationship>
       </AttributeRelationships>
-      <OrderBy>Key</OrderBy>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="ac107806-a470-45e5-9866-6cf73382997c">
-      <ID>DISPLAY NAME</ID>
-      <Name>DISPLAY NAME</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="2448c99f-453d-41e2-a021-995a419e9bde">
-          <DataType>WChar</DataType>
-          <DataSize>255</DataSize>
-          <Collation>Latin1_General_CS_AS</Collation>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="46fae4b7-0bc5-48e6-934b-d3320d522de4">
-            <TableID>MachineType</TableID>
-            <ColumnID>DISPLAY_NAME</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
     <Attribute dwd:design-time-name="2fc4e46e-28f7-4825-b03c-6eec5fac1757">
       <ID>PARENT NAME</ID>
-      <Name>PARENT NAME</Name>
+      <Name>MachineTypeParent</Name>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="3a7cfbe5-806f-4a5f-9070-359071874440">
           <DataType>WChar</DataType>
@@ -179,7 +170,7 @@
     </Attribute>
     <Attribute dwd:design-time-name="a1a43c1c-39b6-4fe8-99a2-d3cb0f1286a7">
       <ID>GRAND NAME</ID>
-      <Name>GRAND NAME</Name>
+      <Name>MachineTypeGrand</Name>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="00461093-2cdc-41ea-9ada-14eb25088a9b">
           <DataType>WChar</DataType>
@@ -194,39 +185,53 @@
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
+    <Attribute dwd:design-time-name="70c9e043-66c6-413c-8861-ed8f48cb86e7">
+      <ID>ID 1</ID>
+      <Name>MachineTypeId</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8608a40c-9d5a-4e2f-8215-0dcae8e76b85">
+          <DataType>BigInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6dc589a3-60e2-42db-b6ff-d48e13522f46">
+            <TableID>MachineType</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="a7d0b783-f431-45bb-8d32-72567341274e">
+    <Hierarchy dwd:design-time-name="2cbcf002-f2fd-4a6c-a09a-abcf598123f5">
       <ID>Hierarchy</ID>
       <Name>Hierarchy</Name>
       <Levels>
-        <Level dwd:design-time-name="459b9265-6843-4d35-b14d-400d3908cdd1">
-          <ID>GRAND NAME</ID>
-          <Name>GRAND NAME</Name>
+        <Level dwd:design-time-name="2c16c0fe-c30b-49e2-bcbc-fb6a2313c3a8">
+          <ID>MachineTypeGrand</ID>
+          <Name>MachineTypeGrand</Name>
           <SourceAttributeID>GRAND NAME</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="5b2e20b5-243e-49d0-8aac-7ad44c6b3e61">
-          <ID>PARENT NAME</ID>
-          <Name>PARENT NAME</Name>
+        <Level dwd:design-time-name="e72c8b14-14d8-4e19-af15-644f2c5e949a">
+          <ID>MachineTypeParent</ID>
+          <Name>MachineTypeParent</Name>
           <SourceAttributeID>PARENT NAME</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="6ed2b442-350c-49a4-ae91-e6b06da73456">
-          <ID>DISPLAY NAME</ID>
-          <Name>DISPLAY NAME</Name>
-          <SourceAttributeID>DISPLAY NAME</SourceAttributeID>
+        <Level dwd:design-time-name="aaf96d3f-334e-42d4-8d92-e5cce8a8cf9c">
+          <ID>MachineType</ID>
+          <Name>MachineType</Name>
+          <SourceAttributeID>ID</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>
   </Hierarchies>
-  <ProactiveCaching dwd:design-time-name="f89ee25e-aa7d-4e39-9d45-239b6ad742ba">
+  <ProactiveCaching dwd:design-time-name="3ac2338d-7e4d-4a3f-b5cc-b8306bbad161">
     <SilenceInterval>-PT1S</SilenceInterval>
     <Latency>-PT1S</Latency>
     <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
-    <ForceRebuildInterval>PT5M</ForceRebuildInterval>
+    <ForceRebuildInterval>PT10M</ForceRebuildInterval>
     <Enabled>true</Enabled>
     <OnlineMode>OnCacheComplete</OnlineMode>
     <AggregationStorage>MolapOnly</AggregationStorage>
-    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="f88dac36-cd2b-405f-8f60-1dfa9a5f95e2">
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="1cf86047-2e1b-4ce1-838e-a96f7aac7aed">
       <NotificationTechnique>Server</NotificationTechnique>
     </Source>
   </ProactiveCaching>

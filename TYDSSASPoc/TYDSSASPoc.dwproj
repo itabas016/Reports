@@ -24,10 +24,6 @@
       <FullPath>ActionInfo.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>MachineType.dim</Name>
-      <FullPath>MachineType.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>City.dim</Name>
       <FullPath>City.dim</FullPath>
     </ProjectItem>
@@ -72,16 +68,20 @@
       <FullPath>TIME.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Channel.dim</Name>
-      <FullPath>Channel.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>DATE.dim</Name>
       <FullPath>DATE.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>AppInfo.dim</Name>
       <FullPath>AppInfo.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>MachineType.dim</Name>
+      <FullPath>MachineType.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Channel.dim</Name>
+      <FullPath>Channel.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>

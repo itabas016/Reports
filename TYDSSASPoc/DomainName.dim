@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3935" scrolltop="-7012" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9790" y="18018" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3935" scrolltop="-7012" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9340" y="17330" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -73,9 +73,14 @@
             <Shape Id="ID" Expanded="true">
               <Attributes>
                 <Attribute Id="ID" />
-                <Attribute Id="PARENT NAME" />
               </Attributes>
               <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="PARENT NAME" Expanded="false">
+              <Attributes>
+                <Attribute Id="PARENT NAME" />
+              </Attributes>
+              <Position x="181" y="20" />
             </Shape>
           </Shapes>
         </DiagramLayout>
@@ -97,7 +102,7 @@
   <Attributes>
     <Attribute dwd:design-time-name="078bf071-58de-40bd-b371-e04a465f0e81">
       <ID>ID</ID>
-      <Name>ID</Name>
+      <Name>DomainName</Name>
       <Usage>Key</Usage>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="01a4aa8d-0308-47fa-a56a-13b1d0834bfd">
@@ -122,12 +127,16 @@
           <AttributeID>PARENT NAME</AttributeID>
           <Name>PARENT NAME</Name>
         </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="884e0eb3-b5b5-4d70-9c75-ef2d56ff6249">
+          <AttributeID>ID 1</AttributeID>
+          <Name>ID_</Name>
+        </AttributeRelationship>
       </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
     <Attribute dwd:design-time-name="1678c983-ab31-41dd-a21a-a8eb6c55a355">
       <ID>PARENT NAME</ID>
-      <Name>PARENT NAME</Name>
+      <Name>DomainNameParent</Name>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="b8547bde-c915-45bc-9f4e-4f5a4852d79a">
           <DataType>WChar</DataType>
@@ -141,20 +150,34 @@
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
+    <Attribute dwd:design-time-name="7bd59a82-30df-4640-929c-abe8145325a4">
+      <ID>ID 1</ID>
+      <Name>DomainNameId</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="906b8936-0af0-4cfc-ad27-987f42de7240">
+          <DataType>BigInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="896bbb01-1cf9-48aa-99b8-0e7f7b3fa971">
+            <TableID>DomainName</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="e2f1ab9e-a190-4437-bd71-35d1a95c960a">
+    <Hierarchy dwd:design-time-name="d8bf0f45-8c93-4ae3-9095-66f254388e8b">
       <ID>Hierarchy</ID>
       <Name>Hierarchy</Name>
       <Levels>
-        <Level dwd:design-time-name="0d997f33-e694-4827-b947-b112730a5334">
-          <ID>PARENT NAME</ID>
-          <Name>PARENT NAME</Name>
+        <Level dwd:design-time-name="5bd59bb9-0b2d-48a7-b85b-f1ef0f503fee">
+          <ID>DomainNameParent</ID>
+          <Name>DomainNameParent</Name>
           <SourceAttributeID>PARENT NAME</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="75a276d4-e7b7-4a40-b781-2d1cd27492c7">
-          <ID>ID</ID>
-          <Name>ID</Name>
+        <Level dwd:design-time-name="c831700c-8669-4542-8d19-43c0559ff266">
+          <ID>DomainName</ID>
+          <Name>DomainName</Name>
           <SourceAttributeID>ID</SourceAttributeID>
         </Level>
       </Levels>

@@ -6,14 +6,14 @@
       <SharedDataSet>
         <SharedDataSetReference>AppDownloadSuccess</SharedDataSetReference>
         <QueryParameters>
-          <QueryParameter Name="CHANNELPARENTNAME">
-            <Value>=Parameters!CHANNELPARENTNAME.Value</Value>
+          <QueryParameter Name="CHANNELChannelParent">
+            <Value>=Parameters!CHANNELChannelParent.Value</Value>
           </QueryParameter>
           <QueryParameter Name="DATEDATE">
             <Value>=Parameters!DATEDATE.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="TARGETAPPID">
-            <Value>=Parameters!TARGETAPPID.Value</Value>
+          <QueryParameter Name="TARGETAPPAppId">
+            <Value>=Parameters!TARGETAPPAppId.Value</Value>
           </QueryParameter>
         </QueryParameters>
       </SharedDataSet>
@@ -22,29 +22,37 @@
           <DataField>YEAR</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="YEAR_MONTH_CN">
-          <DataField>YEAR_MONTH_CN</DataField>
+        <Field Name="Month">
+          <DataField>Month</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="DATE">
           <DataField>DATE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="PARENT_NAME">
-          <DataField>PARENT_NAME</DataField>
+        <Field Name="Time">
+          <DataField>Time</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ID">
-          <DataField>ID</DataField>
+        <Field Name="ChannelParent">
+          <DataField>ChannelParent</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ID2">
-          <DataField>ID2</DataField>
+        <Field Name="Channel">
+          <DataField>Channel</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="活跃用户">
           <DataField>活跃用户</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="App">
+          <DataField>App</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AppId">
+          <DataField>AppId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
@@ -79,8 +87,8 @@
         <SharedDataSetReference>DimApp</SharedDataSetReference>
       </SharedDataSet>
       <Fields>
-        <Field Name="ID">
-          <DataField>ID</DataField>
+        <Field Name="App">
+          <DataField>App</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ParameterCaption">
@@ -137,8 +145,8 @@
         <SharedDataSetReference>DimChannel</SharedDataSetReference>
       </SharedDataSet>
       <Fields>
-        <Field Name="PARENT_NAME">
-          <DataField>PARENT_NAME</DataField>
+        <Field Name="ChannelParent">
+          <DataField>ChannelParent</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ParameterCaption">
@@ -418,9 +426,9 @@
                   </TablixHeader>
                   <TablixMembers>
                     <TablixMember>
-                      <Group Name="ID2">
+                      <Group Name="App">
                         <GroupExpressions>
-                          <GroupExpression>=Fields!ID2.Value</GroupExpression>
+                          <GroupExpression>=Fields!App.Value</GroupExpression>
                         </GroupExpressions>
                       </Group>
                       <SortExpressions>
@@ -432,14 +440,14 @@
                       <TablixHeader>
                         <Size>1.5625in</Size>
                         <CellContents>
-                          <Textbox Name="ID2">
+                          <Textbox Name="App">
                             <CanGrow>true</CanGrow>
                             <KeepTogether>true</KeepTogether>
                             <Paragraphs>
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>=Fields!ID2.Value</Value>
+                                    <Value>=Fields!App.Value</Value>
                                     <Style>
                                       <FontFamily>Tahoma</FontFamily>
                                       <Format>N0</Format>
@@ -449,7 +457,7 @@
                                 <Style />
                               </Paragraph>
                             </Paragraphs>
-                            <rd:DefaultName>ID2</rd:DefaultName>
+                            <rd:DefaultName>App</rd:DefaultName>
                             <Style>
                               <Border>
                                 <Color>LightGrey</Color>
@@ -522,15 +530,15 @@
                 <ChartMember>
                   <Group Name="Chart1_CategoryGroup">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!ID2.Value</GroupExpression>
+                      <GroupExpression>=Fields!App.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!ID2.Value</Value>
+                      <Value>=Fields!App.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!ID2.Value</Label>
+                  <Label>=Fields!App.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
@@ -553,7 +561,7 @@
                         <Style>
                           <FontSize>8pt</FontSize>
                         </Style>
-                        <Label>=Fields!ID2.Value</Label>
+                        <Label>=Fields!App.Value</Label>
                         <Visible>true</Visible>
                       </ChartDataLabel>
                       <Style />
@@ -868,14 +876,14 @@
     </ReportSection>
   </ReportSections>
   <ReportParameters>
-    <ReportParameter Name="CHANNELPARENTNAME">
+    <ReportParameter Name="CHANNELChannelParent">
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>="[CHANNEL].[PARENT NAME].[All]"</Value>
+          <Value>="[CHANNEL].[ChannelParent].[All]"</Value>
         </Values>
       </DefaultValue>
-      <Prompt>CHANNELPARENTNAME</Prompt>
+      <Prompt>CHANNELChannelParent</Prompt>
       <ValidValues>
         <DataSetReference>
           <DataSetName>DimChannel</DataSetName>
@@ -901,7 +909,7 @@
         </DataSetReference>
       </ValidValues>
     </ReportParameter>
-    <ReportParameter Name="TARGETAPPID">
+    <ReportParameter Name="TARGETAPPAppId">
       <DataType>String</DataType>
       <DefaultValue>
         <DataSetReference>
@@ -909,7 +917,7 @@
           <ValueField>TARGET_ID</ValueField>
         </DataSetReference>
       </DefaultValue>
-      <Prompt>TARGETAPPID</Prompt>
+      <Prompt>TARGETAPPAppId</Prompt>
       <ValidValues>
         <DataSetReference>
           <DataSetName>DimApp</DataSetName>

@@ -9,8 +9,8 @@
           <QueryParameter Name="DATEDATE">
             <Value>=Code.DimDateRange(Parameters!DATEDATE.Value,3)</Value>
           </QueryParameter>
-          <QueryParameter Name="CHANNELPARENTNAME">
-            <Value>=Parameters!CHANNELPARENTNAME.Value</Value>
+          <QueryParameter Name="CHANNELChannelParent">
+            <Value>=Parameters!CHANNELCHANNELPARENT.Value</Value>
           </QueryParameter>
         </QueryParameters>
       </SharedDataSet>
@@ -23,16 +23,16 @@
           <DataField>DATE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="YEAR_MONTH_CN">
-          <DataField>YEAR_MONTH_CN</DataField>
+        <Field Name="Month">
+          <DataField>Month</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="TIME_KEY">
-          <DataField>TIME_KEY</DataField>
+        <Field Name="Time">
+          <DataField>Time</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="PARENT_NAME">
-          <DataField>PARENT_NAME</DataField>
+        <Field Name="ChannelParent">
+          <DataField>ChannelParent</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="新增用户">
@@ -43,13 +43,13 @@
           <DataField>活跃用户</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
+        <Field Name="Channel">
+          <DataField>Channel</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="用户请求">
           <DataField>用户请求</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="ID">
-          <DataField>ID</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="激活用户">
           <DataField>激活用户</DataField>
@@ -117,15 +117,15 @@
                 <ChartMember>
                   <Group Name="Chart1_CategoryGroup">
                     <GroupExpressions>
-                      <GroupExpression>=left(Fields!TIME_KEY.Value,2)</GroupExpression>
+                      <GroupExpression>=left(Fields!Time.Value,2)</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!TIME_KEY.Value</Value>
+                      <Value>=Fields!Time.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!TIME_KEY.Value</Label>
+                  <Label>=Fields!Time.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
@@ -169,7 +169,7 @@
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=iif(((Format(Now(), "HH:00" )&gt;Fields!TIME_KEY.Value) or (Fields!DATE.Value&lt;Format(Now(),"yyyy-MM-dd"))) , runningValue(Fields!新增用户.Value,sum,"Chart1_SeriesGroup"), Nothing)</Y>
+                        <Y>=iif(((Format(Now(), "HH:00" )&gt;Fields!Time.Value) or (Fields!DATE.Value&lt;Format(Now(),"yyyy-MM-dd"))) , runningValue(Fields!新增用户.Value,sum,"Chart1_SeriesGroup"), Nothing)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
@@ -211,7 +211,7 @@
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=iif(((Format(Now(), "HH:00" )&gt;Fields!TIME_KEY.Value) or (Fields!DATE.Value&lt;Format(Now(),"yyyy-MM-dd"))) , Sum(Fields!新增用户.Value), Nothing)</Y>
+                        <Y>=iif(((Format(Now(), "HH:00" )&gt;Fields!Time.Value) or (Fields!DATE.Value&lt;Format(Now(),"yyyy-MM-dd"))) , Sum(Fields!新增用户.Value), Nothing)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
@@ -645,15 +645,15 @@
                 <ChartMember>
                   <Group Name="Chart2_CategoryGroup">
                     <GroupExpressions>
-                      <GroupExpression>=left(Fields!TIME_KEY.Value,2)</GroupExpression>
+                      <GroupExpression>=left(Fields!Time.Value,2)</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!TIME_KEY.Value</Value>
+                      <Value>=Fields!Time.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!TIME_KEY.Value</Label>
+                  <Label>=Fields!Time.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
@@ -691,7 +691,7 @@
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=iif(((Format(Now(), "HH:00" )&gt;Fields!TIME_KEY.Value) or (Fields!DATE.Value&lt;Format(Now(),"yyyy-MM-dd"))) ,Sum(Fields!活跃用户.Value), Nothing)</Y>
+                        <Y>=iif(((Format(Now(), "HH:00" )&gt;Fields!Time.Value) or (Fields!DATE.Value&lt;Format(Now(),"yyyy-MM-dd"))) ,Sum(Fields!活跃用户.Value), Nothing)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
@@ -734,7 +734,7 @@
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=iif(((Format(Now(), "HH:00" )&gt;Fields!TIME_KEY.Value) or (Fields!DATE.Value&lt;Format(Now(),"yyyy-MM-dd"))) ,Sum(Fields!用户请求.Value), Nothing)</Y>
+                        <Y>=iif(((Format(Now(), "HH:00" )&gt;Fields!Time.Value) or (Fields!DATE.Value&lt;Format(Now(),"yyyy-MM-dd"))) ,Sum(Fields!用户请求.Value), Nothing)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
@@ -778,7 +778,7 @@
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=iif(((Format(Now(), "HH:00" )&gt;Fields!TIME_KEY.Value) or (Fields!DATE.Value&lt;Format(Now(),"yyyy-MM-dd"))) ,Sum(Fields!激活用户.Value), Nothing)</Y>
+                        <Y>=iif(((Format(Now(), "HH:00" )&gt;Fields!Time.Value) or (Fields!DATE.Value&lt;Format(Now(),"yyyy-MM-dd"))) ,Sum(Fields!激活用户.Value), Nothing)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
@@ -1593,21 +1593,21 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="TIME_KEY">
+                        <Textbox Name="Time">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!TIME_KEY.Value</Value>
+                                  <Value>=Fields!Time.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>TIME_KEY</rd:DefaultName>
+                          <rd:DefaultName>Time</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -1944,7 +1944,7 @@
                 <TablixMember>
                   <Group Name="Details">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!TIME_KEY.Value</GroupExpression>
+                      <GroupExpression>=Fields!Time.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <TablixMembers>
@@ -1983,8 +1983,8 @@
       </Body>
       <Width>12.81984in</Width>
       <Page>
-		  <InteractiveHeight>0in</InteractiveHeight>
-		  <InteractiveWidth>8.5in</InteractiveWidth>
+        <InteractiveHeight>0in</InteractiveHeight>
+        <InteractiveWidth>8.5in</InteractiveWidth>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
         <TopMargin>1in</TopMargin>
@@ -2010,14 +2010,14 @@
         </DataSetReference>
       </ValidValues>
     </ReportParameter>
-    <ReportParameter Name="CHANNELPARENTNAME">
+    <ReportParameter Name="CHANNELCHANNELPARENT">
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>="[CHANNEL].[PARENT NAME].[All]"</Value>
+          <Value>="[CHANNEL].[ChannelParent].[All]"</Value>
         </Values>
       </DefaultValue>
-      <Prompt>CHANNELPARENTNAME</Prompt>
+      <Prompt>CHANNELCHANNELPARENT</Prompt>
       <ValidValues>
         <DataSetReference>
           <DataSetName>DimChannel</DataSetName>

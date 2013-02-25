@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3552" scrolltop="-5160" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9790" y="18018" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3552" scrolltop="-5160" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9340" y="17330" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -104,7 +104,7 @@
   <Attributes>
     <Attribute dwd:design-time-name="d7d70b2a-0b2a-4997-b9fe-df81f9058b3a">
       <ID>ACTION ID</ID>
-      <Name>ACTION ID</Name>
+      <Name>Action</Name>
       <Usage>Key</Usage>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="c5725314-bc36-44b9-b8f1-15614db75ca0">
@@ -119,9 +119,9 @@
       <NameColumn dwd:design-time-name="8e8c1759-d270-436d-a924-df174574380d">
         <DataType>WChar</DataType>
         <DataSize>255</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="8de0dd21-c2f9-4313-946e-0834f37473ab">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="876ad585-f75c-44b4-b463-525f5d9819c5">
           <TableID>MAIN_ACTION_INFO</TableID>
-          <ColumnID>ACTION_NAME</ColumnID>
+          <ColumnID>DISPLAY_NAME</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
@@ -129,16 +129,16 @@
           <AttributeID>CONTROLLER NAME</AttributeID>
           <Name>CONTROLLER NAME</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="82966439-6775-40df-99f4-64e3d83cd062">
-          <AttributeID>DISPLAY NAME</AttributeID>
-          <Name>DISPLAY NAME</Name>
+        <AttributeRelationship dwd:design-time-name="1d29a00f-939c-45b2-b6fa-8321b2b384f4">
+          <AttributeID>ACTION ID 1</AttributeID>
+          <Name>ActionId</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
     <Attribute dwd:design-time-name="f1bee421-f698-467e-a730-7fb0faaef2fb">
       <ID>CONTROLLER NAME</ID>
-      <Name>CONTROLLER NAME</Name>
+      <Name>Controller</Name>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="1020cb4c-6d19-40a8-bac3-270534daed8a">
           <DataType>WChar</DataType>
@@ -152,20 +152,18 @@
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="f9eff7b7-4380-4371-a409-6e5989bcca7e">
-      <ID>DISPLAY NAME</ID>
-      <Name>DISPLAY NAME</Name>
+    <Attribute dwd:design-time-name="99b8070b-c961-4eea-b183-ce1b3e838574">
+      <ID>ACTION ID 1</ID>
+      <Name>ActionId</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="923a5ba4-1273-45d6-974c-55a3d1bd7d21">
-          <DataType>WChar</DataType>
-          <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="00472331-7bbd-4acb-9b74-2eff3d40c7b5">
+        <KeyColumn dwd:design-time-name="464b2a7f-d30e-4442-9377-6af6de2449f8">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a95f7760-9149-4afd-9f8a-45ee6e8c2cb6">
             <TableID>MAIN_ACTION_INFO</TableID>
-            <ColumnID>DISPLAY_NAME</ColumnID>
+            <ColumnID>ACTION_ID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
   </Attributes>

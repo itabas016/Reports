@@ -2,14 +2,14 @@
 <Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
   <AutoRefresh>0</AutoRefresh>
   <DataSets>
-    <DataSet Name="DimUserPerDate">
+    <DataSet Name="UserPerDate">
       <SharedDataSet>
         <SharedDataSetReference>UserPerDate</SharedDataSetReference>
         <QueryParameters>
           <QueryParameter Name="DATEDATE">
             <Value>=Parameters!DATEDATE.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="CHANNELPARENTNAME">
+          <QueryParameter Name="CHANNELChannelParent">
             <Value>=Parameters!CHANNELPARENTNAME.Value</Value>
           </QueryParameter>
         </QueryParameters>
@@ -19,8 +19,8 @@
           <DataField>YEAR</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="YEAR_MONTH_CN">
-          <DataField>YEAR_MONTH_CN</DataField>
+        <Field Name="Month">
+          <DataField>Month</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="DATE">
@@ -35,17 +35,17 @@
           <DataField>活跃用户</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="PARENT_NAME">
-          <DataField>PARENT_NAME</DataField>
+        <Field Name="ChannelParent">
+          <DataField>ChannelParent</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Channel">
+          <DataField>Channel</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="用户请求">
           <DataField>用户请求</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="ID">
-          <DataField>ID</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="激活用户">
           <DataField>激活用户</DataField>
@@ -58,8 +58,8 @@
         <SharedDataSetReference>DimChannel</SharedDataSetReference>
       </SharedDataSet>
       <Fields>
-        <Field Name="PARENT_NAME">
-          <DataField>PARENT_NAME</DataField>
+        <Field Name="ChannelParent">
+          <DataField>ChannelParent</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ParameterCaption">
@@ -324,7 +324,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!ID.Value</Value>
+                                  <Value>=Fields!Channel.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -343,6 +343,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -706,34 +707,34 @@
                   <KeepWithGroup>After</KeepWithGroup>
                 </TablixMember>
                 <TablixMember>
-                  <Group Name="PARENT_NAME">
+                  <Group Name="ChannelParent">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!PARENT_NAME.Value</GroupExpression>
+                      <GroupExpression>=Fields!ChannelParent.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!PARENT_NAME.Value</Value>
+                      <Value>=Fields!ChannelParent.Value</Value>
                     </SortExpression>
                   </SortExpressions>
                   <TablixHeader>
                     <Size>1in</Size>
                     <CellContents>
-                      <Textbox Name="PARENT_NAME1">
+                      <Textbox Name="ChannelParent1">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>=Fields!PARENT_NAME.Value</Value>
+                                <Value>=Fields!ChannelParent.Value</Value>
                                 <Style />
                               </TextRun>
                             </TextRuns>
                             <Style />
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>PARENT_NAME1</rd:DefaultName>
+                        <rd:DefaultName>ChannelParent1</rd:DefaultName>
                         <Style>
                           <Border>
                             <Color>LightGrey</Color>
@@ -795,7 +796,7 @@
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
-            <DataSetName>DimUserPerDate</DataSetName>
+            <DataSetName>UserPerDate</DataSetName>
             <Top>0.24875in</Top>
             <Left>0.28in</Left>
             <Height>0.75in</Height>
@@ -812,15 +813,15 @@
                 <ChartMember>
                   <Group Name="Chart1_CategoryGroup">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!PARENT_NAME.Value</GroupExpression>
+                      <GroupExpression>=Fields!ChannelParent.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!PARENT_NAME.Value</Value>
+                      <Value>=Fields!ChannelParent.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!PARENT_NAME.Value</Label>
+                  <Label>=Fields!ChannelParent.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
@@ -1071,7 +1072,7 @@
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
-            <DataSetName>DimUserPerDate</DataSetName>
+            <DataSetName>UserPerDate</DataSetName>
             <Top>1.26958in</Top>
             <Left>0.28in</Left>
             <Height>2in</Height>
@@ -1092,15 +1093,15 @@
                 <ChartMember>
                   <Group Name="Chart2_CategoryGroup">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!PARENT_NAME.Value</GroupExpression>
+                      <GroupExpression>=Fields!ChannelParent.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!PARENT_NAME.Value</Value>
+                      <Value>=Fields!ChannelParent.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!PARENT_NAME.Value</Label>
+                  <Label>=Fields!ChannelParent.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
@@ -1351,7 +1352,7 @@
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
-            <DataSetName>DimUserPerDate</DataSetName>
+            <DataSetName>UserPerDate</DataSetName>
             <Top>1.26958in</Top>
             <Left>3.53in</Left>
             <Height>2in</Height>
@@ -1372,15 +1373,15 @@
                 <ChartMember>
                   <Group Name="Chart3_CategoryGroup">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!PARENT_NAME.Value</GroupExpression>
+                      <GroupExpression>=Fields!ChannelParent.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!PARENT_NAME.Value</Value>
+                      <Value>=Fields!ChannelParent.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!PARENT_NAME.Value</Label>
+                  <Label>=Fields!ChannelParent.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
@@ -1631,7 +1632,7 @@
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
-            <DataSetName>DimUserPerDate</DataSetName>
+            <DataSetName>UserPerDate</DataSetName>
             <Top>3.64458in</Top>
             <Left>0.28in</Left>
             <Height>2in</Height>
@@ -1652,15 +1653,15 @@
                 <ChartMember>
                   <Group Name="Chart4_CategoryGroup">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!PARENT_NAME.Value</GroupExpression>
+                      <GroupExpression>=Fields!ChannelParent.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!PARENT_NAME.Value</Value>
+                      <Value>=Fields!ChannelParent.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!PARENT_NAME.Value</Label>
+                  <Label>=Fields!ChannelParent.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
@@ -1911,7 +1912,7 @@
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
-            <DataSetName>DimUserPerDate</DataSetName>
+            <DataSetName>UserPerDate</DataSetName>
             <Top>3.64458in</Top>
             <Left>3.53in</Left>
             <Height>2in</Height>
@@ -1961,7 +1962,7 @@
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>="[CHANNEL].[PARENT NAME].[All]"</Value>
+          <Value>="[CHANNEL].[ChannelParent].[All]"</Value>
         </Values>
       </DefaultValue>
       <Prompt>CHANNELPARENTNAME</Prompt>

@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3935" scrolltop="-7012" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9790" y="18018" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3935" scrolltop="-7012" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9340" y="17330" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -81,7 +81,7 @@
   <Attributes>
     <Attribute dwd:design-time-name="520f774d-f167-4073-9747-9e0731eb9af1">
       <ID>ID</ID>
-      <Name>ID</Name>
+      <Name>AppVersion</Name>
       <Usage>Key</Usage>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="9be80aca-3ccd-4442-85a8-c93d127056c3">
@@ -110,12 +110,16 @@
           <AttributeID>GRAND NAME</AttributeID>
           <Name>GRAND NAME</Name>
         </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c5506540-d864-4b71-bc06-f8cda6a72ba3">
+          <AttributeID>ID 1</AttributeID>
+          <Name>ID_</Name>
+        </AttributeRelationship>
       </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
     <Attribute dwd:design-time-name="04428f5b-cf70-4693-8b70-73a6270f313d">
       <ID>PARENT NAME</ID>
-      <Name>PARENT NAME</Name>
+      <Name>AppVersionParent</Name>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="9bcb8854-521e-425d-a3cf-2ffcaaea200b">
           <DataType>WChar</DataType>
@@ -131,7 +135,7 @@
     </Attribute>
     <Attribute dwd:design-time-name="5a557e90-4b55-421f-b8f2-acef4dfd14cf">
       <ID>GRAND NAME</ID>
-      <Name>GRAND NAME</Name>
+      <Name>AppVersionGrand</Name>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="a5834dfc-f0bb-4468-ae68-c38502db2a86">
           <DataType>WChar</DataType>
@@ -145,20 +149,34 @@
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
     </Attribute>
+    <Attribute dwd:design-time-name="8b36fb22-f72a-4cc5-975a-88d6ab63fff8">
+      <ID>ID 1</ID>
+      <Name>AppVersionId</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fa6567a1-49fe-4f6e-ad67-c1bae08a7ff2">
+          <DataType>BigInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b3118be8-a7d6-41cd-bddf-b6c5a6e29458">
+            <TableID>AppVersion</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="55c3a379-9994-4864-8908-cecabaa0b6c5">
+    <Hierarchy dwd:design-time-name="e00e97bc-4061-49dd-86cc-57ffac08d28e">
       <ID>Hierarchy</ID>
       <Name>Hierarchy</Name>
       <Levels>
-        <Level dwd:design-time-name="e93291f4-ca48-4bd9-b230-52b7a157c8ef">
-          <ID>PARENT NAME</ID>
-          <Name>PARENT NAME</Name>
+        <Level dwd:design-time-name="cf4dcd79-1d86-4aca-9f1e-f483a7f803aa">
+          <ID>AppVersionParent</ID>
+          <Name>AppVersionParent</Name>
           <SourceAttributeID>PARENT NAME</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="1e0b9fc6-daa0-4a68-8fb9-46b077c7d635">
-          <ID>ID</ID>
-          <Name>ID</Name>
+        <Level dwd:design-time-name="d4c5e063-d788-4837-8a6e-22d8a27c0a2f">
+          <ID>AppVersion</ID>
+          <Name>AppVersion</Name>
           <SourceAttributeID>ID</SourceAttributeID>
         </Level>
       </Levels>
