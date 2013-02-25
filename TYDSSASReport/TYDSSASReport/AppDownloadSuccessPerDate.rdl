@@ -909,7 +909,7 @@
         </DataSetReference>
       </ValidValues>
     </ReportParameter>
-    <ReportParameter Name="TARGETAPPAppId">
+    <ReportParameter Name="TARGETAPPApp">
       <DataType>String</DataType>
       <DefaultValue>
         <DataSetReference>
@@ -917,7 +917,7 @@
           <ValueField>TARGET_ID</ValueField>
         </DataSetReference>
       </DefaultValue>
-      <Prompt>TARGETAPPAppId</Prompt>
+      <Prompt>TARGETAPPApp</Prompt>
       <ValidValues>
         <DataSetReference>
           <DataSetName>DimApp</DataSetName>

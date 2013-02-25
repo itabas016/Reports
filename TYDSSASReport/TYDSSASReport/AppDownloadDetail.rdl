@@ -12,8 +12,8 @@
           <QueryParameter Name="CHANNELChannelParent">
             <Value>=Parameters!CHANNELChannelParent.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="TARGETAPPAppId">
-            <Value>=Parameters!TARGETAPPAppId.Value</Value>
+          <QueryParameter Name="TARGETAPPApp">
+            <Value>=Parameters!TARGETAPPApp.Value</Value>
           </QueryParameter>
         </QueryParameters>
       </SharedDataSet>
@@ -66,8 +66,8 @@
           <QueryParameter Name="DATEDATE">
             <Value>=Parameters!DATEDATE.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="TARGETAPPAppId">
-            <Value>=Parameters!TARGETAPPAppId.Value</Value>
+          <QueryParameter Name="TARGETAPPApp">
+            <Value>=Parameters!TARGETAPPApp.Value</Value>
           </QueryParameter>
         </QueryParameters>
       </SharedDataSet>
@@ -265,9 +265,10 @@
                         <Y>=Sum(Fields!活跃用户.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
-                        <Style />
+                        <Style>
+                          <Format>n0</Format>
+                        </Style>
                         <Label>=Fields!活跃用户.Value</Label>
-                        <Visible>true</Visible>
                         <Position>Top</Position>
                       </ChartDataLabel>
                       <Style />
@@ -478,7 +479,7 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Chart Title</Caption>
+                <Caption>应用下载</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontWeight>Bold</FontWeight>
@@ -515,8 +516,37 @@
               <BackgroundGradientType>None</BackgroundGradientType>
             </Style>
           </Chart>
+          <Textbox Name="Textbox1">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Parameters!TARGETAPPApp.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox1</rd:DefaultName>
+            <Left>3.53in</Left>
+            <Height>0.25in</Height>
+            <Width>1in</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
         </ReportItems>
-        <Height>3.64583in</Height>
+        <Height>3.80083in</Height>
         <Style />
       </Body>
       <Width>10.09375in</Width>
@@ -564,14 +594,14 @@
       </ValidValues>
       <MultiValue>true</MultiValue>
     </ReportParameter>
-    <ReportParameter Name="TARGETAPPAppId">
+    <ReportParameter Name="TARGETAPPApp">
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
           <Value>="[TARGET APP].[App].&amp;[3]"</Value>
         </Values>
       </DefaultValue>
-      <Prompt>TARGETAPPAppId</Prompt>
+      <Prompt>TARGETAPPApp</Prompt>
       <ValidValues>
         <DataSetReference>
           <DataSetName>DimApp</DataSetName>

@@ -10,7 +10,7 @@
             <Value>=Parameters!DATEDATE.Value</Value>
           </QueryParameter>
           <QueryParameter Name="CHANNELChannelParent">
-            <Value>=Parameters!CHANNELCHANNELPARENT.Value</Value>
+            <Value>=Parameters!CHANNELChannelParent.Value</Value>
           </QueryParameter>
         </QueryParameters>
       </SharedDataSet>
@@ -131,7 +131,7 @@
                       <Value>=Fields!DATE.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Right(Fields!DATE.Value, 5)</Label>
+                  <Label>=Fields!DATE.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
@@ -1342,14 +1342,14 @@
       </ValidValues>
       <MultiValue>true</MultiValue>
     </ReportParameter>
-    <ReportParameter Name="CHANNELCHANNELPARENT">
+    <ReportParameter Name="CHANNELChannelParent">
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
           <Value>="[CHANNEL].[ChannelParent].[All]"</Value>
         </Values>
       </DefaultValue>
-      <Prompt>CHANNELCHANNELPARENT</Prompt>
+      <Prompt>CHANNELChannelParent</Prompt>
       <ValidValues>
         <DataSetReference>
           <DataSetName>DimChannel</DataSetName>
