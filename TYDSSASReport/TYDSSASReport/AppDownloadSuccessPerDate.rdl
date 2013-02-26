@@ -12,8 +12,8 @@
           <QueryParameter Name="DATEDATE">
             <Value>=Parameters!DATEDATE.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="TARGETAPPAppId">
-            <Value>=Parameters!TARGETAPPAppId.Value</Value>
+          <QueryParameter Name="TARGETAPPApp">
+            <Value>=Parameters!TARGETAPPApp.Value</Value>
           </QueryParameter>
         </QueryParameters>
       </SharedDataSet>
