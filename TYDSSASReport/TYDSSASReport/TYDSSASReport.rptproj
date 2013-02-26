@@ -44,8 +44,20 @@
       <Name>UserPerMinute.rsd</Name>
       <FullPath>UserPerMinute.rsd</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>AppDownloadRate.rsd</Name>
+      <FullPath>AppDownloadRate.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>AppDownloadSuccessRate.rsd</Name>
+      <FullPath>AppDownloadSuccessRate.rsd</FullPath>
+    </ProjectItem>
   </DataSets>
   <Reports>
+    <ProjectItem>
+      <Name>AppDownloadDetail.rdl</Name>
+      <FullPath>AppDownloadDetail.rdl</FullPath>
+    </ProjectItem>
     <ProjectItem>
       <Name>AppDownloadPerDate.rdl</Name>
       <FullPath>AppDownloadPerDate.rdl</FullPath>
@@ -67,8 +79,8 @@
       <FullPath>UserPerHour.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>AppDownloadDetail.rdl</Name>
-      <FullPath>AppDownloadDetail.rdl</FullPath>
+      <Name>AppDownloadRate.rdl</Name>
+      <FullPath>AppDownloadRate.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
