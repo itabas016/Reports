@@ -10,7 +10,7 @@
             <Value>=Parameters!DATEDATE.Value</Value>
           </QueryParameter>
           <QueryParameter Name="CHANNELChannelParent">
-            <Value>=Parameters!CHANNELPARENTNAME.Value</Value>
+            <Value>=Parameters!CHANNELChannelParent.Value</Value>
           </QueryParameter>
         </QueryParameters>
       </SharedDataSet>
@@ -1957,14 +1957,14 @@
         </DataSetReference>
       </ValidValues>
     </ReportParameter>
-    <ReportParameter Name="CHANNELPARENTNAME">
+    <ReportParameter Name="CHANNELChannelParent">
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
           <Value>="[CHANNEL].[ChannelParent].[All]"</Value>
         </Values>
       </DefaultValue>
-      <Prompt>CHANNELPARENTNAME</Prompt>
+      <Prompt>CHANNELChannelParent</Prompt>
       <ValidValues>
         <DataSetReference>
           <DataSetName>DimChannel</DataSetName>

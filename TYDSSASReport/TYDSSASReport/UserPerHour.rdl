@@ -1944,7 +1944,7 @@
                 <TablixMember>
                   <Group Name="Details">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!Time.Value</GroupExpression>
+                      <GroupExpression>=left(Fields!Time.Value,2)</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <TablixMembers>

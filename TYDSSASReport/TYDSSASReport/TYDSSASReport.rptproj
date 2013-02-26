@@ -17,8 +17,16 @@
       <FullPath>AppDownload.rsd</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>AppDownloadRate.rsd</Name>
+      <FullPath>AppDownloadRate.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>AppDownloadSuccess.rsd</Name>
       <FullPath>AppDownloadSuccess.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>AppDownloadSuccessRate.rsd</Name>
+      <FullPath>AppDownloadSuccessRate.rsd</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>DimApp.rsd</Name>
@@ -44,14 +52,6 @@
       <Name>UserPerMinute.rsd</Name>
       <FullPath>UserPerMinute.rsd</FullPath>
     </ProjectItem>
-    <ProjectItem>
-      <Name>AppDownloadRate.rsd</Name>
-      <FullPath>AppDownloadRate.rsd</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>AppDownloadSuccessRate.rsd</Name>
-      <FullPath>AppDownloadSuccessRate.rsd</FullPath>
-    </ProjectItem>
   </DataSets>
   <Reports>
     <ProjectItem>
@@ -61,6 +61,10 @@
     <ProjectItem>
       <Name>AppDownloadPerDate.rdl</Name>
       <FullPath>AppDownloadPerDate.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>AppDownloadRate.rdl</Name>
+      <FullPath>AppDownloadRate.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>AppDownloadSuccessPerDate.rdl</Name>
@@ -79,8 +83,12 @@
       <FullPath>UserPerHour.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>AppDownloadRate.rdl</Name>
-      <FullPath>AppDownloadRate.rdl</FullPath>
+      <Name>Index.rdl</Name>
+      <FullPath>Index.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TydApps.rdl</Name>
+      <FullPath>TydApps.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
