@@ -523,7 +523,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=Parameters!TARGETAPPApp.Value</Value>
+                    <Value />
                     <Style />
                   </TextRun>
                 </TextRuns>
