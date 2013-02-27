@@ -460,6 +460,7 @@
             </ChartAreas>
             <ChartLegends>
               <ChartLegend Name="Default">
+                <Hidden>true</Hidden>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontSize>8pt</FontSize>
