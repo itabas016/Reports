@@ -900,7 +900,6 @@
           <LabelField>ParameterCaption</LabelField>
         </DataSetReference>
       </ValidValues>
-      <MultiValue>true</MultiValue>
     </ReportParameter>
     <ReportParameter Name="TARGETAPPApp">
       <DataType>String</DataType>
