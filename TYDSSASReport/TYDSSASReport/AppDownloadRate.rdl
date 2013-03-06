@@ -12,6 +12,9 @@
           <QueryParameter Name="TARGETAPPApp">
             <Value>=Parameters!TARGETAPPApp.Value</Value>
           </QueryParameter>
+          <QueryParameter Name="CHANNELChannelParent">
+            <Value>=Parameters!CHANNELChannelParent.Value</Value>
+          </QueryParameter>
         </QueryParameters>
       </SharedDataSet>
       <Fields>
@@ -148,6 +151,29 @@
       <Fields>
         <Field Name="App">
           <DataField>App</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ParameterCaption">
+          <DataField>ParameterCaption</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ParameterValue">
+          <DataField>ParameterValue</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ParameterLevel">
+          <DataField>ParameterLevel</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="DimChannel">
+      <SharedDataSet>
+        <SharedDataSetReference>DimChannel</SharedDataSetReference>
+      </SharedDataSet>
+      <Fields>
+        <Field Name="ChannelParent">
+          <DataField>ChannelParent</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ParameterCaption">
@@ -894,7 +920,7 @@
         <Height>11in</Height>
         <Style />
       </Body>
-      <Width>11.17708in</Width>
+      <Width>11.17709in</Width>
       <Page>
         <InteractiveHeight>0in</InteractiveHeight>
         <InteractiveWidth>8.5in</InteractiveWidth>
@@ -911,7 +937,7 @@
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>="[DATE].[DATE].&amp;["&amp;Format(Today(), "yyyy-MM-dd" )&amp;"T00:00:00]"</Value>
+          <Value>="[DATE].[DATE].&amp;["&amp;Format(DateAdd("d", -1,Today()), "yyyy-MM-dd" )&amp;"T00:00:00]"</Value>
         </Values>
       </DefaultValue>
       <Prompt>DATEDATE</Prompt>
@@ -941,6 +967,22 @@
         </DataSetReference>
       </ValidValues>
       <MultiValue>true</MultiValue>
+    </ReportParameter>
+    <ReportParameter Name="CHANNELChannelParent">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>="[CHANNEL].[ChannelParent].[All]"</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CHANNELChannelParent</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>DimChannel</DataSetName>
+          <ValueField>ParameterValue</ValueField>
+          <LabelField>ParameterCaption</LabelField>
+        </DataSetReference>
+      </ValidValues>
     </ReportParameter>
   </ReportParameters>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
