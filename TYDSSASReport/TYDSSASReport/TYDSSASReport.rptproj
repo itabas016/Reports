@@ -29,6 +29,10 @@
       <FullPath>AppDownloadSuccessRate.rsd</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>ChipByRes.rsd</Name>
+      <FullPath>ChipByRes.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>DimApp.rsd</Name>
       <FullPath>DimApp.rsd</FullPath>
     </ProjectItem>
@@ -75,12 +79,8 @@
       <FullPath>ChannelUserPerDate.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>UserPerDate.rdl</Name>
-      <FullPath>UserPerDate.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>UserPerHour.rdl</Name>
-      <FullPath>UserPerHour.rdl</FullPath>
+      <Name>ChipByRes.rdl</Name>
+      <FullPath>ChipByRes.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Index.rdl</Name>
@@ -89,6 +89,18 @@
     <ProjectItem>
       <Name>TydApps.rdl</Name>
       <FullPath>TydApps.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>UserPerDate.rdl</Name>
+      <FullPath>UserPerDate.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>UserPerHour.rdl</Name>
+      <FullPath>UserPerHour.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>UserPerDateForChannel.rdl</Name>
+      <FullPath>UserPerDateForChannel.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
