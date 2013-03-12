@@ -734,6 +734,20 @@
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>ChannelParent1</rd:DefaultName>
+                        <ActionInfo>
+                          <Actions>
+                            <Action>
+                              <Drillthrough>
+                                <ReportName>UserPerDate</ReportName>
+                                <Parameters>
+                                  <Parameter Name="CHANNELChannelParent">
+                                    <Value>="[CHANNEL].[ChannelParent].&amp;["&amp;(Fields!ChannelParent.Value)&amp;"]"</Value>
+                                  </Parameter>
+                                </Parameters>
+                              </Drillthrough>
+                            </Action>
+                          </Actions>
+                        </ActionInfo>
                         <Style>
                           <Border>
                             <Color>LightGrey</Color>
@@ -745,6 +759,7 @@
                           <PaddingBottom>2pt</PaddingBottom>
                         </Style>
                       </Textbox>
+                      <rd:Selected>true</rd:Selected>
                     </CellContents>
                   </TablixHeader>
                   <TablixMembers>

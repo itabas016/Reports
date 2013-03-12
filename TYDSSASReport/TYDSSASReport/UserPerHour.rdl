@@ -1369,7 +1369,6 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>UserPerMinute</DataSetName>
-            <Top>0cm</Top>
             <Left>5.85661in</Left>
             <Height>20.02089cm</Height>
             <Width>17.13098cm</Width>
@@ -1962,7 +1961,7 @@
                 <FilterExpression>=Fields!DATE.Value</FilterExpression>
                 <Operator>Equal</Operator>
                 <FilterValues>
-                  <FilterValue>=Format(Today(), "yyyy-MM-dd" )</FilterValue>
+                  <FilterValue>=Format(Code.GetDate(Parameters!DATEDATE.Value), "yyyy-MM-dd")</FilterValue>
                 </FilterValues>
               </Filter>
             </Filters>

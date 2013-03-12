@@ -925,13 +925,32 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!DATE.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Color>Blue</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>DATE</rd:DefaultName>
+                          <ActionInfo>
+                            <Actions>
+                              <Action>
+                                <Drillthrough>
+                                  <ReportName>UserPerHour</ReportName>
+                                  <Parameters>
+                                    <Parameter Name="DATEDATE">
+                                      <Value>="[DATE].[DATE].&amp;["&amp;(Fields!DATE.Value)&amp;"T00:00:00]"</Value>
+                                    </Parameter>
+                                    <Parameter Name="CHANNELChannelParent">
+                                      <Value>=Parameters!CHANNELChannelParent.Value</Value>
+                                    </Parameter>
+                                  </Parameters>
+                                </Drillthrough>
+                              </Action>
+                            </Actions>
+                          </ActionInfo>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -943,6 +962,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>

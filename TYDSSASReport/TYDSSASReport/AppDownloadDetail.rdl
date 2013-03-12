@@ -30,10 +30,6 @@
           <DataField>DATE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Time">
-          <DataField>Time</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="App">
           <DataField>App</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -82,10 +78,6 @@
         </Field>
         <Field Name="DATE">
           <DataField>DATE</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Time">
-          <DataField>Time</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ChannelParent">
@@ -230,15 +222,6 @@
                     <GroupExpressions>
                       <GroupExpression>=Fields!DATE.Value</GroupExpression>
                     </GroupExpressions>
-                    <Filters>
-                      <Filter>
-                        <FilterExpression>=Fields!DATE.Value</FilterExpression>
-                        <Operator>TopN</Operator>
-                        <FilterValues>
-                          <FilterValue>30</FilterValue>
-                        </FilterValues>
-                      </Filter>
-                    </Filters>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
@@ -265,11 +248,7 @@
                         <Y>=Sum(Fields!活跃用户.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
-                        <Style>
-                          <Format>n0</Format>
-                        </Style>
-                        <Label>=Fields!活跃用户.Value</Label>
-                        <Position>Top</Position>
+                        <Style />
                       </ChartDataLabel>
                       <Style />
                       <ChartMarker>
