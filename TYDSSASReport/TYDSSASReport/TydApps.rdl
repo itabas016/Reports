@@ -215,7 +215,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!DISPLAY_NAME.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Color>Blue</Color>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />

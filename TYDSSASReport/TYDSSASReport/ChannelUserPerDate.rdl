@@ -727,7 +727,9 @@
                             <TextRuns>
                               <TextRun>
                                 <Value>=Fields!ChannelParent.Value</Value>
-                                <Style />
+                                <Style>
+                                  <Color>Blue</Color>
+                                </Style>
                               </TextRun>
                             </TextRuns>
                             <Style />

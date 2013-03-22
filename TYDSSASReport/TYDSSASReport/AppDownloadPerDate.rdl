@@ -30,10 +30,6 @@
           <DataField>DATE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Time">
-          <DataField>Time</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="App">
           <DataField>App</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -189,10 +185,6 @@
         </Field>
         <Field Name="DATE">
           <DataField>DATE</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Time">
-          <DataField>Time</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ChannelParent">
