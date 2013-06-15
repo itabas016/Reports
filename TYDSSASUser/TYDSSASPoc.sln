@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "TYDSSASUser", "TYDSSASUser.dwproj", "{5BB02DE0-E864-40DC-A0B3-35E39BACDBE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BB02DE0-E864-40DC-A0B3-35E39BACDBE6}.Development|Default.ActiveCfg = Development
+		{5BB02DE0-E864-40DC-A0B3-35E39BACDBE6}.Development|Default.Build.0 = Development
+		{5BB02DE0-E864-40DC-A0B3-35E39BACDBE6}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

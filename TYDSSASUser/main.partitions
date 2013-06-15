@@ -1,0 +1,115 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3cfcfddf-ab86-45a1-8311-37a711d3a5e7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>main</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>USER INFO</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="29e45cb2-9712-484c-a328-142eb7dea80e">
+          <ID>USER INFO</ID>
+          <Name>USER INFO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <Annotations>
+            <Annotation>
+              <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ProactiveCachingQueryDesignerDetails</Name>
+              <Value>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;DesignerTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;NotificationDesignerDetails&gt;
+    &lt;PollingQuery&gt;
+      &lt;DesignerType&gt;Generic&lt;/DesignerType&gt;
+      &lt;Query&gt;select  max(ID) from user_info&lt;/Query&gt;
+    &lt;/PollingQuery&gt;
+    &lt;ProcessingQuery&gt;
+      &lt;DesignerType&gt;Generic&lt;/DesignerType&gt;
+      &lt;Query&gt;SELECT "STORE"."USER_INFO".*,trunc(CREATE_TIME) "CREATE_DATE",         SUBSTR(TO_CHAR("STORE"."USER_INFO".CREATE_TIME,'hh24:mi:ss'),0,4) as TIME_KEY            FROM "STORE"."USER_INFO"         WHERE "STORE"."USER_INFO".ID&amp;gt;:1 AND "STORE"."USER_INFO".ID&amp;lt;=:2&lt;/Query&gt;
+    &lt;/ProcessingQuery&gt;
+  &lt;/NotificationDesignerDetails&gt;
+&lt;/DesignerTypes&gt;</Value>
+            </Annotation>
+          </Annotations>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="f48ca9aa-8dca-4f0f-abef-6e0904c30de2">
+            <DataSourceID>hynew</DataSourceID>
+            <QueryDefinition>SELECT "STORE"."USER_INFO".*,trunc(CREATE_TIME) "CREATE_DATE",SUBSTR(TO_CHAR("STORE"."USER_INFO".CREATE_TIME,'hh24:mi:ss'),0,4) as TIME_KEY   FROM "STORE"."USER_INFO"</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="1888b21e-59d3-4bb4-abde-154993dab2d5">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <AggregationStorage>MolapOnly</AggregationStorage>
+            <Source xsi:type="ProactiveCachingIncrementalProcessingBinding" dwd:design-time-name="957c4ee9-ed4e-4b4c-bf11-111abab49d32">
+              <RefreshInterval>PT20M</RefreshInterval>
+              <IncrementalProcessingNotifications>
+                <IncrementalProcessingNotification>
+                  <Query>select  max(ID) from user_info</Query>
+                  <TableID>MAIN_USER_INFO</TableID>
+                  <ProcessingQuery>SELECT "STORE"."USER_INFO".*,trunc(CREATE_TIME) "CREATE_DATE",         SUBSTR(TO_CHAR("STORE"."USER_INFO".CREATE_TIME,'hh24:mi:ss'),0,4) as TIME_KEY            FROM "STORE"."USER_INFO"         WHERE "STORE"."USER_INFO".ID&gt;:1 AND "STORE"."USER_INFO".ID&lt;=:2</ProcessingQuery>
+                </IncrementalProcessingNotification>
+              </IncrementalProcessingNotifications>
+            </Source>
+          </ProactiveCaching>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>COMMUNICATION LOG</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="713bb8e5-37e8-4f8b-b4e4-74fa42d5d5b3">
+          <ID>COMMUNICATION LOG</ID>
+          <Name>COMMUNICATION LOG</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <Annotations>
+            <Annotation>
+              <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ProactiveCachingQueryDesignerDetails</Name>
+              <Value>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;DesignerTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;NotificationDesignerDetails&gt;
+    &lt;PollingQuery&gt;
+      &lt;DesignerType&gt;Generic&lt;/DesignerType&gt;
+      &lt;Query&gt;SELECT MAX(ID) FROM COMMUNICATION_LOG&lt;/Query&gt;
+    &lt;/PollingQuery&gt;
+    &lt;ProcessingQuery&gt;
+      &lt;DesignerType&gt;Generic&lt;/DesignerType&gt;
+      &lt;Query&gt;SELECT "STORE"."COMMUNICATION_LOG".*,trunc(CREATE_TIME) "CREATE_DATE",SUBSTR(TO_CHAR("STORE"."COMMUNICATION_LOG".CREATE_TIME,'hh24:mi:ss'),0,4) as TIME_KEY  FROM "STORE"."COMMUNICATION_LOG" WHERE "STORE"."COMMUNICATION_LOG"."ID" &amp;gt; :1 AND "STORE"."COMMUNICATION_LOG"."ID" &amp;lt;= :2&lt;/Query&gt;
+    &lt;/ProcessingQuery&gt;
+  &lt;/NotificationDesignerDetails&gt;
+&lt;/DesignerTypes&gt;</Value>
+            </Annotation>
+          </Annotations>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="6dff8849-b907-489e-afaf-a4f4b6c1ac76">
+            <DataSourceID>hynew</DataSourceID>
+            <QueryDefinition>SELECT "STORE"."COMMUNICATION_LOG".*,trunc(CREATE_TIME) "CREATE_DATE",SUBSTR(TO_CHAR("STORE"."COMMUNICATION_LOG".CREATE_TIME,'hh24:mi:ss'),0,4) as TIME_KEY  FROM "STORE"."COMMUNICATION_LOG"</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="2f6a828a-2e1d-48a8-8d5a-1fe5d2f0cf06">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <AggregationStorage>MolapOnly</AggregationStorage>
+            <Source xsi:type="ProactiveCachingIncrementalProcessingBinding" dwd:design-time-name="f88fee68-584a-4017-ae96-0b3ecf72d18a">
+              <RefreshInterval>PT20M</RefreshInterval>
+              <IncrementalProcessingNotifications>
+                <IncrementalProcessingNotification>
+                  <Query>SELECT MAX(ID) FROM COMMUNICATION_LOG</Query>
+                  <TableID>MAIN_COMMUNICATION_LOG</TableID>
+                  <ProcessingQuery>SELECT "STORE"."COMMUNICATION_LOG".*,trunc(CREATE_TIME) "CREATE_DATE",SUBSTR(TO_CHAR("STORE"."COMMUNICATION_LOG".CREATE_TIME,'hh24:mi:ss'),0,4) as TIME_KEY  FROM "STORE"."COMMUNICATION_LOG" WHERE "STORE"."COMMUNICATION_LOG"."ID" &gt; :1 AND "STORE"."COMMUNICATION_LOG"."ID" &lt;= :2</ProcessingQuery>
+                </IncrementalProcessingNotification>
+              </IncrementalProcessingNotifications>
+            </Source>
+          </ProactiveCaching>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
